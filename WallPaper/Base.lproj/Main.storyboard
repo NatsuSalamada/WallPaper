@@ -29,7 +29,7 @@
         <!--Item 1-->
         <scene sceneID="aUm-vB-Cva">
             <objects>
-                <viewController id="Ex8-zG-N4B" sceneMemberID="viewController">
+                <viewController id="Ex8-zG-N4B" customClass="Home" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m9x-MZ-mUb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-1251"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Wallpapers-->
         <scene sceneID="soR-tL-L65">
             <objects>
-                <viewController id="lW7-Kn-S6v" sceneMemberID="viewController">
+                <viewController id="lW7-Kn-S6v" customClass="YourWallpapers" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2rX-mc-nxD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

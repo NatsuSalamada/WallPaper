@@ -25,6 +25,8 @@
 		040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7CD20C4E3F900B6A0E6 /* Config.swift */; };
 		040ED7D220C4E92200B6A0E6 /* RemainDatView.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */; };
 		040ED7D420C4E93C00B6A0E6 /* RemainHieuView.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */; };
+		5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400420C4EA2B00FD7042 /* Home.swift */; };
+		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = RemainHieuView.rtf; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB6400420C4EA2B00FD7042 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWallpapers.swift; sourceTree = "<group>"; };
 		5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.release.xcconfig"; sourceTree = "<group>"; };
 		8659C4DA75A63185C9F34869 /* Pods_WallPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
+				5BB6400420C4EA2B00FD7042 /* Home.swift */,
+				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
 			);
 			path = Hieu;
 			sourceTree = "<group>";
@@ -495,7 +501,9 @@
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
 				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
+				5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */,
 				040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */,
+				5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
