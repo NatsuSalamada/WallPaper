@@ -32,12 +32,13 @@
 		040ED7E220C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7DF20C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf */; };
 		040ED7E320C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7E020C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf */; };
 		040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7E420C4F6A000B6A0E6 /* DataOfAppLife.swift */; };
+		0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */; };
+		0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */; };
+		0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */; };
 		5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400420C4EA2B00FD7042 /* Home.swift */; };
 		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
-		CEEB800420C51D9800D54A3C /* CalelogiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */; };
-		CEEB800620C51DB000D54A3C /* CategogiesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,9 @@
 		040ED7DF20C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		040ED7E020C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		040ED7E420C4F6A000B6A0E6 /* DataOfAppLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOfAppLife.swift; sourceTree = "<group>"; };
+		0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_Cate_TableViewCell.swift; sourceTree = "<group>"; };
+		0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_H_TableViewCell.swift; sourceTree = "<group>"; };
+		0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_V_TableViewCell.swift; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB6400420C4EA2B00FD7042 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -98,8 +102,6 @@
 		9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
-		CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalelogiesTableView.swift; sourceTree = "<group>"; };
-		CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesCollectionView.swift; sourceTree = "<group>"; };
 		D915AB1BDD109AB6579E672C /* Pods-WallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465045DE1B4BB7569431353 /* Pods-WallPaperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -291,8 +293,9 @@
 			children = (
 				040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */,
 				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
-				CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */,
-				CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */,
+				0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */,
+				0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */,
+				0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -543,19 +546,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
-				CEEB800420C51D9800D54A3C /* CalelogiesTableView.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
 				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
 				5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */,
 				040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */,
 				5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */,
 				040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */,
+				0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
+				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
-				CEEB800620C51DB000D54A3C /* CategogiesCollectionView.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
+				0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */,
 				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
 				CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */,
 			);
