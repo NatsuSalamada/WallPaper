@@ -16,6 +16,13 @@
 		040ED79120C4DF4C00B6A0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040ED78F20C4DF4C00B6A0E6 /* LaunchScreen.storyboard */; };
 		040ED79C20C4DF4C00B6A0E6 /* WallPaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED79B20C4DF4C00B6A0E6 /* WallPaperTests.swift */; };
 		040ED7A720C4DF4C00B6A0E6 /* WallPaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7A620C4DF4C00B6A0E6 /* WallPaperUITests.swift */; };
+		040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7BE20C4E39C00B6A0E6 /* Alert.swift */; };
+		040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7BF20C4E39C00B6A0E6 /* Reachability.swift */; };
+		040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C020C4E39C00B6A0E6 /* UIButton+Extention.swift */; };
+		040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C120C4E39D00B6A0E6 /* UILable+Extention.swift */; };
+		040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C220C4E39D00B6A0E6 /* GoogleAdsMob.swift */; };
+		040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C320C4E39D00B6A0E6 /* UIView+Extention.swift */; };
+		040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7CD20C4E3F900B6A0E6 /* Config.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +59,13 @@
 		040ED7A220C4DF4C00B6A0E6 /* WallPaperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallPaperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040ED7A620C4DF4C00B6A0E6 /* WallPaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperUITests.swift; sourceTree = "<group>"; };
 		040ED7A820C4DF4C00B6A0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040ED7BE20C4E39C00B6A0E6 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		040ED7BF20C4E39C00B6A0E6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		040ED7C020C4E39C00B6A0E6 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		040ED7C120C4E39D00B6A0E6 /* UILable+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extention.swift"; sourceTree = "<group>"; };
+		040ED7C220C4E39D00B6A0E6 /* GoogleAdsMob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAdsMob.swift; sourceTree = "<group>"; };
+		040ED7C320C4E39D00B6A0E6 /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		040ED7CD20C4E3F900B6A0E6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +130,13 @@
 		040ED78220C4DF4A00B6A0E6 /* WallPaper */ = {
 			isa = PBXGroup;
 			children = (
+				040ED7CC20C4E3DB00B6A0E6 /* Config */,
+				040ED7B920C4E27900B6A0E6 /* Resource */,
+				040ED7B820C4E26E00B6A0E6 /* Main */,
+				040ED7B720C4E25E00B6A0E6 /* Base */,
+				040ED7B620C4E24C00B6A0E6 /* Ultis */,
+				040ED7B520C4E23300B6A0E6 /* Library */,
+				040ED7B420C4E1FE00B6A0E6 /* Framework */,
 				040ED78320C4DF4A00B6A0E6 /* AppDelegate.swift */,
 				040ED78520C4DF4A00B6A0E6 /* ViewController.swift */,
 				040ED78720C4DF4A00B6A0E6 /* Main.storyboard */,
@@ -143,6 +164,94 @@
 				040ED7A820C4DF4C00B6A0E6 /* Info.plist */,
 			);
 			path = WallPaperUITests;
+			sourceTree = "<group>";
+		};
+		040ED7B420C4E1FE00B6A0E6 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		040ED7B520C4E23300B6A0E6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		040ED7B620C4E24C00B6A0E6 /* Ultis */ = {
+			isa = PBXGroup;
+			children = (
+				040ED7BE20C4E39C00B6A0E6 /* Alert.swift */,
+				040ED7C220C4E39D00B6A0E6 /* GoogleAdsMob.swift */,
+				040ED7BF20C4E39C00B6A0E6 /* Reachability.swift */,
+				040ED7C020C4E39C00B6A0E6 /* UIButton+Extention.swift */,
+				040ED7C120C4E39D00B6A0E6 /* UILable+Extention.swift */,
+				040ED7C320C4E39D00B6A0E6 /* UIView+Extention.swift */,
+			);
+			path = Ultis;
+			sourceTree = "<group>";
+		};
+		040ED7B720C4E25E00B6A0E6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		040ED7B820C4E26E00B6A0E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				040ED7BD20C4E31600B6A0E6 /* View */,
+				040ED7BC20C4E30F00B6A0E6 /* Model */,
+				040ED7BB20C4E30700B6A0E6 /* Controller */,
+				040ED7BA20C4E2FB00B6A0E6 /* Custom */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		040ED7B920C4E27900B6A0E6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		040ED7BA20C4E2FB00B6A0E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		040ED7BB20C4E30700B6A0E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		040ED7BC20C4E30F00B6A0E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		040ED7BD20C4E31600B6A0E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040ED7CC20C4E3DB00B6A0E6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				040ED7CD20C4E3F900B6A0E6 /* Config.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		85EC098A476E5A49E9574095 /* Frameworks */ = {
@@ -359,9 +468,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
+				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
 				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
 				040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */,
+				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
+				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
+				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
+				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
+				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
