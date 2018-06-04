@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ex8-zG-N4B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -235,14 +236,64 @@
                     <view key="view" contentMode="scaleToFill" id="m9x-MZ-mUb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-v8-HPr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2500123-7" translatesAutoresizingMaskIntoConstraints="NO" id="g7E-89-Jv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                    </imageView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aPM-yE-izV" customClass="Segment1" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="127" y="57" width="121" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Wallpapers"/>
+                                            <segment title="Live Wallpapers"/>
+                                        </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="76"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="38"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="224"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="29"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segment:" destination="ngr-SC-E6q" eventType="valueChanged" id="fOb-2a-2q7"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="g7E-89-Jv3" firstAttribute="height" secondItem="8bJ-v8-HPr" secondAttribute="height" multiplier="1:2" id="0fW-TC-Wwa"/>
+                                    <constraint firstAttribute="trailing" secondItem="g7E-89-Jv3" secondAttribute="trailing" id="7yC-40-8V2"/>
+                                    <constraint firstItem="g7E-89-Jv3" firstAttribute="leading" secondItem="8bJ-v8-HPr" secondAttribute="leading" id="BsB-2c-vq3"/>
+                                    <constraint firstItem="g7E-89-Jv3" firstAttribute="top" secondItem="8bJ-v8-HPr" secondAttribute="top" id="J8W-U3-a2E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8bJ-v8-HPr" firstAttribute="top" secondItem="m9x-MZ-mUb" secondAttribute="top" id="GFI-jg-Z5X"/>
+                            <constraint firstItem="8bJ-v8-HPr" firstAttribute="trailing" secondItem="Jfy-eR-sDZ" secondAttribute="trailing" id="PaS-n8-DsO"/>
+                            <constraint firstItem="8bJ-v8-HPr" firstAttribute="bottom" secondItem="Jfy-eR-sDZ" secondAttribute="bottom" id="bbK-8n-4Nb"/>
+                            <constraint firstItem="8bJ-v8-HPr" firstAttribute="leading" secondItem="Jfy-eR-sDZ" secondAttribute="leading" id="iYK-hp-oBl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jfy-eR-sDZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="vcP-77-xSC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apa-dO-4GU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ngr-SC-E6q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-481"/>
+            <point key="canvasLocation" x="-284" y="-481.70914542728639"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7h-yy-gof">
@@ -317,4 +368,7 @@
             <point key="canvasLocation" x="1837.5999999999999" y="-483.50824587706148"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="_2500123-7" width="2048" height="1152"/>
+    </resources>
 </document>
