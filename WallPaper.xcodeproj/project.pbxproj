@@ -36,6 +36,8 @@
 		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
+		CEEB800420C51D9800D54A3C /* CalelogiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */; };
+		CEEB800620C51DB000D54A3C /* CategogiesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
+		CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalelogiesTableView.swift; sourceTree = "<group>"; };
+		CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesCollectionView.swift; sourceTree = "<group>"; };
 		D915AB1BDD109AB6579E672C /* Pods-WallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465045DE1B4BB7569431353 /* Pods-WallPaperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 			children = (
 				040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */,
 				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
+				CEEB800320C51D9800D54A3C /* CalelogiesTableView.swift */,
+				CEEB800520C51DB000D54A3C /* CategogiesCollectionView.swift */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -537,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
+				CEEB800420C51D9800D54A3C /* CalelogiesTableView.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
 				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
 				5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */,
@@ -546,6 +553,7 @@
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
+				CEEB800620C51DB000D54A3C /* CategogiesCollectionView.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
 				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
