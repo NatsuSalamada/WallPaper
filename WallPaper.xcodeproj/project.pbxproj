@@ -23,6 +23,8 @@
 		040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C220C4E39D00B6A0E6 /* GoogleAdsMob.swift */; };
 		040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7C320C4E39D00B6A0E6 /* UIView+Extention.swift */; };
 		040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7CD20C4E3F900B6A0E6 /* Config.swift */; };
+		040ED7D220C4E92200B6A0E6 /* RemainDatView.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */; };
+		040ED7D420C4E93C00B6A0E6 /* RemainHieuView.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		040ED7C220C4E39D00B6A0E6 /* GoogleAdsMob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAdsMob.swift; sourceTree = "<group>"; };
 		040ED7C320C4E39D00B6A0E6 /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		040ED7CD20C4E3F900B6A0E6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = RemainDatView.rtf; sourceTree = "<group>"; };
+		040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = RemainHieuView.rtf; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 		040ED7CF20C4E63200B6A0E6 /* Dat */ = {
 			isa = PBXGroup;
 			children = (
+				040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 		040ED7D020C4E63C00B6A0E6 /* Hieu */ = {
 			isa = PBXGroup;
 			children = (
+				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
 			);
 			path = Hieu;
 			sourceTree = "<group>";
@@ -402,7 +408,9 @@
 			files = (
 				040ED79120C4DF4C00B6A0E6 /* LaunchScreen.storyboard in Resources */,
 				040ED78E20C4DF4C00B6A0E6 /* Assets.xcassets in Resources */,
+				040ED7D420C4E93C00B6A0E6 /* RemainHieuView.rtf in Resources */,
 				040ED78920C4DF4A00B6A0E6 /* Main.storyboard in Resources */,
+				040ED7D220C4E92200B6A0E6 /* RemainDatView.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
