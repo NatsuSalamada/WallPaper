@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource {
+class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate {
     
     var img = ["hinh1","hinh2","hinh3","hinh4","hinh5"]
     
@@ -26,29 +26,31 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
+        
         if indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 4{
             cell = tableView.dequeueReusableCell(withIdentifier: "CellLbl", for: indexPath) as! Name_Cate_TableViewCell
+           
         }else if indexPath.row == 1 || indexPath.row == 3{
             cell = tableView.dequeueReusableCell(withIdentifier: "Cell_H", for: indexPath) as! Collection_H_TableViewCell
         }else{
             cell = tableView.dequeueReusableCell(withIdentifier: "Cell_V", for: indexPath) as! Collection_V_TableViewCell
         }
+        
         return cell
     }
-//    // Collectionview Delegate
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return img.count
-//    }
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cellimg", for: indexPath) as! CategogiesCollectionView
-//        cell.Image.image = UIImage(named: img[indexPath.row])
-//
-//        return cell
-//    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return img.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Coll_H", for: indexPath) as! Horizontal_CollectionView
+        cell.H_Image.image = UIImage(named: img[indexPath.row])
+        return cell
+    }
+
+    
 }
-
-  
-
 
 
 
