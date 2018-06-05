@@ -12,12 +12,16 @@ struct CellCollectionCate {
     static let Cell_H = "Coll_H"
     static let Cell_V = "Coll_V"
 }
+enum CellCollectionCateType:Int {
+    case Cell_H = 0
+    case Coll_V = 1
+}
 
 class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate {
     
     var img = ["hinh1","hinh2","hinh3","hinh4","hinh5","hinh1","hinh2","hinh3","hinh4","hinh5"]
     
-    var identifier = ""
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,11 +65,11 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
            
         }else if indexPath.row == 1 || indexPath.row == 3{
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_H", for: indexPath) as! Collection_H_TableViewCell
-            self.identifier = CellCollectionCate.Cell_H
+            
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_V", for: indexPath) as! Collection_V_TableViewCell
-            self.identifier = CellCollectionCate.Cell_V
+            
             return cell
         }
         
@@ -76,18 +80,22 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         return img.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
-        if identifier == CellCollectionCate.Cell_H{
-            if let Cell_H_Collection = cell as? Horizontal_CollectionView{
-                Cell_H_Collection.H_Image.image = UIImage(named: img[indexPath.row])
-            }
+       
+        
+      
+        
+        if collectionView.tag == CellCollectionCateType.Cell_H.rawValue{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionCate.Cell_H, for: indexPath) as! Horizontal_CollectionView
+           cell.H_Image.image = UIImage(named: img[indexPath.row])
+            return cell
+            
         }else{
-            if let Cell_V_Collection = cell as? Vertical_CollectionView{
-                Cell_V_Collection.V_Image.image = UIImage(named: img[indexPath.row])
-            }
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionCate.Cell_V, for: indexPath) as! Vertical_CollectionView
+            cell.V_Image.image = UIImage(named: img[indexPath.row])
+            return cell
         }
         
-        return cell
+       
     }
 
     
