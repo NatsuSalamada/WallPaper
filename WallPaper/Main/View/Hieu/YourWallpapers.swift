@@ -8,7 +8,20 @@
 
 import UIKit
 
-class YourWallpapers: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class YourWallpapers: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if UIScreen.main.bounds.width >= 768{
+            
+            return CGSize(width: WIPA(w: 184), height: HIPA(h: 212))
+            
+            
+        }else{
+            
+            return CGSize(width: WIPH(w: 93), height: HIPH(h: 152))
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50 }
     
