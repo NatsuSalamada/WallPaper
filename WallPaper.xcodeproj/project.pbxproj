@@ -36,6 +36,7 @@
 		0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */; };
 		0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */; };
 		049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */; };
+		5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65624820C67ADA00E02062 /* CollViewCell1.swift */; };
 		5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400420C4EA2B00FD7042 /* Home.swift */; };
 		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
@@ -99,6 +100,7 @@
 		049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBSegmentedControl.swift; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B65624820C67ADA00E02062 /* CollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewCell1.swift; sourceTree = "<group>"; };
 		5BB6400420C4EA2B00FD7042 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWallpapers.swift; sourceTree = "<group>"; };
 		5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
 				5BB6400420C4EA2B00FD7042 /* Home.swift */,
 				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
+				5B65624820C67ADA00E02062 /* CollViewCell1.swift */,
 			);
 			path = Hieu;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
+				5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,

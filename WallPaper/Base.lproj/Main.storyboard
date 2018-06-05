@@ -391,12 +391,67 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
-                                                <color key="value" red="0.96862745098039216" green="0.27450980392156865" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="76"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="38"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="224"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="29"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="272"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="54"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="224"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="29"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-qV-AYC">
+                                        <rect key="frame" x="160" y="530" width="56" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="iconDowload"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="356"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="871"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="160"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="530"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="g7E-89-Jv3" firstAttribute="height" secondItem="8bJ-v8-HPr" secondAttribute="height" multiplier="1:2" id="0fW-TC-Wwa"/>
                                     <constraint firstAttribute="trailing" secondItem="g7E-89-Jv3" secondAttribute="trailing" id="7yC-40-8V2"/>
@@ -446,14 +501,162 @@
                     <view key="view" contentMode="scaleToFill" id="2rX-mc-nxD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cms-qA-eu1">
+                                <rect key="frame" x="0.0" y="101" width="375" height="517"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="dDr-yg-QJW">
+                                    <size key="itemSize" width="93" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Hinhanh" id="FXA-Kt-L8E" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530721" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-jt-uKL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                            <real key="value" value="184"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                            <real key="value" value="212"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                            <real key="value" value="93"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                            <real key="value" value="152"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Ofc-jt-uKL" firstAttribute="leading" secondItem="FXA-Kt-L8E" secondAttribute="leading" id="Awf-xb-2tz"/>
+                                            <constraint firstItem="Ofc-jt-uKL" firstAttribute="top" secondItem="FXA-Kt-L8E" secondAttribute="top" id="Dyd-hx-epE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ofc-jt-uKL" secondAttribute="trailing" id="Svv-6B-0if"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ofc-jt-uKL" secondAttribute="bottom" id="d0s-xB-c1R"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="93"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="152"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="184"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="212"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lW7-Kn-S6v" id="FQS-P0-VkB"/>
+                                    <outlet property="delegate" destination="lW7-Kn-S6v" id="tiY-Pg-kyl"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-GP-424">
+                                <rect key="frame" x="295" y="538" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="buttonCreateNew"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                        <real key="value" value="672"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                        <real key="value" value="879"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                        <real key="value" value="295"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                        <real key="value" value="538"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owb-p5-Q1U" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
+                                <rect key="frame" x="76" y="38" width="224" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="JNU-sx-FMF"/>
+                                    <constraint firstAttribute="height" constant="29" id="Qpv-fP-iO0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                        <real key="value" value="76"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                        <real key="value" value="224"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                        <real key="value" value="272"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                        <real key="value" value="54"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                        <real key="value" value="224"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cms-qA-eu1" firstAttribute="top" secondItem="owb-p5-Q1U" secondAttribute="bottom" constant="34" id="AOJ-qN-AjP"/>
+                            <constraint firstItem="cms-qA-eu1" firstAttribute="leading" secondItem="2rX-mc-nxD" secondAttribute="leading" id="ASp-vX-iOz"/>
+                            <constraint firstItem="owb-p5-Q1U" firstAttribute="top" secondItem="2rX-mc-nxD" secondAttribute="top" constant="38" id="O11-kI-Ax1"/>
+                            <constraint firstItem="owb-p5-Q1U" firstAttribute="centerX" secondItem="RuR-vt-Bwe" secondAttribute="centerX" id="QWg-16-jQ7"/>
+                            <constraint firstItem="RuR-vt-Bwe" firstAttribute="bottom" secondItem="cms-qA-eu1" secondAttribute="bottom" id="tAZ-to-cOd"/>
+                            <constraint firstAttribute="trailing" secondItem="cms-qA-eu1" secondAttribute="trailing" id="tX8-5A-fBx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RuR-vt-Bwe"/>
                     </view>
                     <navigationItem key="navigationItem" id="xvY-8q-74G"/>
+                    <connections>
+                        <outlet property="Coll1" destination="cms-qA-eu1" id="cdH-ZS-Ns0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnB-Ix-cgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="-482"/>
+            <point key="canvasLocation" x="2656.8000000000002" y="-482.60869565217394"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="jAN-8h-aKY">
@@ -476,11 +679,10 @@
         <!--Item-->
         <scene sceneID="Uiy-SG-aXt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ea-oT-17D" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4ea-oT-17D" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mb5-or-W7g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xvf-bq-hfm">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -494,6 +696,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="_2500123-7" width="2048" height="1152"/>
+        <image name="_2500123-7" width="1024" height="576"/>
+        <image name="_2530721" width="1536" height="2304"/>
+        <image name="buttonCreateNew" width="56" height="56"/>
+        <image name="iconDowload" width="40" height="42"/>
     </resources>
 </document>
