@@ -40,6 +40,8 @@
 		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
+		CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */; };
+		CEEB800A20C63C5100D54A3C /* Vertical_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
+		CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horizontal_CollectionView.swift; sourceTree = "<group>"; };
+		CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertical_CollectionView.swift; sourceTree = "<group>"; };
 		D915AB1BDD109AB6579E672C /* Pods-WallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465045DE1B4BB7569431353 /* Pods-WallPaperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -298,6 +302,8 @@
 				0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */,
 				0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */,
 				0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */,
+				CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */,
+				CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEB800A20C63C5100D54A3C /* Vertical_CollectionView.swift in Sources */,
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
 				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
@@ -556,6 +563,7 @@
 				5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */,
 				040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */,
 				0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */,
+				CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
 				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */,
