@@ -15,7 +15,7 @@ struct CellCollectionCate {
 
 class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate {
     
-    var img = ["hinh1","hinh2","hinh3","hinh4","hinh5"]
+    var img = ["hinh1","hinh2","hinh3","hinh4","hinh5","hinh1","hinh2","hinh3","hinh4","hinh5"]
     
     var identifier = ""
     
@@ -25,7 +25,15 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        if indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 4{
+            return 33
+            
+        }else if indexPath.row == 1 || indexPath.row == 3{
+            return 200
+        }else{
+            return 317
+        }
+        
     }
     // Tableview Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +45,18 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         if indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 4{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellLbl", for: indexPath) as! Name_Cate_TableViewCell
+            
+            if indexPath.row == 0{
+               cell.lbl_Name.text = "New Arrivals"
+                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+            }else if indexPath.row == 2{
+                cell.lbl_Name.text = "Popular"
+                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+            }else if indexPath.row == 4{
+                 cell.lbl_Name.text = "Categories"
+                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+            }
+        
             return cell
            
         }else if indexPath.row == 1 || indexPath.row == 3{
@@ -63,7 +83,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             }
         }else{
             if let Cell_V_Collection = cell as? Vertical_CollectionView{
-                
+                Cell_V_Collection.V_Image.image = UIImage(named: img[indexPath.row])
             }
         }
         
