@@ -18,14 +18,59 @@
                     <view key="view" contentMode="scaleToFill" id="SVt-G0-XAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9UU-Bf-xtE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellLbl" rowHeight="57" id="Rrl-jZ-Dv3" customClass="Name_Cate_TableViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rrl-jZ-Dv3" id="Ftb-XB-q6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.92156862750000001" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_H" rowHeight="227" id="won-ki-f6S" customClass="Collection_H_TableViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="227"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="won-ki-f6S" id="aBa-0d-Fko">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="226.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.68235294120000001" green="0.74117647060000003" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_V" rowHeight="140" id="icJ-4v-Se3" customClass="Collection_V_TableViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="312" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icJ-4v-Se3" id="PWp-QM-VU4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.12549019610000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hbX-g8-duu" id="FUm-mE-vqZ"/>
+                                    <outlet property="delegate" destination="hbX-g8-duu" id="vfc-QJ-4SE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="top" secondItem="SVt-G0-XAe" secondAttribute="top" id="AcP-7m-iB6"/>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="bottom" secondItem="P1k-VL-kxx" secondAttribute="bottom" id="EUf-wH-UKH"/>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="leading" secondItem="P1k-VL-kxx" secondAttribute="leading" id="ks8-Sj-YNE"/>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="trailing" secondItem="P1k-VL-kxx" secondAttribute="trailing" id="yp3-jt-3g9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="P1k-VL-kxx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rsa-GA-Gpc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNw-GN-xQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="254"/>
+            <point key="canvasLocation" x="749.60000000000002" y="509.59520239880067"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="aUm-vB-Cva">
@@ -41,32 +86,19 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2500123-7" translatesAutoresizingMaskIntoConstraints="NO" id="g7E-89-Jv3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                     </imageView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aPM-yE-izV" customClass="Segment1" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="127" y="57" width="121" height="29"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kuA-3q-xln" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="55" width="240" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="Wallpapers"/>
-                                            <segment title="Live Wallpapers"/>
-                                        </segments>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                <real key="value" value="76"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                <real key="value" value="38"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                <real key="value" value="224"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                <real key="value" value="29"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
+                                                <color key="value" red="0.96862745098039216" green="0.27450980392156865" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="segment:" destination="ngr-SC-E6q" eventType="valueChanged" id="fOb-2a-2q7"/>
-                                        </connections>
-                                    </segmentedControl>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -89,7 +121,6 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="vcP-77-xSC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apa-dO-4GU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ngr-SC-E6q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-284" y="-481.70914542728639"/>
         </scene>
