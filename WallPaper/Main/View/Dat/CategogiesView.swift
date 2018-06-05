@@ -52,13 +52,13 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             
             if indexPath.row == 0{
                cell.lbl_Name.text = "New Arrivals"
-                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+              
             }else if indexPath.row == 2{
                 cell.lbl_Name.text = "Popular"
-                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+            
             }else if indexPath.row == 4{
                  cell.lbl_Name.text = "Categories"
-                cell.btn_Name.setTitle("SEE ALL >", for: .normal)
+            
             }
         
             return cell
