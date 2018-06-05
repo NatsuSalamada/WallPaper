@@ -74,7 +74,7 @@ import UIKit
         layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
         layer.borderWidth = 1
         
-        backgroundColor = UIColor.clear
+        backgroundColor = UIColor.init(displayP3Red: 255, green: 255, blue: 255, alpha: 0.2)
         
         setupLabels()
         
