@@ -93,10 +93,12 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
        
         var raDius:CGFloat = 0.0
         var space: CGFloat = 0.0
+        
         if UIScreen.main.bounds.width >= 768{
             
             raDius = WIPA(w: 4 )
             space = WIPA(w: 24)
+           
             
         }else{
             raDius = WIPH(w: 4)
@@ -115,7 +117,10 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             cell.clipsToBounds = true
             layout.sectionInset = UIEdgeInsetsMake(0, space, 0, 0)
             layout.itemSize = CGSize(width: 113, height: 200)
-            layout.minimumInteritemSpacing = 8
+           
+            layout.minimumLineSpacing = 8
+            
+            
             layout.scrollDirection = .horizontal
      
            
@@ -132,7 +137,9 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             layout.sectionInset = UIEdgeInsetsMake(0, space, 0,space)
             layout.itemSize = CGSize(width: 160, height: 57)
             layout.minimumInteritemSpacing = 0
-            layout.minimumLineSpacing = 8
+           
+            
+            layout.minimumLineSpacing = UIScreen.main.bounds.width - space*2 - cell.bounds.size.width*2
              layout.scrollDirection = .vertical
             return cell
         }
@@ -140,6 +147,25 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
        
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var sizeCell_H:CGSize = CGSize.zero
+        var sizeCell_V:CGSize = CGSize.zero
+        if UIScreen.main.bounds.width >= 768{
+            
+            sizeCell_V = CGSize(width: WIPA(w: 166), height: HIPA(h: 57))
+            sizeCell_H = CGSize(width: WIPA(w: 230), height: HIPA(h: 307))
+            
+        }else{
+           sizeCell_V = CGSize(width: WIPH(w: 160), height: HIPH(h: 57))
+            sizeCell_H = CGSize(width: WIPH(w: 113), height: HIPH(h: 200))
+        }
+        if collectionView.tag == CellCollectionCateType.Cell_H.rawValue{
+            return sizeCell_H
+        }else{
+            return sizeCell_V
+        }
+            
+    }
     
 }
 
