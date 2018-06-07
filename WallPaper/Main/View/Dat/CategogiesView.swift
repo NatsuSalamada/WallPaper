@@ -20,7 +20,7 @@ enum CellCollectionCateType:Int {
 class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     var img = ["hinh1","hinh2","hinh3","hinh4","hinh5","hinh1","hinh2","hinh3","hinh4","hinh5"]
-  
+    var lbl = ["Abstract","Animals","Cities","Science","Flowers","Sports","Mountains","Underwater","Nature","Ohter"]
    
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         if indexPath.row == 0 {
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 16)
+                height = HIPA(h: 32)
                 return height
                 
             }else{
@@ -44,17 +44,17 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         }else if indexPath.row == 3 || indexPath.row == 6{
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 32)
+                height = HIPA(h: 28)
                 return height
                 
             }else{
-                height = HIPH(h: 32)
+                height = HIPH(h: 28)
                 return height
             }
         }else if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 37)
+                height = HIPA(h: 48)
                 return height
                 
             }else{
@@ -65,7 +65,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         else if indexPath.row == 2 || indexPath.row == 5{
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 200)
+                height = HIPA(h: 307)
                 return height
                 
             }else{
@@ -75,7 +75,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         }else{
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 317)
+                height = HIPA(h: 187)
                 return height
                 
             }else{
@@ -96,7 +96,8 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellLbl", for: indexPath) as! Name_Cate_TableViewCell
-           
+            cell.btn_Name.set(image: #imageLiteral(resourceName: "iconArrow"), title: "SEE ALL", titlePosition: .left, additionalSpacing: 8, state: .normal)
+            cell.btn_Name.tintColor = UIColor.white 
             if indexPath.row == 1{
                cell.lbl_Name.text = "New Arrivals"
               
@@ -140,8 +141,8 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         if UIScreen.main.bounds.width >= 768{
             
-            raDius = WIPA(w: 4 )
-            space = WIPA(w: 24)
+            raDius = WIPA(w: 6)
+            space = WIPA(w: 40)
            
             
         }else{
@@ -174,16 +175,24 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionCate.Cell_V, for: indexPath) as! Vertical_CollectionView
             
                 cell.V_Image.image = UIImage(named: img[indexPath.row])
-          
+          cell.Lbl_NameCate.text = lbl[indexPath.row]
             cell.layer.cornerRadius = raDius
             cell.clipsToBounds = true
             
             layout.sectionInset = UIEdgeInsetsMake(0, space, 0,space)
             layout.itemSize = CGSize(width: 160, height: 57)
             layout.minimumInteritemSpacing = 0
-           
+            var minimumLine:CGFloat = 0
+            if UIScreen.main.bounds.width >= 768{
+                
+                minimumLine = 8
+                
+                
+            }else{
+                minimumLine = WIPH(w: UIScreen.main.bounds.width - space*2 - cell.bounds.size.width*2)
+            }
             
-            layout.minimumLineSpacing = UIScreen.main.bounds.width - space*2 - cell.bounds.size.width*2
+            layout.minimumLineSpacing = minimumLine
              layout.scrollDirection = .vertical
             return cell
         }

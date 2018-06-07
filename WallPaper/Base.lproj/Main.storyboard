@@ -16,6 +16,9 @@
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
         </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Categogies View-->
@@ -40,7 +43,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-OC-syz" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="15" width="133" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,6 +67,18 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontIPad">
                                                             <real key="value" value="22"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                            <real key="value" value="40"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                            <real key="value" value="133"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                            <real key="value" value="53"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yQ-81-ctm" customClass="DesignableButton" customModule="WallPaper" customModuleProvider="target">
@@ -74,9 +89,6 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                            <real key="value" value="282"/>
-                                                        </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
                                                             <real key="value" value="6"/>
                                                         </userDefinedRuntimeAttribute>
@@ -97,6 +109,21 @@
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="positiontitleIPad">
                                                             <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                            <real key="value" value="282"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                            <real key="value" value="659"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                            <real key="value" value="90"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                            <real key="value" value="24"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
@@ -243,14 +270,44 @@
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Yk-6i9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="91"/>
                                                                     </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jT-ga-5gK" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="91"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                                                <real key="value" value="128"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                                                <real key="value" value="27"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontIPhone">
+                                                                                <real key="value" value="18"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontIPad">
+                                                                                <real key="value" value="18"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
                                                                 </subviews>
                                                             </view>
                                                             <color key="backgroundColor" red="0.96862745100000003" green="0.27450980390000002" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="0jT-ga-5gK" secondAttribute="trailing" id="0hQ-2t-YRE"/>
+                                                                <constraint firstItem="0jT-ga-5gK" firstAttribute="leading" secondItem="eJr-ek-WrY" secondAttribute="leading" id="GiB-jy-aRk"/>
                                                                 <constraint firstItem="4v6-Yk-6i9" firstAttribute="leading" secondItem="eJr-ek-WrY" secondAttribute="leading" id="I5b-JG-U8s"/>
                                                                 <constraint firstItem="4v6-Yk-6i9" firstAttribute="top" secondItem="eJr-ek-WrY" secondAttribute="top" id="JMe-as-Npr"/>
+                                                                <constraint firstItem="0jT-ga-5gK" firstAttribute="top" secondItem="eJr-ek-WrY" secondAttribute="top" id="PHH-2U-dF1"/>
                                                                 <constraint firstAttribute="bottom" secondItem="4v6-Yk-6i9" secondAttribute="bottom" id="mNp-8L-fmj"/>
                                                                 <constraint firstAttribute="trailing" secondItem="4v6-Yk-6i9" secondAttribute="trailing" id="mmZ-WU-OUp"/>
+                                                                <constraint firstAttribute="bottom" secondItem="0jT-ga-5gK" secondAttribute="bottom" id="y5K-hq-fdj"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
@@ -267,6 +324,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
+                                                                <outlet property="Lbl_NameCate" destination="0jT-ga-5gK" id="Arm-LJ-VCd"/>
                                                                 <outlet property="V_Image" destination="4v6-Yk-6i9" id="Zp6-Xf-i0K"/>
                                                             </connections>
                                                         </collectionViewCell>
