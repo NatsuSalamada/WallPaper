@@ -29,17 +29,59 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var height:CGFloat = 0
+        
         if indexPath.row == 0 {
-            return 16
+            if UIScreen.main.bounds.width >= 768{
+                
+                height = HIPA(h: 16)
+                return height
+                
+            }else{
+                height = HIPH(h: 16)
+                return height
+            }
         }else if indexPath.row == 3 || indexPath.row == 6{
-            return 32
+            if UIScreen.main.bounds.width >= 768{
+                
+                height = HIPA(h: 32)
+                return height
+                
+            }else{
+                height = HIPH(h: 32)
+                return height
+            }
         }else if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
-            return 37
+            if UIScreen.main.bounds.width >= 768{
+                
+                height = HIPA(h: 37)
+                return height
+                
+            }else{
+                height = HIPH(h: 37)
+                return height
+            }
         }
         else if indexPath.row == 2 || indexPath.row == 5{
-            return 200
+            if UIScreen.main.bounds.width >= 768{
+                
+                height = HIPA(h: 200)
+                return height
+                
+            }else{
+                height = HIPH(h: 200)
+                return height
+            }
         }else{
-            return 317
+            if UIScreen.main.bounds.width >= 768{
+                
+                height = HIPA(h: 317)
+                return height
+                
+            }else{
+                height = HIPH(h: 317)
+                return height
+            }
         }
         
     }
@@ -65,13 +107,15 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
                  cell.lbl_Name.text = "Categories"
             
             }
+            
+            
          cell.selectionStyle = .none
             return cell
            
         }else if indexPath.row == 2 || indexPath.row == 5{
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_H", for: indexPath) as! Collection_H_TableViewCell
            cell.selectionStyle = .none
-        
+            
             return cell
         }else if indexPath.row == 0 || indexPath.row == 3 || indexPath.row == 6 {
              let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_None", for: indexPath) as! None_TableViewCell
