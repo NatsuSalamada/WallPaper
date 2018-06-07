@@ -8,36 +8,74 @@
 
 import UIKit
 
-class YourWallpapers: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class YourWallpapers: UIViewController{
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if UIScreen.main.bounds.width >= 768{
-            
-            return CGSize(width: WIPA(w: 184), height: HIPA(h: 212))
-            
-            
-        }else{
-            
-            return CGSize(width: WIPH(w: 93), height: HIPH(h: 152))
+   
+    
+   
+    
+
+
+    
+    @IBOutlet weak var View_My: UIView!
+    
+    lazy var WallpaperControlller:UIViewController? = {
+        
+        let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "Wallpapers_My")
+        return wallpapersController
+        
+    }()
+    
+    lazy var LiveWallpapersController:UIViewController? = {
+        let livewallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "LiveWallpapers_My")
+        return livewallpapersController
+    }()
+    
+    var currentViewCOntroller:UIViewController?
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
+        
+        ChangeDisplayViewLoad(index: 0)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let current = currentViewCOntroller{
+            current.viewWillDisappear(true)
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50 }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Hinhanh", for: indexPath) as! CollViewCell1
-        return cell
+    func ChangeDisplayViewLoad(index:Int){
+        
+        let vc = CheckCollection(index: index)
+        vc.didMove(toParentViewController: self)
+        self.addChildViewController(vc)
+        vc.view.frame = self.View_My.bounds
+        View_My.addSubview(vc.view)
+        currentViewCOntroller = vc
     }
     
-
-    @IBOutlet weak var Coll1: UICollectionView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @objc func ChangeDisplay(noti:Notification){
+        print("Change:\(noti.object as! Int)")
+        currentViewCOntroller?.view.removeFromSuperview()
+        currentViewCOntroller?.removeFromParentViewController()
+        let vc = CheckCollection(index: noti.object as! Int)
+        vc.didMove(toParentViewController: self)
+        self.addChildViewController(vc)
+        vc.view.frame = self.View_My.bounds
+        View_My.addSubview(vc.view)
     }
-
+    
+    func CheckCollection(index:Int) ->UIViewController {
+        if(index == 0){
+            return WallpaperControlller!
+        }else{
+            return LiveWallpapersController!
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

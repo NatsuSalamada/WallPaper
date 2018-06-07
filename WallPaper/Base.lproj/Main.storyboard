@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ex8-zG-N4B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lW7-Kn-S6v">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apa-dO-4GU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1247" y="-512"/>
+            <point key="canvasLocation" x="-1254" y="-484"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7h-yy-gof">
@@ -498,101 +498,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cms-qA-eu1">
-                                <rect key="frame" x="0.0" y="101" width="375" height="517"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="dDr-yg-QJW">
-                                    <size key="itemSize" width="93" height="152"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Hinhanh" id="FXA-Kt-L8E" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530721" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-jt-uKL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="93" height="152"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                                            <real key="value" value="184"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                                            <real key="value" value="212"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                            <real key="value" value="93"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                            <real key="value" value="152"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Ofc-jt-uKL" firstAttribute="leading" secondItem="FXA-Kt-L8E" secondAttribute="leading" id="Awf-xb-2tz"/>
-                                            <constraint firstItem="Ofc-jt-uKL" firstAttribute="top" secondItem="FXA-Kt-L8E" secondAttribute="top" id="Dyd-hx-epE"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ofc-jt-uKL" secondAttribute="trailing" id="Svv-6B-0if"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ofc-jt-uKL" secondAttribute="bottom" id="d0s-xB-c1R"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                <real key="value" value="93"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                <real key="value" value="152"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                                <real key="value" value="184"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                                <real key="value" value="212"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="lW7-Kn-S6v" id="FQS-P0-VkB"/>
-                                    <outlet property="delegate" destination="lW7-Kn-S6v" id="tiY-Pg-kyl"/>
-                                </connections>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-GP-424">
-                                <rect key="frame" x="295" y="538" width="56" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="buttonCreateNew"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
-                                        <real key="value" value="672"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
-                                        <real key="value" value="879"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                        <real key="value" value="295"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                        <real key="value" value="538"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owb-p5-Q1U" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
                                 <rect key="frame" x="76" y="38" width="224" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -633,26 +538,186 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-Xt-813">
+                                <rect key="frame" x="0.0" y="91" width="375" height="527"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-GP-424">
+                                <rect key="frame" x="295" y="538" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="buttonCreateNew"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                        <real key="value" value="672"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                        <real key="value" value="879"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                        <real key="value" value="295"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                        <real key="value" value="538"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                        <real key="value" value="56"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cms-qA-eu1" firstAttribute="top" secondItem="owb-p5-Q1U" secondAttribute="bottom" constant="34" id="AOJ-qN-AjP"/>
-                            <constraint firstItem="cms-qA-eu1" firstAttribute="leading" secondItem="2rX-mc-nxD" secondAttribute="leading" id="ASp-vX-iOz"/>
                             <constraint firstItem="owb-p5-Q1U" firstAttribute="top" secondItem="2rX-mc-nxD" secondAttribute="top" constant="38" id="O11-kI-Ax1"/>
                             <constraint firstItem="owb-p5-Q1U" firstAttribute="centerX" secondItem="RuR-vt-Bwe" secondAttribute="centerX" id="QWg-16-jQ7"/>
-                            <constraint firstItem="RuR-vt-Bwe" firstAttribute="bottom" secondItem="cms-qA-eu1" secondAttribute="bottom" id="tAZ-to-cOd"/>
-                            <constraint firstAttribute="trailing" secondItem="cms-qA-eu1" secondAttribute="trailing" id="tX8-5A-fBx"/>
+                            <constraint firstItem="BY6-Xt-813" firstAttribute="leading" secondItem="RuR-vt-Bwe" secondAttribute="leading" id="UaL-fZ-qYS"/>
+                            <constraint firstItem="BY6-Xt-813" firstAttribute="top" secondItem="owb-p5-Q1U" secondAttribute="bottom" constant="24" id="VVo-cw-q0B"/>
+                            <constraint firstItem="RuR-vt-Bwe" firstAttribute="trailing" secondItem="BY6-Xt-813" secondAttribute="trailing" id="X7L-9r-Fqy"/>
+                            <constraint firstItem="RuR-vt-Bwe" firstAttribute="bottom" secondItem="BY6-Xt-813" secondAttribute="bottom" id="bQH-KS-VdO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RuR-vt-Bwe"/>
                     </view>
                     <navigationItem key="navigationItem" id="xvY-8q-74G"/>
                     <connections>
-                        <outlet property="Coll1" destination="cms-qA-eu1" id="cdH-ZS-Ns0"/>
+                        <outlet property="View_My" destination="BY6-Xt-813" id="YiC-99-Ubo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnB-Ix-cgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2656.8000000000002" y="-482.60869565217394"/>
+        </scene>
+        <!--Wallpapers My-->
+        <scene sceneID="Ax2-Kq-BvY">
+            <objects>
+                <viewController storyboardIdentifier="Wallpapers_My" id="E7T-HZ-OnY" customClass="Wallpapers_My" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SZy-AO-613">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DGG-uM-hRf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="hCD-qC-z2C">
+                                    <size key="itemSize" width="129" height="122"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Wallpapers_Cell" id="LuK-G9-Ka5" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="122"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530565" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-a9-K4C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="122"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="l7X-a9-K4C" firstAttribute="top" secondItem="LuK-G9-Ka5" secondAttribute="top" id="0KG-2x-pAd"/>
+                                            <constraint firstAttribute="bottom" secondItem="l7X-a9-K4C" secondAttribute="bottom" id="Anv-sR-12O"/>
+                                            <constraint firstAttribute="trailing" secondItem="l7X-a9-K4C" secondAttribute="trailing" id="h9k-gd-EJ3"/>
+                                            <constraint firstItem="l7X-a9-K4C" firstAttribute="leading" secondItem="LuK-G9-Ka5" secondAttribute="leading" id="rXc-Rr-tmj"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="E7T-HZ-OnY" id="HFi-fD-3rB"/>
+                                    <outlet property="delegate" destination="E7T-HZ-OnY" id="s4a-SO-HZ1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DGG-uM-hRf" secondAttribute="trailing" id="9cG-Ne-m8q"/>
+                            <constraint firstItem="DGG-uM-hRf" firstAttribute="leading" secondItem="SZy-AO-613" secondAttribute="leading" id="H3P-ix-wRJ"/>
+                            <constraint firstAttribute="bottom" secondItem="DGG-uM-hRf" secondAttribute="bottom" id="IxS-Pa-cib"/>
+                            <constraint firstItem="DGG-uM-hRf" firstAttribute="top" secondItem="SZy-AO-613" secondAttribute="top" id="MiU-wl-vxp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cZ1-C8-pwP"/>
+                    </view>
+                    <connections>
+                        <outlet property="Wallpapers_Coll" destination="DGG-uM-hRf" id="l5p-m1-2B2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAP-jL-dcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="283.80809595202402"/>
+        </scene>
+        <!--Live Wallpapers My-->
+        <scene sceneID="cnq-Pv-u04">
+            <objects>
+                <viewController storyboardIdentifier="LiveWallpapers_My" id="tbK-wp-d6H" customClass="LiveWallpapers_My" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uN2-AO-Oul">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6a4-DC-QVO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="mZk-IW-6l9">
+                                    <size key="itemSize" width="188" height="181"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LiveWallpapers_Cell" id="Cop-KX-0ec" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="93.5" y="0.0" width="188" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="188" height="181"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530564" translatesAutoresizingMaskIntoConstraints="NO" id="jxu-VH-fH3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="188" height="181"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jxu-VH-fH3" firstAttribute="leading" secondItem="Cop-KX-0ec" secondAttribute="leading" id="NKi-tn-7Sw"/>
+                                            <constraint firstAttribute="bottom" secondItem="jxu-VH-fH3" secondAttribute="bottom" id="TKq-aL-6ja"/>
+                                            <constraint firstAttribute="trailing" secondItem="jxu-VH-fH3" secondAttribute="trailing" id="bel-Gb-wNi"/>
+                                            <constraint firstItem="jxu-VH-fH3" firstAttribute="top" secondItem="Cop-KX-0ec" secondAttribute="top" id="cq2-Eo-dCX"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tbK-wp-d6H" id="bUg-fS-iZT"/>
+                                    <outlet property="delegate" destination="tbK-wp-d6H" id="BvI-1G-BpM"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6a4-DC-QVO" secondAttribute="trailing" id="Jse-59-BCK"/>
+                            <constraint firstAttribute="bottom" secondItem="6a4-DC-QVO" secondAttribute="bottom" id="MIu-OF-znm"/>
+                            <constraint firstItem="6a4-DC-QVO" firstAttribute="leading" secondItem="uN2-AO-Oul" secondAttribute="leading" id="ZPW-le-hg4"/>
+                            <constraint firstItem="6a4-DC-QVO" firstAttribute="top" secondItem="uN2-AO-Oul" secondAttribute="top" id="fZ0-UG-SQ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mkt-lM-W2g"/>
+                    </view>
+                    <connections>
+                        <outlet property="LiveWallpapers_Coll" destination="6a4-DC-QVO" id="AOY-KB-14v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvC-cK-z3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3232.8000000000002" y="283.80809595202402"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="jAN-8h-aKY">
@@ -692,7 +757,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="_2530721" width="1536" height="2304"/>
+        <image name="_2530564" width="1372" height="1387"/>
+        <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
         <image name="iconDowload" width="40" height="42"/>
     </resources>

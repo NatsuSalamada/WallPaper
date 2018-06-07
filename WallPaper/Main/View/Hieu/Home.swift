@@ -35,14 +35,43 @@ class Home: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
         
-       
+       ChangeDisplayViewLoad(index: 0)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let current = currentViewCOntroller{
+            current.viewWillDisappear(true)
+        }
+    }
+    
+    func ChangeDisplayViewLoad(index:Int){
+        
+        let vc = CheckCollection(index: index)
+        vc.didMove(toParentViewController: self)
+        self.addChildViewController(vc)
+        vc.view.frame = self.View_Home.bounds
+        View_Home.addSubview(vc.view)
+        currentViewCOntroller = vc
     }
     
     @objc func ChangeDisplay(noti:Notification){
         print("Change:\(noti.object as! Int)")
+        currentViewCOntroller?.view.removeFromSuperview()
+        currentViewCOntroller?.removeFromParentViewController()
+        let vc = CheckCollection(index: noti.object as! Int)
+        vc.didMove(toParentViewController: self)
+        self.addChildViewController(vc)
+        vc.view.frame = self.View_Home.bounds
+        View_Home.addSubview(vc.view)
     }
 
-    
+    func CheckCollection(index:Int) ->UIViewController {
+        if(index == 0){
+            return WallpaperControlller!
+        }else{
+            return LiveWallpapersController!
+        }
+    }
 
 
     override func didReceiveMemoryWarning() {
