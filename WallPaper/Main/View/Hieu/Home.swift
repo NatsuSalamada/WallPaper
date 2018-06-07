@@ -10,11 +10,40 @@ import UIKit
 
 class Home: UIViewController {
 
+    @IBOutlet weak var View_Home: UIView!
+   
+  
+    
+    
+    lazy var WallpaperControlller:UIViewController? = {
+        
+        let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "Wallpapers_Home")
+        return wallpapersController
+        
+    }()
+    
+    lazy var LiveWallpapersController:UIViewController? = {
+        let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "LiveWallpapers_Home")
+        return wallpapersController
+    }()
+    
+    var currentViewCOntroller:UIViewController?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
+        
+       
     }
+    
+    @objc func ChangeDisplay(noti:Notification){
+        print("Change:\(noti.object as! Int)")
+    }
+
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

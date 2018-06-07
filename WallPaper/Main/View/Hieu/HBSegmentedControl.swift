@@ -126,13 +126,16 @@ import UIKit
         
         let location = touch.location(in: self)
         
+        
+        
         var calculatedIndex : Int?
         for (index, item) in labels.enumerated() {
             if item.frame.contains(location) {
                 calculatedIndex = index
             }
         }
-        
+        NotificationCenter.default.post(name: Notification.Name("ChangeDislay"), object: calculatedIndex)
+       
         
         if calculatedIndex != nil {
             selectedIndex = calculatedIndex!
