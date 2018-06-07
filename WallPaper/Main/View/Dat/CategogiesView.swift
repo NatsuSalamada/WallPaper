@@ -17,7 +17,7 @@ enum CellCollectionCateType:Int {
     case Coll_V = 1
 }
 
-class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate {
+class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     var img = ["hinh1","hinh2","hinh3","hinh4","hinh5","hinh1","hinh2","hinh3","hinh4","hinh5"]
   
@@ -34,7 +34,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         }else if indexPath.row == 3 || indexPath.row == 6{
             return 32
         }else if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
-            return 33
+            return 37
         }
         else if indexPath.row == 2 || indexPath.row == 5{
             return 200
@@ -54,7 +54,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellLbl", for: indexPath) as! Name_Cate_TableViewCell
-            UIEdgeInsetsInsetRect(cell.frame, UIEdgeInsetsMake(30, 30, 30, 30))
+           
             if indexPath.row == 1{
                cell.lbl_Name.text = "New Arrivals"
               
@@ -92,13 +92,15 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         var raDius:CGFloat = 0.0
+        var space: CGFloat = 0.0
         if UIScreen.main.bounds.width >= 768{
             
             raDius = WIPA(w: 4 )
+            space = WIPA(w: 24)
             
         }else{
             raDius = WIPH(w: 4)
-            
+            space = WIPH(w: 24)
         }
        var layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 
@@ -111,7 +113,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             
             cell.layer.cornerRadius = raDius
             cell.clipsToBounds = true
-            layout.sectionInset = UIEdgeInsetsMake(0, 24, 0, 0)
+            layout.sectionInset = UIEdgeInsetsMake(0, space, 0, 0)
             layout.itemSize = CGSize(width: 113, height: 200)
             layout.minimumInteritemSpacing = 8
             layout.scrollDirection = .horizontal
@@ -127,10 +129,10 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             cell.layer.cornerRadius = raDius
             cell.clipsToBounds = true
             
-            layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 48)
+            layout.sectionInset = UIEdgeInsetsMake(0, space, 0,space)
             layout.itemSize = CGSize(width: 160, height: 57)
             layout.minimumInteritemSpacing = 0
-            layout.minimumLineSpacing = 3
+            layout.minimumLineSpacing = 8
              layout.scrollDirection = .vertical
             return cell
         }
