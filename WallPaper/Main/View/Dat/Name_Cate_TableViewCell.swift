@@ -14,6 +14,7 @@ class Name_Cate_TableViewCell: UITableViewCell {
     
     @IBOutlet weak var btn_Name: UIButton!
     
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
       
