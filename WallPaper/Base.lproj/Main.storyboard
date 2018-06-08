@@ -539,7 +539,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owb-p5-Q1U" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
-                                <rect key="frame" x="76" y="38" width="224" height="29"/>
+                                <rect key="frame" x="75.5" y="38" width="224" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="JNU-sx-FMF"/>
