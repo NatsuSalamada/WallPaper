@@ -34,7 +34,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         if indexPath.row == 0 {
             if UIScreen.main.bounds.width >= 768{
                 
-                height = HIPA(h: 32)
+                height = HIPA(h: 30)
                 return height
                 
             }else{

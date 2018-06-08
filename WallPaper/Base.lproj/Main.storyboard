@@ -381,6 +381,107 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="509.59520239880067"/>
         </scene>
+        <!--Click Image Cate View-->
+        <scene sceneID="baF-7M-n5Q">
+            <objects>
+                <viewController id="zyF-0N-PdZ" customClass="ClickImageCateView" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rAX-e7-y7m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-oj-NHI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-SN-kzV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" red="0.68235294120000001" green="0.74117647060000003" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wA8-lB-6DJ">
+                                        <rect key="frame" x="35" y="27" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="iconBackWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="36"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="36"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-zi-f2R">
+                                        <rect key="frame" x="167" y="565" width="40" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="iconDowload"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="160"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="571"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="356"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="928"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6lk-SN-kzV" firstAttribute="top" secondItem="uOt-oj-NHI" secondAttribute="top" id="6WR-Ja-NTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="6lk-SN-kzV" secondAttribute="trailing" id="9TB-Ob-gof"/>
+                                    <constraint firstAttribute="bottom" secondItem="6lk-SN-kzV" secondAttribute="bottom" id="APX-o5-AXl"/>
+                                    <constraint firstItem="6lk-SN-kzV" firstAttribute="leading" secondItem="uOt-oj-NHI" secondAttribute="leading" id="KBQ-k1-VWS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v47-PN-Yzo" firstAttribute="bottom" secondItem="uOt-oj-NHI" secondAttribute="bottom" id="Mke-Wl-Jgu"/>
+                            <constraint firstItem="uOt-oj-NHI" firstAttribute="top" secondItem="rAX-e7-y7m" secondAttribute="top" id="eWX-QR-7Jc"/>
+                            <constraint firstItem="uOt-oj-NHI" firstAttribute="leading" secondItem="v47-PN-Yzo" secondAttribute="leading" id="ewN-U3-EHb"/>
+                            <constraint firstItem="v47-PN-Yzo" firstAttribute="trailing" secondItem="uOt-oj-NHI" secondAttribute="trailing" id="tZt-gl-vFR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v47-PN-Yzo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6Q-Uz-obC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375.2" y="508.69565217391306"/>
+        </scene>
         <!--Wallpapers Home-->
         <scene sceneID="tsL-eK-KS2">
             <objects>
@@ -734,6 +835,7 @@
     <resources>
         <image name="_2530721" width="1536" height="2304"/>
         <image name="buttonCreateNew" width="56" height="56"/>
+        <image name="iconBackWhite" width="32" height="32"/>
         <image name="iconDowload" width="40" height="42"/>
     </resources>
 </document>
