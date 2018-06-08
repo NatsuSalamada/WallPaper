@@ -16,6 +16,9 @@
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
         </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Categogies View-->
@@ -26,22 +29,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="22" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9UU-Bf-xtE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="22" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9UU-Bf-xtE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellLbl" rowHeight="33" id="Rrl-jZ-Dv3" customClass="Name_Cate_TableViewCell" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="33"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellLbl" rowHeight="49" id="Rrl-jZ-Dv3" customClass="Name_Cate_TableViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rrl-jZ-Dv3" id="Ftb-XB-q6b">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-OC-syz" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="15" width="40" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,7 +56,7 @@
                                                             <real key="value" value="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                            <real key="value" value="133"/>
+                                                            <real key="value" value="150"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
                                                             <real key="value" value="33"/>
@@ -65,24 +67,33 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontIPad">
                                                             <real key="value" value="22"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                            <real key="value" value="40"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                            <real key="value" value="133"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                            <real key="value" value="53"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yQ-81-ctm" customClass="DesignableButton" customModule="WallPaper" customModuleProvider="target">
-                                                    <rect key="frame" x="282" y="3" width="46" height="30"/>
+                                                    <rect key="frame" x="282" y="6" width="87" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
                                                     <state key="normal" title="SEE ALL">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                            <real key="value" value="282"/>
-                                                        </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
                                                             <real key="value" value="6"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                            <real key="value" value="66"/>
+                                                            <real key="value" value="90"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
                                                             <real key="value" value="24"/>
@@ -98,6 +109,21 @@
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="positiontitleIPad">
                                                             <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                            <real key="value" value="282"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                            <real key="value" value="659"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                            <real key="value" value="90"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                            <real key="value" value="24"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
@@ -125,52 +151,44 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_H" rowHeight="200" id="won-ki-f6S" customClass="Collection_H_TableViewCell" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="71" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="won-ki-f6S" id="aBa-0d-Fko">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="idd-cC-spa">
-                                                    <rect key="frame" x="0.0" y="-2" width="375" height="201"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="idd-cC-spa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iqd-RU-7UG">
-                                                        <size key="itemSize" width="113" height="228"/>
+                                                        <size key="itemSize" width="113" height="208"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Coll_H" id="eGQ-ts-zUn" customClass="Horizontal_CollectionView" customModule="WallPaper" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-13.5" width="113" height="228"/>
+                                                            <rect key="frame" x="0.0" y="-4" width="113" height="208"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="113" height="228"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="113" height="208"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuz-Me-hFz">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="228"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zuz-Me-hFz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="208"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </view>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <size key="customSize" width="113" height="228"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                                    <real key="value" value="24"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                                    <real key="value" value="0.0"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                                    <real key="value" value="113"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                                    <real key="value" value="200"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="Zuz-Me-hFz" secondAttribute="bottom" id="CHl-B8-bpg"/>
+                                                                <constraint firstItem="Zuz-Me-hFz" firstAttribute="leading" secondItem="eGQ-ts-zUn" secondAttribute="leading" id="Da9-wt-QGh"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Zuz-Me-hFz" secondAttribute="trailing" id="XBK-CF-wyh"/>
+                                                                <constraint firstItem="Zuz-Me-hFz" firstAttribute="top" secondItem="eGQ-ts-zUn" secondAttribute="top" id="jY1-rA-WOc"/>
+                                                                <constraint firstItem="Zuz-Me-hFz" firstAttribute="height" secondItem="eGQ-ts-zUn" secondAttribute="height" id="sJK-0s-H6r"/>
+                                                                <constraint firstItem="Zuz-Me-hFz" firstAttribute="width" secondItem="eGQ-ts-zUn" secondAttribute="width" id="vn1-KP-CBs"/>
+                                                            </constraints>
+                                                            <size key="customSize" width="113" height="208"/>
                                                             <connections>
                                                                 <outlet property="H_Image" destination="Zuz-Me-hFz" id="sU1-g9-zAp"/>
                                                             </connections>
@@ -197,6 +215,14 @@
                                                 </collectionView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="idd-cC-spa" firstAttribute="leading" secondItem="aBa-0d-Fko" secondAttribute="leading" id="LIZ-m6-G9n"/>
+                                                <constraint firstItem="idd-cC-spa" firstAttribute="width" secondItem="aBa-0d-Fko" secondAttribute="width" id="T5U-qB-6e0"/>
+                                                <constraint firstAttribute="bottom" secondItem="idd-cC-spa" secondAttribute="bottom" id="fev-BD-1A7"/>
+                                                <constraint firstAttribute="trailing" secondItem="idd-cC-spa" secondAttribute="trailing" id="ftB-dI-DMp"/>
+                                                <constraint firstItem="idd-cC-spa" firstAttribute="top" secondItem="aBa-0d-Fko" secondAttribute="top" id="o2h-3b-aYk"/>
+                                                <constraint firstItem="idd-cC-spa" firstAttribute="height" secondItem="aBa-0d-Fko" secondAttribute="height" id="rHk-Rj-l2f"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
                                                     <real key="value" value="0.0"/>
@@ -218,17 +244,15 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_V" rowHeight="140" id="icJ-4v-Se3" customClass="Collection_V_TableViewCell" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="255" width="375" height="140"/>
+                                        <rect key="frame" x="0.0" y="271" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icJ-4v-Se3" id="PWp-QM-VU4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1jW-oX-uhM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1jW-oX-uhM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="13" maxY="0.0"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c3U-Ij-3Sq">
                                                         <size key="itemSize" width="160" height="91"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -246,48 +270,65 @@
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Yk-6i9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="91"/>
                                                                     </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jT-ga-5gK" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="91"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                                                <real key="value" value="128"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                                                <real key="value" value="27"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontIPhone">
+                                                                                <real key="value" value="18"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontIPad">
+                                                                                <real key="value" value="18"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
                                                                 </subviews>
                                                             </view>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" red="0.96862745100000003" green="0.27450980390000002" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="0jT-ga-5gK" secondAttribute="trailing" id="0hQ-2t-YRE"/>
+                                                                <constraint firstItem="0jT-ga-5gK" firstAttribute="leading" secondItem="eJr-ek-WrY" secondAttribute="leading" id="GiB-jy-aRk"/>
                                                                 <constraint firstItem="4v6-Yk-6i9" firstAttribute="leading" secondItem="eJr-ek-WrY" secondAttribute="leading" id="I5b-JG-U8s"/>
                                                                 <constraint firstItem="4v6-Yk-6i9" firstAttribute="top" secondItem="eJr-ek-WrY" secondAttribute="top" id="JMe-as-Npr"/>
+                                                                <constraint firstItem="0jT-ga-5gK" firstAttribute="top" secondItem="eJr-ek-WrY" secondAttribute="top" id="PHH-2U-dF1"/>
                                                                 <constraint firstAttribute="bottom" secondItem="4v6-Yk-6i9" secondAttribute="bottom" id="mNp-8L-fmj"/>
                                                                 <constraint firstAttribute="trailing" secondItem="4v6-Yk-6i9" secondAttribute="trailing" id="mmZ-WU-OUp"/>
+                                                                <constraint firstAttribute="bottom" secondItem="0jT-ga-5gK" secondAttribute="bottom" id="y5K-hq-fdj"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                                    <real key="value" value="0.0"/>
+                                                                    <real key="value" value="24"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
                                                                     <real key="value" value="0.0"/>
                                                                 </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                                    <real key="value" value="160"/>
-                                                                </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
                                                                     <real key="value" value="57"/>
                                                                 </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                                    <real key="value" value="160"/>
+                                                                </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
+                                                                <outlet property="Lbl_NameCate" destination="0jT-ga-5gK" id="Arm-LJ-VCd"/>
                                                                 <outlet property="V_Image" destination="4v6-Yk-6i9" id="Zp6-Xf-i0K"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                            <real key="value" value="375"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                            <real key="value" value="317"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                            <real key="value" value="24"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outlet property="dataSource" destination="hbX-g8-duu" id="scn-gK-VdJ"/>
                                                         <outlet property="delegate" destination="hbX-g8-duu" id="yI2-BP-b2X"/>
@@ -295,20 +336,13 @@
                                                 </collectionView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                    <real key="value" value="375"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                    <real key="value" value="317"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                    <real key="value" value="0.0"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                    <real key="value" value="0.0"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
+                                            <constraints>
+                                                <constraint firstItem="1jW-oX-uhM" firstAttribute="height" secondItem="PWp-QM-VU4" secondAttribute="height" id="3Xw-FT-YYp"/>
+                                                <constraint firstItem="1jW-oX-uhM" firstAttribute="width" secondItem="PWp-QM-VU4" secondAttribute="width" id="LQW-mg-rvu"/>
+                                                <constraint firstItem="1jW-oX-uhM" firstAttribute="top" secondItem="PWp-QM-VU4" secondAttribute="top" id="Nof-7G-xnY"/>
+                                                <constraint firstItem="1jW-oX-uhM" firstAttribute="leading" secondItem="PWp-QM-VU4" secondAttribute="leading" id="sFW-SD-h5t"/>
+                                                <constraint firstAttribute="trailing" secondItem="1jW-oX-uhM" secondAttribute="trailing" id="waM-vV-rg6"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -316,7 +350,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_None" rowHeight="140" id="E6g-zk-iyM" customClass="None_TableViewCell" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="395" width="375" height="140"/>
+                                        <rect key="frame" x="0.0" y="411" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E6g-zk-iyM" id="udr-gp-5Y6">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
@@ -333,6 +367,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="trailing" secondItem="P1k-VL-kxx" secondAttribute="trailing" id="Cni-LW-svo"/>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="leading" secondItem="P1k-VL-kxx" secondAttribute="leading" id="E8Z-H3-LCy"/>
+                            <constraint firstAttribute="bottom" secondItem="9UU-Bf-xtE" secondAttribute="bottom" id="Vbq-ju-HTG"/>
+                            <constraint firstItem="9UU-Bf-xtE" firstAttribute="top" secondItem="SVt-G0-XAe" secondAttribute="top" id="ebp-vh-Hmz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="P1k-VL-kxx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rsa-GA-Gpc"/>
@@ -340,211 +380,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNw-GN-xQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="509.59520239880067"/>
-        </scene>
-        <!--Wallpapers See All-->
-        <scene sceneID="ufJ-5o-eTl">
-            <objects>
-                <viewController storyboardIdentifier="Wallpapers_SeeAll" id="8EX-2j-gZO" customClass="Wallpapers_SeeAll" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y9B-Gl-oC2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rHy-cU-w5q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="mAe-Js-OBu">
-                                    <size key="itemSize" width="161" height="226"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Wallpapers_Cell" id="wBE-s2-qVB" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530564" translatesAutoresizingMaskIntoConstraints="NO" id="2OO-ki-sC3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="2OO-ki-sC3" firstAttribute="leading" secondItem="wBE-s2-qVB" secondAttribute="leading" id="Bvs-qs-Inq"/>
-                                            <constraint firstAttribute="bottom" secondItem="2OO-ki-sC3" secondAttribute="bottom" id="DP4-em-LOc"/>
-                                            <constraint firstAttribute="trailing" secondItem="2OO-ki-sC3" secondAttribute="trailing" id="cAF-CF-4D2"/>
-                                            <constraint firstItem="2OO-ki-sC3" firstAttribute="top" secondItem="wBE-s2-qVB" secondAttribute="top" id="udv-ho-luO"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="8EX-2j-gZO" id="v9q-GN-cyI"/>
-                                    <outlet property="delegate" destination="8EX-2j-gZO" id="Ya0-KY-srx"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="rHy-cU-w5q" firstAttribute="leading" secondItem="y9B-Gl-oC2" secondAttribute="leading" id="9Jk-bW-Mij"/>
-                            <constraint firstItem="rHy-cU-w5q" firstAttribute="top" secondItem="y9B-Gl-oC2" secondAttribute="top" id="kG8-hL-f5d"/>
-                            <constraint firstAttribute="trailing" secondItem="rHy-cU-w5q" secondAttribute="trailing" id="n2h-6i-GqJ"/>
-                            <constraint firstAttribute="bottom" secondItem="rHy-cU-w5q" secondAttribute="bottom" id="xWf-yr-GOp"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5xr-ag-Ba6"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p48-Gd-09q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-130.40000000000001" y="2261.9190404797605"/>
-        </scene>
-        <!--Categories See All-->
-        <scene sceneID="P8P-hL-GAU">
-            <objects>
-                <viewController id="oI6-GT-USn" customClass="Categories_SeeAll" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="r9S-oe-YmA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMd-JF-nMu">
-                                <rect key="frame" x="16" y="36" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="iconBackWhite">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                        <real key="value" value="36"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                        <real key="value" value="32"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                        <real key="value" value="32"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8f-v0-qiU" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
-                                <rect key="frame" x="76" y="34" width="224" height="29"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="2fg-tJ-p9a"/>
-                                    <constraint firstAttribute="width" constant="224" id="5eR-Ai-Nla"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
-                                        <real key="value" value="272"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
-                                        <real key="value" value="54"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                        <real key="value" value="224"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                        <real key="value" value="29"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                        <real key="value" value="76"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                        <real key="value" value="38"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                        <real key="value" value="224"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                        <real key="value" value="29"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2R-cH-76g">
-                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="M2R-cH-76g" firstAttribute="top" secondItem="J8f-v0-qiU" secondAttribute="bottom" constant="24" id="6ep-V6-oS5"/>
-                            <constraint firstItem="J8f-v0-qiU" firstAttribute="top" secondItem="r9S-oe-YmA" secondAttribute="top" constant="34" id="Pgx-o3-qze"/>
-                            <constraint firstItem="QCv-30-JqV" firstAttribute="bottom" secondItem="M2R-cH-76g" secondAttribute="bottom" id="cld-9Q-Sy3"/>
-                            <constraint firstItem="J8f-v0-qiU" firstAttribute="centerX" secondItem="QCv-30-JqV" secondAttribute="centerX" id="eYp-V3-tNW"/>
-                            <constraint firstItem="QCv-30-JqV" firstAttribute="trailing" secondItem="M2R-cH-76g" secondAttribute="trailing" id="fvm-ak-D9n"/>
-                            <constraint firstItem="M2R-cH-76g" firstAttribute="leading" secondItem="QCv-30-JqV" secondAttribute="leading" id="ngb-9f-Int"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="QCv-30-JqV"/>
-                    </view>
-                    <connections>
-                        <outlet property="View_SeeAll" destination="M2R-cH-76g" id="nhj-H4-wqX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ry7-iY-evf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="604" y="1439"/>
-        </scene>
-        <!--Live Wallpapers See All-->
-        <scene sceneID="2fY-du-mtq">
-            <objects>
-                <viewController storyboardIdentifier="LiveWallpapers_SeeAll" id="Hf4-Ky-xTl" customClass="LiveWallpapers_SeeAll" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gsy-5w-CTZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fy2-dc-OJB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="3rF-cs-oGB">
-                                    <size key="itemSize" width="150" height="168"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LiveWallpapers_Cell" id="HxA-u1-PLk" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530565" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-P1-7Aw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="168"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FXl-P1-7Aw" secondAttribute="trailing" id="6fi-NM-1NT"/>
-                                            <constraint firstItem="FXl-P1-7Aw" firstAttribute="leading" secondItem="HxA-u1-PLk" secondAttribute="leading" id="Op9-Rp-N41"/>
-                                            <constraint firstItem="FXl-P1-7Aw" firstAttribute="top" secondItem="HxA-u1-PLk" secondAttribute="top" id="Td0-SV-hOP"/>
-                                            <constraint firstAttribute="bottom" secondItem="FXl-P1-7Aw" secondAttribute="bottom" id="zZd-MA-WYL"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Hf4-Ky-xTl" id="Prw-Cc-Vfz"/>
-                                    <outlet property="delegate" destination="Hf4-Ky-xTl" id="xzN-x7-DjD"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fy2-dc-OJB" secondAttribute="trailing" id="BP5-Mh-XMl"/>
-                            <constraint firstAttribute="bottom" secondItem="fy2-dc-OJB" secondAttribute="bottom" id="Jak-0L-Tfu"/>
-                            <constraint firstItem="fy2-dc-OJB" firstAttribute="leading" secondItem="gsy-5w-CTZ" secondAttribute="leading" id="QJy-v1-iaa"/>
-                            <constraint firstItem="fy2-dc-OJB" firstAttribute="top" secondItem="gsy-5w-CTZ" secondAttribute="top" id="UXc-Ky-Mo4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0UK-kX-aoZ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u1C-mn-uL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1325.5999999999999" y="2261.9190404797605"/>
         </scene>
         <!--Wallpapers Home-->
         <scene sceneID="tsL-eK-KS2">
@@ -577,7 +412,7 @@
             </objects>
             <point key="canvasLocation" x="-478" y="152"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="aUm-vB-Cva">
             <objects>
                 <viewController id="Ex8-zG-N4B" customClass="Home" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
@@ -667,7 +502,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jfy-eR-sDZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vcP-77-xSC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="iconHomeOff" selectedImage="iconHomeOn" id="vcP-77-xSC"/>
                     <connections>
                         <outlet property="View_Home" destination="8bJ-v8-HPr" id="fyP-PY-xqu"/>
                     </connections>
@@ -924,11 +759,11 @@
             </objects>
             <point key="canvasLocation" x="3232.8000000000002" y="283.80809595202402"/>
         </scene>
-        <!--Item 2-->
+        <!--Categories-->
         <scene sceneID="jAN-8h-aKY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9DR-ua-z5i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ByT-ef-YsG"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="iconCateforiesOff" selectedImage="iconCateforiesOn" id="ByT-ef-YsG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1V-fX-1CK">
                         <autoresizingMask key="autoresizingMask"/>
@@ -942,11 +777,11 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-482.60869565217394"/>
         </scene>
-        <!--Item-->
+        <!--Your Wallpapers-->
         <scene sceneID="Uiy-SG-aXt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4ea-oT-17D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mb5-or-W7g"/>
+                    <tabBarItem key="tabBarItem" title="Your Wallpapers" image="iconLibraryOff" selectedImage="iconLibraryOn" id="mb5-or-W7g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xvf-bq-hfm">
                         <autoresizingMask key="autoresizingMask"/>
@@ -965,7 +800,12 @@
         <image name="_2530564" width="1372" height="1387"/>
         <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
-        <image name="iconBackWhite" width="32" height="32"/>
+        <image name="iconCateforiesOff" width="28" height="28"/>
+        <image name="iconCateforiesOn" width="28" height="28"/>
         <image name="iconDowload" width="40" height="42"/>
+        <image name="iconHomeOff" width="28" height="28"/>
+        <image name="iconHomeOn" width="28" height="28"/>
+        <image name="iconLibraryOff" width="28" height="28"/>
+        <image name="iconLibraryOn" width="28" height="28"/>
     </resources>
 </document>
