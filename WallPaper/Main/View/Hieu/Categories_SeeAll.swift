@@ -1,33 +1,25 @@
 //
-//  YourWallpapers.swift
+//  Categories_SeeAll.swift
 //  WallPaper
 //
-//  Created by 5k on 6/4/18.
+//  Created by 5k on 6/8/18.
 //  Copyright © 2018 NatsuSalamada. All rights reserved.
 //
 
 import UIKit
 
-class YourWallpapers: UIViewController{
-    
-   
-    
-   
-    
+class Categories_SeeAll: UIViewController {
 
-
-    
-    @IBOutlet weak var View_My: UIView!
-    
+    @IBOutlet weak var View_SeeAll: UIView!
     lazy var WallpapersControlller:UIViewController? = {
         
-        let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "Wallpapers_My")
+        let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "Wallpapers_SeeAll")
         return wallpapersController
         
     }()
     
     lazy var LiveWallpapersController:UIViewController? = {
-        let livewallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "LiveWallpapers_My")
+        let livewallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "LiveWallpapers_SeeAll")
         return livewallpapersController
     }()
     
@@ -53,8 +45,8 @@ class YourWallpapers: UIViewController{
         let vc = CheckCollection(index: index)
         vc.didMove(toParentViewController: self)
         self.addChildViewController(vc)
-        vc.view.frame = self.View_My.bounds
-        View_My.addSubview(vc.view)
+        vc.view.frame = self.View_SeeAll.bounds
+        View_SeeAll.addSubview(vc.view)
         currentViewCOntroller = vc
     }
     
@@ -65,8 +57,8 @@ class YourWallpapers: UIViewController{
         let vc = CheckCollection(index: noti.object as! Int)
         vc.didMove(toParentViewController: self)
         self.addChildViewController(vc)
-        vc.view.frame = self.View_My.bounds
-        View_My.addSubview(vc.view)
+        vc.view.frame = self.View_SeeAll.bounds
+        View_SeeAll.addSubview(vc.view)
     }
     
     func CheckCollection(index:Int) ->UIViewController {
@@ -76,6 +68,7 @@ class YourWallpapers: UIViewController{
             return LiveWallpapersController!
         }
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
