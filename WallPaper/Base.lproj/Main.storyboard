@@ -759,7 +759,7 @@
             </objects>
             <point key="canvasLocation" x="3232.8000000000002" y="283.80809595202402"/>
         </scene>
-        <!--Item 2-->
+        <!--Categories-->
         <scene sceneID="jAN-8h-aKY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9DR-ua-z5i" sceneMemberID="viewController">
@@ -800,7 +800,6 @@
         <image name="_2530564" width="1372" height="1387"/>
         <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
-        <image name="iconBackWhite" width="32" height="32"/>
         <image name="iconCateforiesOff" width="28" height="28"/>
         <image name="iconCateforiesOn" width="28" height="28"/>
         <image name="iconDowload" width="40" height="42"/>
