@@ -36,6 +36,9 @@
 		0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */; };
 		0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */; };
 		049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */; };
+		5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */; };
+		5B09FA5920CA2B7700FEE1AD /* Wallpapers_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */; };
+		5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */; };
 		5B34572120C77ADC00EB4572 /* Wallpapers_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */; };
 		5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */; };
 		5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65624820C67ADA00E02062 /* CollViewCell1.swift */; };
@@ -106,6 +109,9 @@
 		049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBSegmentedControl.swift; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories_SeeAll.swift; sourceTree = "<group>"; };
+		5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpapers_SeeAll.swift; sourceTree = "<group>"; };
+		5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWallpapers_SeeAll.swift; sourceTree = "<group>"; };
 		5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpapers_Home.swift; sourceTree = "<group>"; };
 		5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWallpapers_Home.swift; sourceTree = "<group>"; };
 		5B65624820C67ADA00E02062 /* CollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewCell1.swift; sourceTree = "<group>"; };
@@ -336,6 +342,9 @@
 				5BCE293C20C8DE7A00DE7037 /* Wallpapers_My.swift */,
 				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
 				5BCE294220C9311000DE7037 /* AllWallpapers_Coll.swift */,
+				5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */,
+				5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */,
+				5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */,
 			);
 			path = Hieu;
 			sourceTree = "<group>";
@@ -588,6 +597,7 @@
 				CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
 				5B34572120C77ADC00EB4572 /* Wallpapers_Home.swift in Sources */,
+				5B09FA5920CA2B7700FEE1AD /* Wallpapers_SeeAll.swift in Sources */,
 				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */,
 				5BCE294320C9311000DE7037 /* AllWallpapers_Coll.swift in Sources */,
@@ -600,6 +610,8 @@
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
 				0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */,
 				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
+				5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */,
+				5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */,
 				CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */,
 				5BCE293D20C8DE7A00DE7037 /* Wallpapers_My.swift in Sources */,
 			);
