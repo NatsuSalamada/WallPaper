@@ -10,13 +10,6 @@ import UIKit
 
 class YourWallpapers: UIViewController{
     
-   
-    
-   
-    
-
-
-    
     @IBOutlet weak var View_My: UIView!
     
     lazy var WallpapersControlller:UIViewController? = {
