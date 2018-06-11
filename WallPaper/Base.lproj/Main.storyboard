@@ -619,10 +619,10 @@
             </objects>
             <point key="canvasLocation" x="-1254" y="-484"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="w7h-yy-gof">
             <objects>
-                <tabBarController id="j07-og-kbe" sceneMemberID="viewController">
+                <tabBarController id="j07-og-kbe" customClass="TabbarController" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LAX-JI-nuK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -871,7 +871,7 @@
         <scene sceneID="jAN-8h-aKY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9DR-ua-z5i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Categories" image="iconCateforiesOff" selectedImage="iconCateforiesOn" id="ByT-ef-YsG"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Categories" image="iconCateforiesOff" selectedImage="iconCateforiesOn" id="ByT-ef-YsG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1V-fX-1CK">
                         <autoresizingMask key="autoresizingMask"/>
