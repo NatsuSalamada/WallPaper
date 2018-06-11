@@ -17,12 +17,10 @@ class TabbarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     private func config(){
-        //self.view.backgroundColor = UIColor(displayP3Red: 185/255, green: 202/255, blue: 210/255, alpha: 1.0)
-        tabBar.backgroundColor = UIColor.red
-        (tabBar.subviews[2]).backgroundColor = UIColor.clear
-//
-//        tabBar.unselectedItemTintColor = UIColor(displayP3Red: 146/255, green: 146/255, blue: 146/255, alpha: 1.0)
-//        tabBar.tintColor = UIColor(displayP3Red: 74/255, green: 144/255, blue: 226/255, alpha: 1.0)
+        
+        //tabBar.tintColor = UIColor.red    // Thay doi mau content ben trong
+        //tabBar.barTintColor = UIColor.red // Thay doi mau tabbar 
+       
   
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
