@@ -10,6 +10,9 @@ import UIKit
 
 class ClickImageCateView: UIViewController {
 
+    @IBAction func abtn_BacktoCate(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
