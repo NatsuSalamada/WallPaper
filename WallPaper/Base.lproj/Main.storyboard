@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -126,6 +125,9 @@
                                                             <real key="value" value="24"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="Kx0-Bh-jJZ" kind="show" id="rRs-wx-Jc2"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -191,6 +193,7 @@
                                                             <size key="customSize" width="113" height="208"/>
                                                             <connections>
                                                                 <outlet property="H_Image" destination="Zuz-Me-hFz" id="sU1-g9-zAp"/>
+                                                                <segue destination="foH-pP-vHm" kind="show" id="ixi-sj-JoK"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -326,6 +329,7 @@
                                                             <connections>
                                                                 <outlet property="Lbl_NameCate" destination="0jT-ga-5gK" id="Arm-LJ-VCd"/>
                                                                 <outlet property="V_Image" destination="4v6-Yk-6i9" id="Zp6-Xf-i0K"/>
+                                                                <segue destination="Kx0-Bh-jJZ" kind="show" id="W8L-RV-LvZ"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -381,6 +385,110 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="509.59520239880067"/>
         </scene>
+        <!--Click Image Cate View-->
+        <scene sceneID="Giu-1O-lOT">
+            <objects>
+                <viewController id="foH-pP-vHm" customClass="ClickImageCateView" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kax-Vg-24N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-PQ-WUf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKF-ip-Xcm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-oZ-Wye">
+                                        <rect key="frame" x="30" y="27" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="iconBackWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="36"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="36"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="abtn_BacktoCate:" destination="foH-pP-vHm" eventType="touchUpInside" id="b9f-yu-J4O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-OB-Tgy">
+                                        <rect key="frame" x="180" y="487" width="40" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="iconDowload"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
+                                                <real key="value" value="356"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
+                                                <real key="value" value="928"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                                <real key="value" value="160"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                                <real key="value" value="571"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                                <real key="value" value="56"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UKF-ip-Xcm" firstAttribute="top" secondItem="sHY-PQ-WUf" secondAttribute="top" id="8UK-EH-UI2"/>
+                                    <constraint firstAttribute="bottom" secondItem="UKF-ip-Xcm" secondAttribute="bottom" id="DJt-sz-EyT"/>
+                                    <constraint firstAttribute="trailing" secondItem="UKF-ip-Xcm" secondAttribute="trailing" id="YZY-7T-aUi"/>
+                                    <constraint firstItem="UKF-ip-Xcm" firstAttribute="leading" secondItem="sHY-PQ-WUf" secondAttribute="leading" id="d8d-ey-Qbj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Olx-qs-XAh" firstAttribute="trailing" secondItem="sHY-PQ-WUf" secondAttribute="trailing" id="OWU-8O-evf"/>
+                            <constraint firstItem="Olx-qs-XAh" firstAttribute="bottom" secondItem="sHY-PQ-WUf" secondAttribute="bottom" id="T6S-Az-ouq"/>
+                            <constraint firstItem="sHY-PQ-WUf" firstAttribute="top" secondItem="Kax-Vg-24N" secondAttribute="top" id="V7F-ca-gtB"/>
+                            <constraint firstItem="sHY-PQ-WUf" firstAttribute="leading" secondItem="Olx-qs-XAh" secondAttribute="leading" id="ssc-3P-7OI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Olx-qs-XAh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIF-be-IOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="496"/>
+        </scene>
         <!--Wallpapers Home-->
         <scene sceneID="tsL-eK-KS2">
             <objects>
@@ -410,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0H-Dg-is8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-478" y="152"/>
+            <point key="canvasLocation" x="-609" y="235"/>
         </scene>
         <!--Home-->
         <scene sceneID="aUm-vB-Cva">
@@ -695,7 +803,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAP-jL-dcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="283.80809595202402"/>
+            <point key="canvasLocation" x="2471" y="284"/>
         </scene>
         <!--Live Wallpapers My-->
         <scene sceneID="cnq-Pv-u04">
@@ -852,7 +960,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sze-6G-hie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.40000000000001" y="2261.9190404797605"/>
+            <point key="canvasLocation" x="670" y="2262"/>
         </scene>
         <!--Categories See All-->
         <scene sceneID="HvH-ye-6b6">
@@ -882,6 +990,9 @@
                                         <real key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_SA:" destination="Kx0-Bh-jJZ" eventType="touchUpInside" id="M9f-xc-mvC"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="av6-4U-EDh" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
                                 <rect key="frame" x="76" y="34" width="224" height="29"/>
@@ -918,7 +1029,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x74-Xd-vSd">
-                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
+                                <rect key="frame" x="0.0" y="87" width="375" height="531"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -939,7 +1050,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDG-x2-UjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="1439"/>
+            <point key="canvasLocation" x="122" y="510"/>
         </scene>
         <!--Live Wallpapers See All-->
         <scene sceneID="Kve-MN-MHH">
@@ -1014,4 +1125,7 @@
         <image name="iconLibraryOff" width="28" height="28"/>
         <image name="iconLibraryOn" width="28" height="28"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rRs-wx-Jc2"/>
+    </inferredMetricsTieBreakers>
 </document>

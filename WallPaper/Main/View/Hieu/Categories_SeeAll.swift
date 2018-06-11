@@ -10,6 +10,9 @@ import UIKit
 
 class Categories_SeeAll: UIViewController {
 
+    @IBAction func abtn_SA(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     @IBOutlet weak var View_SeeAll: UIView!
     lazy var WallpapersControlller:UIViewController? = {
         
