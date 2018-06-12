@@ -18,25 +18,34 @@ class TabbarController: UITabBarController {
     }
     private func config(){
         
-        //tabBar.tintColor = UIColor.red    // Thay doi mau content ben trong
-        //tabBar.barTintColor = UIColor.red // Thay doi mau tabbar 
+        tabBar.tintColor = UIColor.white   // Thay doi mau content ben trong
+//        tabBar.barTintColor = UIColor(displayP3Red: 30/255, green: 30/255, blue: 30/255, alpha: 1.0)
+        tabBar.backgroundImage = UIImage(named: "background")
        
   
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1{
+            let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+            bounceAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
+            bounceAnimation.duration = 1.2
+            bounceAnimation.calculationMode = kCAAnimationCubic
+            (tabBar.subviews[1].subviews[0] as! UIImageView).layer.add(bounceAnimation, forKey: "bounceAnimation")
+        }
+            else  if item.tag == 2{
             
             (tabBar.subviews[2].subviews[0] as! UIImageView).transform = CGAffineTransform.identity
             UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
                 let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
                 (tabBar.subviews[2].subviews[0] as! UIImageView).transform = rotation
             }, completion: nil)
+            
         }else{
             let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
             bounceAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
             bounceAnimation.duration = 1.2
             bounceAnimation.calculationMode = kCAAnimationCubic
-            (tabBar.subviews[1].subviews[0] as! UIImageView).layer.add(bounceAnimation, forKey: "bounceAnimation")
+            (tabBar.subviews[3].subviews[0] as! UIImageView).layer.add(bounceAnimation, forKey: "bounceAnimation")
         }
         
     }

@@ -610,7 +610,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jfy-eR-sDZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="iconHomeOff" selectedImage="iconHomeOn" id="vcP-77-xSC"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Home" image="iconHomeOff" selectedImage="iconHomeOn" id="vcP-77-xSC"/>
                     <connections>
                         <outlet property="View_Home" destination="8bJ-v8-HPr" id="fyP-PY-xqu"/>
                     </connections>
@@ -871,7 +871,7 @@
         <scene sceneID="jAN-8h-aKY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9DR-ua-z5i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Categories" image="iconCateforiesOff" selectedImage="iconCateforiesOn" id="ByT-ef-YsG"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Categories" image="iconCateforiesOff" selectedImage="iconCateforiesOn" id="ByT-ef-YsG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1V-fX-1CK">
                         <autoresizingMask key="autoresizingMask"/>
@@ -889,7 +889,7 @@
         <scene sceneID="Uiy-SG-aXt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4ea-oT-17D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Wallpapers" image="iconLibraryOff" selectedImage="iconLibraryOn" id="mb5-or-W7g"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Your Wallpapers" image="iconLibraryOff" selectedImage="iconLibraryOn" id="mb5-or-W7g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xvf-bq-hfm">
                         <autoresizingMask key="autoresizingMask"/>
