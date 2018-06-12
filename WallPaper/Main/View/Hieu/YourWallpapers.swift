@@ -12,6 +12,10 @@ class YourWallpapers: UIViewController{
     
     @IBOutlet weak var View_My: UIView!
     
+    @IBOutlet weak var btn_CreateWall: UIButton!
+    @IBOutlet weak var CreateView: UIView!
+    @IBOutlet weak var btn_CreateLive: UIButton!
+    var btn_expand_state = 0
     lazy var WallpapersControlller:UIViewController? = {
         
         let wallpapersController = self.storyboard?.instantiateViewController(withIdentifier: "Wallpapers_My")
@@ -27,12 +31,54 @@ class YourWallpapers: UIViewController{
     var currentViewCOntroller:UIViewController?
     
     
+    @IBOutlet weak var btn_expand: UIButton!
+    
+    @IBAction func abtn_Expand(_ sender: Any) {
+        
+        if btn_expand_state == 0{
+          
+            btn_expand.transform = CGAffineTransform.identity
+            UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+                let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi/4))
+                self.btn_expand.transform = rotation
+//                self.btn_CreateLive.set(image: #imageLiteral(resourceName: "iconCreateLiveWallpapers") , title: "Create Live Wallpapers", titlePosition: .left, additionalSpacing: 8, state: .normal)
+                
+                
+                
+                
+            }, completion: nil)
+            btn_expand_state = 1
+            btn_CreateLive.isHidden = false
+            btn_CreateWall.isHidden = false
+        }else{
+            
+            UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+                self.btn_expand.transform = CGAffineTransform.identity
+    //            btn_CreateLive
+                
+            }, completion: nil)
+            btn_expand_state = 0
+            btn_CreateLive.isHidden = true
+            btn_CreateWall.isHidden = true
+
+        }
+
+    
+        
+   
+    }
+    
+  
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
         
         ChangeDisplayViewLoad(index: 0)
+        btn_CreateLive.isHidden = true
+        btn_CreateWall.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
