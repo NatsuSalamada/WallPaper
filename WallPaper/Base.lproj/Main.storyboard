@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j07-og-kbe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lW7-Kn-S6v">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,9 @@
         </array>
         <array key="SF-Pro-Display-Semibold.otf">
             <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
         </array>
     </customFonts>
     <scenes>
@@ -690,7 +694,7 @@
                                 <rect key="frame" x="0.0" y="91" width="375" height="527"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-GP-424">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-GP-424">
                                 <rect key="frame" x="295" y="538" width="56" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="buttonCreateNew"/>
@@ -720,6 +724,25 @@
                                         <real key="value" value="56"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_Expand:" destination="lW7-Kn-S6v" eventType="touchUpInside" id="u62-eY-iei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-ev-gmq">
+                                <rect key="frame" x="160" y="410" width="168" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
+                                <state key="normal" title="Create Live Wallpapers" image="iconCreateLiveWallpapers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndg-Zz-uMa">
+                                <rect key="frame" x="188" y="474" width="141" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
+                                <state key="normal" title="Create Wallpapers" image="iconCreateWallpapers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -736,6 +759,9 @@
                     <navigationItem key="navigationItem" id="xvY-8q-74G"/>
                     <connections>
                         <outlet property="View_My" destination="BY6-Xt-813" id="YiC-99-Ubo"/>
+                        <outlet property="btn_CreateLive" destination="Cgq-ev-gmq" id="lL4-Sn-ofo"/>
+                        <outlet property="btn_CreateWall" destination="Ndg-Zz-uMa" id="5md-h4-a25"/>
+                        <outlet property="btn_expand" destination="Clx-GP-424" id="KHB-LY-95Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnB-Ix-cgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1119,6 +1145,8 @@
         <image name="iconBackWhite" width="32" height="32"/>
         <image name="iconCateforiesOff" width="28" height="28"/>
         <image name="iconCateforiesOn" width="28" height="28"/>
+        <image name="iconCreateLiveWallpapers" width="32" height="32"/>
+        <image name="iconCreateWallpapers" width="32" height="32"/>
         <image name="iconDowload" width="40" height="42"/>
         <image name="iconHomeOff" width="28" height="28"/>
         <image name="iconHomeOn" width="28" height="28"/>
