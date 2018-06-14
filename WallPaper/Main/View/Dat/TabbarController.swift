@@ -19,10 +19,15 @@ class TabbarController: UITabBarController {
     private func config(){
         
         tabBar.tintColor = UIColor.white   // Thay doi mau content ben trong
-//        tabBar.barTintColor = UIColor(displayP3Red: 30/255, green: 30/255, blue: 30/255, alpha: 1.0)
+        //tabBar.barTintColor = UIColor.red
+        tabBar.layer.borderWidth = 0
+        tabBar.isTranslucent = false
         tabBar.backgroundImage = UIImage(named: "background")
        
   
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1{
@@ -36,7 +41,7 @@ class TabbarController: UITabBarController {
             
             (tabBar.subviews[2].subviews[0] as! UIImageView).transform = CGAffineTransform.identity
             UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
-                let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
+            let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
                 (tabBar.subviews[2].subviews[0] as! UIImageView).transform = rotation
             }, completion: nil)
             

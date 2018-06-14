@@ -36,6 +36,7 @@
 		0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */; };
 		0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */; };
 		049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */; };
+		04D05BE820CF758E00854469 /* LinkServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D05BE720CF758E00854469 /* LinkServer.swift */; };
 		5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */; };
 		5B09FA5920CA2B7700FEE1AD /* Wallpapers_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */; };
 		5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */; };
@@ -109,6 +110,7 @@
 		0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_H_TableViewCell.swift; sourceTree = "<group>"; };
 		0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_V_TableViewCell.swift; sourceTree = "<group>"; };
 		049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBSegmentedControl.swift; sourceTree = "<group>"; };
+		04D05BE720CF758E00854469 /* LinkServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkServer.swift; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories_SeeAll.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		040ED7BC20C4E30F00B6A0E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04D05BE720CF758E00854469 /* LinkServer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */,
+				04D05BE820CF758E00854469 /* LinkServer.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
 				0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */,
 				CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */,
@@ -798,12 +802,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWXZYM9R2G;
 				INFOPLIST_FILE = WallPaper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Natsu.WallPaper;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = Natsu.Boxingtimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -818,12 +823,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWXZYM9R2G;
 				INFOPLIST_FILE = WallPaper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Natsu.WallPaper;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = Natsu.Boxingtimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
