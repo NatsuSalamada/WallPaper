@@ -28,6 +28,39 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Wallpapers_Cell", for: indexPath) as! CollViewCell1
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        var space: CGFloat = 0.0
+        
+        if UIScreen.main.bounds.width >= 768{
+            
+            
+            space = WIPA(w: 14)
+            
+            
+        }else{
+            
+            space = WIPH(w: 0)
+        }
+        var minimumLine:CGFloat = 0
+        if UIScreen.main.bounds.width >= 768{
+            
+            minimumLine = WIPH(w: 1)
+            
+        }else{
+            minimumLine = WIPH(w: 1)
+        }
+        if UIScreen.main.bounds.width >= 768{
+            
+            layout.minimumInteritemSpacing = 0
+            layout.sectionInset = UIEdgeInsetsMake(0, space, 0, space)
+            layout.minimumLineSpacing = minimumLine
+            
+        }else{
+            
+            layout.minimumInteritemSpacing = 1
+        }
+        
+        
         return cell
     }
     

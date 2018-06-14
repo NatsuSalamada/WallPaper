@@ -96,8 +96,11 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         if indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellLbl", for: indexPath) as! Name_Cate_TableViewCell
+            if indexPath.row == 1 || indexPath.row == 4{
             cell.btn_Name.set(image: #imageLiteral(resourceName: "iconArrow"), title: "SEE ALL", titlePosition: .left, additionalSpacing: 8, state: .normal)
-            cell.btn_Name.tintColor = UIColor.white 
+            cell.btn_Name.tintColor = UIColor.white
+            }
+            
             if indexPath.row == 1{
                cell.lbl_Name.text = "New Arrivals"
               
@@ -108,7 +111,6 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
                  cell.lbl_Name.text = "Categories"
             
             }
-            
             
          cell.selectionStyle = .none
             return cell
@@ -149,7 +151,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             raDius = WIPH(w: 4)
             space = WIPH(w: 24)
         }
-       var layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 
         
         if collectionView.tag == CellCollectionCateType.Cell_H.rawValue{

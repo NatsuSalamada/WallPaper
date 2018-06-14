@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lW7-Kn-S6v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j07-og-kbe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,7 +44,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-OC-syz" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-OC-syz" customClass="DesignableLabel" customModule="WallPaper" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="133" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
@@ -87,7 +87,7 @@
                                                     <rect key="frame" x="282" y="6" width="87" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
-                                                    <state key="normal" title="SEE ALL">
+                                                    <state key="normal">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -196,7 +196,7 @@
                                                             <size key="customSize" width="113" height="208"/>
                                                             <connections>
                                                                 <outlet property="H_Image" destination="Zuz-Me-hFz" id="sU1-g9-zAp"/>
-                                                                <segue destination="foH-pP-vHm" kind="show" id="ixi-sj-JoK"/>
+                                                                <segue destination="foH-pP-vHm" kind="presentation" id="h6u-Lh-4VC"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -386,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNw-GN-xQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="509.59520239880067"/>
+            <point key="canvasLocation" x="750" y="421"/>
         </scene>
         <!--Click Image Cate View-->
         <scene sceneID="Giu-1O-lOT">
@@ -397,16 +397,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-PQ-WUf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKF-ip-Xcm">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-oZ-Wye">
-                                        <rect key="frame" x="30" y="27" width="32" height="32"/>
+                                        <rect key="frame" x="34" y="31" width="24" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="iconBackWhite"/>
+                                        <state key="normal" image="iconCancel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
                                                 <real key="value" value="16"/>
@@ -487,10 +487,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Olx-qs-XAh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qpw-Ej-dVi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIF-be-IOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="496"/>
+            <point key="canvasLocation" x="2838" y="1164"/>
         </scene>
         <!--Wallpapers Home-->
         <scene sceneID="tsL-eK-KS2">
@@ -505,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OM-9u-MFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2164" y="125"/>
+            <point key="canvasLocation" x="-1714" y="158"/>
         </scene>
         <!--Live Wallpapers Home-->
         <scene sceneID="LFo-di-UJZ">
@@ -521,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0H-Dg-is8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="235"/>
+            <point key="canvasLocation" x="-1106" y="158"/>
         </scene>
         <!--Home-->
         <scene sceneID="aUm-vB-Cva">
@@ -866,6 +867,9 @@
                                             <constraint firstAttribute="trailing" secondItem="l7X-a9-K4C" secondAttribute="trailing" id="h9k-gd-EJ3"/>
                                             <constraint firstItem="l7X-a9-K4C" firstAttribute="leading" secondItem="LuK-G9-Ka5" secondAttribute="leading" id="rXc-Rr-tmj"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="foH-pP-vHm" kind="presentation" id="115-9p-Kdx"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -889,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAP-jL-dcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="284"/>
+            <point key="canvasLocation" x="2342" y="170"/>
         </scene>
         <!--Live Wallpapers My-->
         <scene sceneID="cnq-Pv-u04">
@@ -928,6 +932,9 @@
                                             <constraint firstAttribute="trailing" secondItem="jxu-VH-fH3" secondAttribute="trailing" id="bel-Gb-wNi"/>
                                             <constraint firstItem="jxu-VH-fH3" firstAttribute="top" secondItem="Cop-KX-0ec" secondAttribute="top" id="cq2-Eo-dCX"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="foH-pP-vHm" kind="presentation" id="bol-q7-zdb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -951,7 +958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvC-cK-z3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3232.8000000000002" y="283.80809595202402"/>
+            <point key="canvasLocation" x="2969" y="170"/>
         </scene>
         <!--Categories-->
         <scene sceneID="jAN-8h-aKY">
@@ -1026,6 +1033,9 @@
                                             <constraint firstItem="dZd-LO-4Rv" firstAttribute="top" secondItem="Apn-lG-197" secondAttribute="top" id="gTc-em-sTX"/>
                                             <constraint firstItem="dZd-LO-4Rv" firstAttribute="leading" secondItem="Apn-lG-197" secondAttribute="leading" id="psw-0Q-PhG"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="foH-pP-vHm" kind="presentation" id="c16-FI-LDf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -1046,7 +1056,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sze-6G-hie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="2262"/>
+            <point key="canvasLocation" x="-593" y="1166"/>
         </scene>
         <!--Categories See All-->
         <scene sceneID="HvH-ye-6b6">
@@ -1136,7 +1146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDG-x2-UjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="510"/>
+            <point key="canvasLocation" x="-228" y="421"/>
         </scene>
         <!--Live Wallpapers See All-->
         <scene sceneID="Kve-MN-MHH">
@@ -1175,6 +1185,9 @@
                                             <constraint firstItem="DBa-2H-VDH" firstAttribute="leading" secondItem="6kf-2T-3yC" secondAttribute="leading" id="LeU-8E-1Dm"/>
                                             <constraint firstAttribute="bottom" secondItem="DBa-2H-VDH" secondAttribute="bottom" id="mJP-5q-eM1"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="foH-pP-vHm" kind="presentation" id="2SW-nf-cOj"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -1195,7 +1208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egf-eY-Wnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325.5999999999999" y="2261.9190404797605"/>
+            <point key="canvasLocation" x="20" y="1165"/>
         </scene>
     </scenes>
     <resources>
@@ -1203,6 +1216,7 @@
         <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
         <image name="iconBackWhite" width="32" height="32"/>
+        <image name="iconCancel" width="24" height="24"/>
         <image name="iconCateforiesOff" width="28" height="28"/>
         <image name="iconCateforiesOn" width="28" height="28"/>
         <image name="iconCreateLiveWallpapers" width="32" height="32"/>
@@ -1215,5 +1229,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rRs-wx-Jc2"/>
+        <segue reference="c16-FI-LDf"/>
     </inferredMetricsTieBreakers>
 </document>
