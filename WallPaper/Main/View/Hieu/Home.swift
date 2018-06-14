@@ -12,7 +12,9 @@ class Home: UIViewController {
 
     @IBOutlet weak var View_Home: UIView!
    
-  
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     lazy var WallpaperControlller:UIViewController? = {
