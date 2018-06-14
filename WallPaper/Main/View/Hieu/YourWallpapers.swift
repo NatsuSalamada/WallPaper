@@ -95,6 +95,15 @@ class YourWallpapers: UIViewController{
         }
     }
     
+<<<<<<< Updated upstream
+=======
+  
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
+>>>>>>> Stashed changes
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)

@@ -19,10 +19,15 @@ class TabbarController: UITabBarController {
     private func config(){
         
         tabBar.tintColor = UIColor.white   // Thay doi mau content ben trong
-//        tabBar.barTintColor = UIColor(displayP3Red: 30/255, green: 30/255, blue: 30/255, alpha: 1.0)
+        //tabBar.barTintColor = UIColor.red
+        tabBar.layer.borderWidth = 0
+        tabBar.isTranslucent = false
         tabBar.backgroundImage = UIImage(named: "background")
        
   
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1{
