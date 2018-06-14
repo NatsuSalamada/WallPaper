@@ -36,7 +36,7 @@ class TabbarController: UITabBarController {
             
             (tabBar.subviews[2].subviews[0] as! UIImageView).transform = CGAffineTransform.identity
             UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
-                let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
+            let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
                 (tabBar.subviews[2].subviews[0] as! UIImageView).transform = rotation
             }, completion: nil)
             
