@@ -20,7 +20,7 @@ private let formatter = DateFormatter.private_new()
 
 /// 自定义日志输出
 public func DTLog(_ format: String, _ args: CVarArg..., file : String = #file, line : UInt = #line) {
-    
-        DTLog("\(Thread.isMainThread ? "[Main]" : "[Child]")\((file as NSString).lastPathComponent.replacingOccurrences(of: ".swift", with: ""))[\(line)][\(formatter.string(from: Date.init()))]:\(String.init(format: format, arguments: args))")
-   
+    #if DEBUG
+//        DTLog("\(Thread.isMainThread ? "[Main]" : "[Child]")\((file as NSString).lastPathComponent.replacingOccurrences(of: ".swift", with: ""))[\(line)][\(formatter.string(from: Date.init()))]:\(String.init(format: format, arguments: args))")
+    #endif
 }

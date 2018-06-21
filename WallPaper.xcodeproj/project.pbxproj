@@ -53,6 +53,7 @@
 		CE23564220DA479C00AF2BAC /* QuickTimeMov.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23564020DA479C00AF2BAC /* QuickTimeMov.swift */; };
 		CE23564320DA479C00AF2BAC /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23564120DA479C00AF2BAC /* JPEG.swift */; };
 		CE23564620DA4B8E00AF2BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23564420DA4B8E00AF2BAC /* Main.storyboard */; };
+		CE23564820DB4E8B00AF2BAC /* Spacedoggy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */; };
 		CE333E9C20CE287E002D390B /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E9B20CE287E002D390B /* TabbarController.swift */; };
 		CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */; };
 		CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACD2E920C7E580007499EE /* None_TableViewCell.swift */; };
@@ -136,6 +137,7 @@
 		CE23564020DA479C00AF2BAC /* QuickTimeMov.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickTimeMov.swift; sourceTree = "<group>"; };
 		CE23564120DA479C00AF2BAC /* JPEG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPEG.swift; sourceTree = "<group>"; };
 		CE23564520DA4B8E00AF2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spacedoggy.JPG; sourceTree = "<group>"; };
 		CE333E9B20CE287E002D390B /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickImageCateView.swift; sourceTree = "<group>"; };
 		CEACD2E920C7E580007499EE /* None_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = None_TableViewCell.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				CE23563420DA03AE00AF2BAC /* Spacedoggy.MOV */,
+				CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */,
 				CE23563A20DA46D000AF2BAC /* DTOtherMacro.swift */,
 				049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */,
 				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
@@ -521,6 +524,7 @@
 				CE23563520DA03AE00AF2BAC /* Spacedoggy.MOV in Resources */,
 				040ED7DB20C4F57F00B6A0E6 /* SF-Pro-Display-Regular.otf in Resources */,
 				040ED7E220C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf in Resources */,
+				CE23564820DB4E8B00AF2BAC /* Spacedoggy.JPG in Resources */,
 				040ED7DD20C4F57F00B6A0E6 /* SF-Pro-Display-Bold.otf in Resources */,
 				040ED7E320C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf in Resources */,
 				040ED7D220C4E92200B6A0E6 /* RemainDatView.rtf in Resources */,
