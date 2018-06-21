@@ -8,8 +8,26 @@
 
 import UIKit
 
-class Wallpapers_Home: UIViewController {
+class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
 
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_WallpapersHome", for: indexPath) as! CollViewCell_Home
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: CollView_WallHome.bounds.width, height: CollView_WallHome.bounds.height)
+    }
+    
+
+    @IBOutlet weak var CollView_WallHome: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

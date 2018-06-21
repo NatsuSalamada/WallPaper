@@ -3,6 +3,24 @@ import Photos
 import PhotosUI
 import MobileCoreServices
 
+class LiveWallpapers_Home: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+   
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: CollView_LiveWallHome.bounds.width, height: CollView_LiveWallHome.bounds.height)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_LiveWallpapersHome", for: indexPath) as! CollViewCell_Home
+        return cell
+    }
+    
+    
+    
 
 struct FilePaths {
     static let documentsPath : AnyObject = NSSearchPathForDirectoriesInDomains(.cachesDirectory,.userDomainMask,true)[0] as AnyObject
@@ -10,6 +28,9 @@ struct FilePaths {
         static var livePath = FilePaths.documentsPath.appending("/")
     }
 }
+    @IBOutlet weak var CollView_LiveWallHome: UICollectionView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
 class LiveWallpapers_Home: UIViewController, UIImagePickerControllerDelegate {
     @IBOutlet weak var livePhotoView: PHLivePhotoView! {

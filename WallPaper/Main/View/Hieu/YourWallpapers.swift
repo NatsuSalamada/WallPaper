@@ -68,6 +68,8 @@ class YourWallpapers: UIViewController{
             btn_CreateLive.layer.add(animation, forKey: "move")
         }else{
             
+           
+            
             UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
                 self.btn_expand.transform = CGAffineTransform.identity
    
@@ -112,12 +114,26 @@ class YourWallpapers: UIViewController{
         btn_CreateLive.alpha = 0
         btn_CreateWall.alpha  = 0
         FadedView.alpha  = 0
+//        let tapGesture = UITapGestureRecognizer(target: self.FadedView, action: #selector(TapFadedView(_:)))
+//        view.addGestureRecognizer(tapGesture)
+        
+        FadedView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TapFadedView(_:))))
     }
+    
+    @objc  func TapFadedView(_ sender: UITapGestureRecognizer){
 
-    override func viewWillDisappear(_ animated: Bool) {
-        if let current = currentViewCOntroller{
-            current.viewWillDisappear(true)
+        UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+            self.btn_expand.transform = CGAffineTransform.identity
+            
+            
+        }, completion: nil)
+        UIView.animate(withDuration: 0.5) {
+            self.btn_expand_state = 0
+            self.btn_CreateLive.alpha  = 0
+            self.btn_CreateWall.alpha  = 0
+            self.FadedView.alpha = 0
         }
+    
     }
     
     func ChangeDisplayViewLoad(index:Int){
