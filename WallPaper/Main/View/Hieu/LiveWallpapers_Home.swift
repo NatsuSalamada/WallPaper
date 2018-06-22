@@ -3,21 +3,7 @@ import Photos
 import PhotosUI
 import MobileCoreServices
 
-class LiveWallpapers_Home: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
-   
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: CollView_LiveWallHome.bounds.width, height: CollView_LiveWallHome.bounds.height)
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_LiveWallpapersHome", for: indexPath) as! CollViewCell_Home
-        return cell
-    }
+
     
     
     
@@ -28,19 +14,29 @@ struct FilePaths {
         static var livePath = FilePaths.documentsPath.appending("/")
     }
 }
-    @IBOutlet weak var CollView_LiveWallHome: UICollectionView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-class LiveWallpapers_Home: UIViewController, UIImagePickerControllerDelegate {
+class LiveWallpapers_Home: UIViewController, UIImagePickerControllerDelegate,UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+
+    @IBOutlet weak var Coll_Live: UICollectionView!
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: Coll_Live.bounds.width, height: Coll_Live.bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Coll_LivePhoto", for: indexPath) as! CollViewCell_Home
+        return cell
+    }
+  
+    
     @IBOutlet weak var livePhotoView: PHLivePhotoView! {
         didSet {
             loadVideoWithVideoURL(Bundle.main.url(forResource: "Spacedoggy", withExtension: "MOV")!)
         }
     }
-
-    
-    
     func loadVideoWithVideoURL(_ videoURL: URL) {
         livePhotoView.livePhoto = nil
         let asset = AVURLAsset(url: videoURL)
@@ -109,4 +105,9 @@ class LiveWallpapers_Home: UIViewController, UIImagePickerControllerDelegate {
             }
         })
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
+

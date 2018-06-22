@@ -563,74 +563,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-7C-g1x" customClass="PHLivePhotoView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-sV-Rbg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rct-0H-gm6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="E2s-b2-O9f">
-                                    <size key="itemSize" width="212" height="272"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W5D-WG-i6C">
+                                    <size key="itemSize" width="375" height="677"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell_LiveWallpapersHome" id="1V6-aw-Kqy" customClass="CollViewCell_Home" customModule="WallPaper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="212" height="272"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Coll_LivePhoto" id="Pg3-pl-Ppl" customClass="CollLiveviewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="212" height="272"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vt " translatesAutoresizingMaskIntoConstraints="NO" id="mj6-ro-LV4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="212" height="272"/>
-                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-7C-g1x" customClass="PHLivePhotoView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="mj6-ro-LV4" firstAttribute="top" secondItem="1V6-aw-Kqy" secondAttribute="top" id="6Gx-F9-Bmh"/>
-                                            <constraint firstAttribute="trailing" secondItem="mj6-ro-LV4" secondAttribute="trailing" id="WZo-4b-g3G"/>
-                                            <constraint firstAttribute="bottom" secondItem="mj6-ro-LV4" secondAttribute="bottom" id="Xia-tO-yZI"/>
-                                            <constraint firstItem="mj6-ro-LV4" firstAttribute="leading" secondItem="1V6-aw-Kqy" secondAttribute="leading" id="tnP-KI-GZI"/>
-                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="kQL-ks-MSq" id="lUe-A1-mNo"/>
-                                    <outlet property="delegate" destination="kQL-ks-MSq" id="Kr9-pT-ksv"/>
+                                    <outlet property="dataSource" destination="kQL-ks-MSq" id="YqL-iE-kAE"/>
+                                    <outlet property="delegate" destination="kQL-ks-MSq" id="SG1-Iq-fOy"/>
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VYJ-xS-dgr" firstAttribute="bottom" secondItem="YPr-7C-g1x" secondAttribute="bottom" id="1BT-Cp-Hhb"/>
-                            <constraint firstItem="VYJ-xS-dgr" firstAttribute="trailing" secondItem="YPr-7C-g1x" secondAttribute="trailing" id="2IO-M5-IV9"/>
-                            <constraint firstItem="YPr-7C-g1x" firstAttribute="leading" secondItem="VYJ-xS-dgr" secondAttribute="leading" id="DuM-KO-ibL"/>
-                            <constraint firstItem="YPr-7C-g1x" firstAttribute="top" secondItem="leI-OT-YP1" secondAttribute="top" id="chg-6K-FLi"/>
-                        </constraints>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rct-0H-gm6" secondAttribute="bottom" id="1Pp-Pu-lzL"/>
-                            <constraint firstItem="rct-0H-gm6" firstAttribute="leading" secondItem="leI-OT-YP1" secondAttribute="leading" id="3LZ-cO-ZvZ"/>
-                            <constraint firstAttribute="trailing" secondItem="rct-0H-gm6" secondAttribute="trailing" id="4qb-Cf-h8O"/>
-                            <constraint firstItem="rct-0H-gm6" firstAttribute="top" secondItem="leI-OT-YP1" secondAttribute="top" id="wgd-uP-GH8"/>
+                            <constraint firstItem="0Pe-sV-Rbg" firstAttribute="top" secondItem="leI-OT-YP1" secondAttribute="top" id="NyB-S2-2wa"/>
+                            <constraint firstItem="VYJ-xS-dgr" firstAttribute="bottom" secondItem="0Pe-sV-Rbg" secondAttribute="bottom" id="Y9d-eb-Tr4"/>
+                            <constraint firstItem="0Pe-sV-Rbg" firstAttribute="trailing" secondItem="VYJ-xS-dgr" secondAttribute="trailing" id="hIk-5J-SR0"/>
+                            <constraint firstItem="0Pe-sV-Rbg" firstAttribute="leading" secondItem="VYJ-xS-dgr" secondAttribute="leading" id="rAw-4h-ku6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VYJ-xS-dgr"/>
                     </view>
                     <connections>
-                        <outlet property="livePhotoView" destination="YPr-7C-g1x" id="CG5-fy-oGx"/>
-                    </connections>
-                    <connections>
-                        <outlet property="CollView_LiveWallHome" destination="rct-0H-gm6" id="fIi-2E-Pns"/>
+                        <outlet property="Coll_Live" destination="0Pe-sV-Rbg" id="E4b-b9-6LW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0H-Dg-is8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1759.2" y="227.13643178410797"/>
+            <point key="canvasLocation" x="-2133" y="286"/>
         </scene>
         <!--Home-->
         <scene sceneID="aUm-vB-Cva">
@@ -1199,7 +1179,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="av6-4U-EDh" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="34" width="224" height="29"/>
+                                <rect key="frame" x="76" y="34" width="224" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="feT-8t-p8y"/>
@@ -1321,7 +1301,6 @@
     </scenes>
     <resources>
         <image name="IMG_6601" width="1207" height="992"/>
-        <image name="Vt " width="2304" height="1536"/>
         <image name="_2530564" width="1372" height="1387"/>
         <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
@@ -1338,9 +1317,7 @@
         <image name="iconLibraryOn" width="28" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W8L-RV-LvZ"/>
-        <segue reference="h6u-Lh-4VC"/>
         <segue reference="rRs-wx-Jc2"/>
-        <segue reference="bol-q7-zdb"/>
+        <segue reference="h6u-Lh-4VC"/>
     </inferredMetricsTieBreakers>
 </document>
