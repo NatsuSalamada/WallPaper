@@ -42,7 +42,7 @@ class GoogleAdMob: NSObject {
     
     func showInterstitial() {
         guard !isTestMode else {return}
-        guard AppDelegate.shared.reachability.connection != .none else {return}
+        guard AppDelegate.share.reachability.connection != .none else {return}
         let save = UserDefaults.standard
         if (save.value(forKey: "Purchase") == nil){
             if interstitialAds.isReady {

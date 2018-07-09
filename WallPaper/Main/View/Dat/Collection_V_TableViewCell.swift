@@ -13,13 +13,18 @@ class Collection_V_TableViewCell: UITableViewCell {
     @IBOutlet weak var Collection_V: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: .CategoriesDownload, object: nil)
     }
-
+    @objc func reload(){
+        Collection_V.reloadData()
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
+}
+extension Notification.Name{
+    static let CategoriesDownload = Notification.Name("Downloading")
 }

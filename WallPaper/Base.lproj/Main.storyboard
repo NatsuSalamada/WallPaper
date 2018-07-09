@@ -397,102 +397,171 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-PQ-WUf">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQK-Mo-fd3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKF-ip-Xcm">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-oZ-Wye">
-                                        <rect key="frame" x="34" y="31" width="24" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="iconCancel"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                <real key="value" value="36"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
-                                                <real key="value" value="36"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="abtn_BacktoCate:" destination="foH-pP-vHm" eventType="touchUpInside" id="b9f-yu-J4O"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-OB-Tgy">
-                                        <rect key="frame" x="180" y="487" width="40" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="iconDowload"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
-                                                <real key="value" value="356"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
-                                                <real key="value" value="928"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                                <real key="value" value="56"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                                <real key="value" value="56"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                                <real key="value" value="160"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                                <real key="value" value="571"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                                <real key="value" value="56"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                                <real key="value" value="56"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="UKF-ip-Xcm" firstAttribute="top" secondItem="sHY-PQ-WUf" secondAttribute="top" id="8UK-EH-UI2"/>
-                                    <constraint firstAttribute="bottom" secondItem="UKF-ip-Xcm" secondAttribute="bottom" id="DJt-sz-EyT"/>
-                                    <constraint firstAttribute="trailing" secondItem="UKF-ip-Xcm" secondAttribute="trailing" id="YZY-7T-aUi"/>
-                                    <constraint firstItem="UKF-ip-Xcm" firstAttribute="leading" secondItem="sHY-PQ-WUf" secondAttribute="leading" id="d8d-ey-Qbj"/>
-                                </constraints>
-                            </view>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FsM-zI-IsY">
+                                    <size key="itemSize" width="319" height="159"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Coll_ClickView" id="J8C-Fl-IkY" customClass="ClickView_CollectionViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="159"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hca-jN-etW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="159"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hca-jN-etW" secondAttribute="bottom" id="68B-VK-itd"/>
+                                            <constraint firstItem="hca-jN-etW" firstAttribute="top" secondItem="J8C-Fl-IkY" secondAttribute="top" id="7Bb-jT-aSp"/>
+                                            <constraint firstItem="hca-jN-etW" firstAttribute="leading" secondItem="J8C-Fl-IkY" secondAttribute="leading" id="JF9-OS-6Vf"/>
+                                            <constraint firstAttribute="trailing" secondItem="hca-jN-etW" secondAttribute="trailing" id="yIS-jE-QvX"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="img_clickView" destination="hca-jN-etW" id="qPt-Np-qgL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="foH-pP-vHm" id="Zyk-MQ-DtZ"/>
+                                    <outlet property="delegate" destination="foH-pP-vHm" id="LCw-q8-STS"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThR-N6-run">
+                                <rect key="frame" x="0.0" y="161" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="iconCancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                        <real key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_BacktoCate:" destination="foH-pP-vHm" eventType="touchUpInside" id="rcM-Pc-3Ne"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Olx-qs-XAh" firstAttribute="trailing" secondItem="sHY-PQ-WUf" secondAttribute="trailing" id="OWU-8O-evf"/>
-                            <constraint firstItem="Olx-qs-XAh" firstAttribute="bottom" secondItem="sHY-PQ-WUf" secondAttribute="bottom" id="T6S-Az-ouq"/>
-                            <constraint firstItem="sHY-PQ-WUf" firstAttribute="top" secondItem="Kax-Vg-24N" secondAttribute="top" id="V7F-ca-gtB"/>
-                            <constraint firstItem="sHY-PQ-WUf" firstAttribute="leading" secondItem="Olx-qs-XAh" secondAttribute="leading" id="ssc-3P-7OI"/>
+                            <constraint firstItem="Olx-qs-XAh" firstAttribute="bottom" secondItem="yQK-Mo-fd3" secondAttribute="bottom" id="7Wr-BT-4lg"/>
+                            <constraint firstItem="yQK-Mo-fd3" firstAttribute="leading" secondItem="Kax-Vg-24N" secondAttribute="leading" id="cu0-m2-U79"/>
+                            <constraint firstItem="yQK-Mo-fd3" firstAttribute="trailing" secondItem="Kax-Vg-24N" secondAttribute="trailing" id="d2H-L6-BaV"/>
+                            <constraint firstItem="yQK-Mo-fd3" firstAttribute="top" secondItem="Kax-Vg-24N" secondAttribute="top" id="kdO-SE-YNc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Olx-qs-XAh"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qpw-Ej-dVi"/>
+                    <connections>
+                        <outlet property="Collection_ClickView" destination="yQK-Mo-fd3" id="UvQ-ba-mi1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIF-be-IOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="1165"/>
+            <point key="canvasLocation" x="2968.8000000000002" y="1164.4677661169417"/>
+        </scene>
+        <!--Click Image Library View Controller-->
+        <scene sceneID="X8G-tX-Pfr">
+            <objects>
+                <viewController id="iQ1-gR-Puh" customClass="Click_Image_Library_ViewController" customModule="WallPaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0o-1N-hqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VKT-bD-bUv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VfB-oi-wHf">
+                                    <size key="itemSize" width="292" height="154"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell_Library" id="pNs-jg-lrq" customClass="Click_Library_CollectionViewCell" customModule="WallPaper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="154"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="292" height="154"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mn1-bQ-e2L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292" height="154"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Mn1-bQ-e2L" secondAttribute="trailing" id="6s6-Ut-XUa"/>
+                                            <constraint firstItem="Mn1-bQ-e2L" firstAttribute="leading" secondItem="pNs-jg-lrq" secondAttribute="leading" id="Cm7-Bl-o9H"/>
+                                            <constraint firstItem="Mn1-bQ-e2L" firstAttribute="top" secondItem="pNs-jg-lrq" secondAttribute="top" id="QZ2-YH-qhn"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mn1-bQ-e2L" secondAttribute="bottom" id="mYx-w3-tck"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="img_Library" destination="Mn1-bQ-e2L" id="AqN-eU-ggV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="iQ1-gR-Puh" id="CyM-eX-xCr"/>
+                                    <outlet property="delegate" destination="iQ1-gR-Puh" id="N8b-JX-jH4"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-s6-zlx">
+                                <rect key="frame" x="27" y="174" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="iconCancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
+                                        <real key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_ClickLibrary_cancle:" destination="iQ1-gR-Puh" eventType="touchUpInside" id="wBd-Yk-On1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VKT-bD-bUv" firstAttribute="trailing" secondItem="MuF-ZT-L6P" secondAttribute="trailing" id="Pxs-mc-HPj"/>
+                            <constraint firstItem="VKT-bD-bUv" firstAttribute="leading" secondItem="MuF-ZT-L6P" secondAttribute="leading" id="eQj-lm-Dhh"/>
+                            <constraint firstItem="VKT-bD-bUv" firstAttribute="top" secondItem="i0o-1N-hqh" secondAttribute="top" id="tpy-Er-6TB"/>
+                            <constraint firstItem="VKT-bD-bUv" firstAttribute="bottom" secondItem="MuF-ZT-L6P" secondAttribute="bottom" id="vYa-W1-AUo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MuF-ZT-L6P"/>
+                    </view>
+                    <connections>
+                        <outlet property="Collection_library" destination="VKT-bD-bUv" id="kB0-lm-BCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jge-4g-rWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3796" y="1173.4632683658172"/>
         </scene>
         <!--Wallpapers Home-->
         <scene sceneID="tsL-eK-KS2">
@@ -519,7 +588,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="122" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6601" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-SK-oPe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-SK-oPe">
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="155"/>
                                                 </imageView>
                                             </subviews>
@@ -530,6 +599,9 @@
                                             <constraint firstAttribute="trailing" secondItem="7iE-SK-oPe" secondAttribute="trailing" id="i8v-fv-ohW"/>
                                             <constraint firstAttribute="bottom" secondItem="7iE-SK-oPe" secondAttribute="bottom" id="oZ9-XK-5v4"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="Img_Home" destination="7iE-SK-oPe" id="XQM-SK-jv2"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -875,6 +947,9 @@
                                         <real key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_TakePhotoWallpaper:" destination="lW7-Kn-S6v" eventType="touchUpInside" id="fWO-95-YuC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-ev-gmq">
                                 <rect key="frame" x="160" y="410" width="168" height="32"/>
@@ -909,6 +984,9 @@
                                         <real key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="abtn_takePhoto:" destination="0gI-2S-dLM" eventType="touchUpInside" id="YlK-g3-cOO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -936,6 +1014,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnB-Ix-cgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0gI-2S-dLM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2656.8000000000002" y="-482.60869565217394"/>
         </scene>
@@ -965,7 +1044,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530565" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-a9-K4C">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-a9-K4C">
                                                     <rect key="frame" x="0.0" y="0.0" width="129" height="122"/>
                                                 </imageView>
                                             </subviews>
@@ -978,7 +1057,8 @@
                                             <constraint firstItem="l7X-a9-K4C" firstAttribute="leading" secondItem="LuK-G9-Ka5" secondAttribute="leading" id="rXc-Rr-tmj"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="foH-pP-vHm" kind="presentation" id="115-9p-Kdx"/>
+                                            <outlet property="img_Library" destination="l7X-a9-K4C" id="tif-oj-1Tk"/>
+                                            <segue destination="iQ1-gR-Puh" kind="presentation" id="N4f-Gm-CFV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1003,7 +1083,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAP-jL-dcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2342" y="170"/>
+            <point key="canvasLocation" x="2470" y="189"/>
         </scene>
         <!--Live Wallpapers My-->
         <scene sceneID="cnq-Pv-u04">
@@ -1023,27 +1103,28 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LiveWallpapers_Cell" id="Cop-KX-0ec" customClass="CollViewCell1" customModule="WallPaper" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LiveWallpapers_Cell" id="Cop-KX-0ec" customClass="Live_Library_CollectionViewCell" customModule="WallPaper" customModuleProvider="target">
                                         <rect key="frame" x="93.5" y="0.0" width="188" height="181"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="188" height="181"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530564" translatesAutoresizingMaskIntoConstraints="NO" id="jxu-VH-fH3">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyB-Ih-Mur" customClass="PHLivePhotoView">
                                                     <rect key="frame" x="0.0" y="0.0" width="188" height="181"/>
-                                                </imageView>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="jxu-VH-fH3" firstAttribute="leading" secondItem="Cop-KX-0ec" secondAttribute="leading" id="NKi-tn-7Sw"/>
-                                            <constraint firstAttribute="bottom" secondItem="jxu-VH-fH3" secondAttribute="bottom" id="TKq-aL-6ja"/>
-                                            <constraint firstAttribute="trailing" secondItem="jxu-VH-fH3" secondAttribute="trailing" id="bel-Gb-wNi"/>
-                                            <constraint firstItem="jxu-VH-fH3" firstAttribute="top" secondItem="Cop-KX-0ec" secondAttribute="top" id="cq2-Eo-dCX"/>
+                                            <constraint firstAttribute="bottom" secondItem="kyB-Ih-Mur" secondAttribute="bottom" id="BpI-6s-tHx"/>
+                                            <constraint firstAttribute="trailing" secondItem="kyB-Ih-Mur" secondAttribute="trailing" id="Dwm-ha-uFQ"/>
+                                            <constraint firstItem="kyB-Ih-Mur" firstAttribute="top" secondItem="Cop-KX-0ec" secondAttribute="top" id="Mvx-km-UTX"/>
+                                            <constraint firstItem="kyB-Ih-Mur" firstAttribute="leading" secondItem="Cop-KX-0ec" secondAttribute="leading" id="uXu-rv-PXw"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="foH-pP-vHm" kind="presentation" id="bol-q7-zdb"/>
+                                            <outlet property="livePhotoView" destination="kyB-Ih-Mur" id="gMc-GN-OaY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1068,7 +1149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvC-cK-z3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2969" y="170"/>
+            <point key="canvasLocation" x="3076" y="190"/>
         </scene>
         <!--Categories-->
         <scene sceneID="jAN-8h-aKY">
@@ -1131,7 +1212,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_2530564" translatesAutoresizingMaskIntoConstraints="NO" id="dZd-LO-4Rv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZd-LO-4Rv">
                                                     <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
                                                 </imageView>
                                             </subviews>
@@ -1144,6 +1225,7 @@
                                             <constraint firstItem="dZd-LO-4Rv" firstAttribute="leading" secondItem="Apn-lG-197" secondAttribute="leading" id="psw-0Q-PhG"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="img_categories_seeall" destination="dZd-LO-4Rv" id="jJn-wI-OWe"/>
                                             <segue destination="foH-pP-vHm" kind="presentation" id="c16-FI-LDf"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1163,6 +1245,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k1X-Np-0dn"/>
                     </view>
+                    <connections>
+                        <outlet property="coll_Categories_seeall" destination="dgq-h2-t64" id="wgd-DX-D3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sze-6G-hie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1201,7 +1286,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="av6-4U-EDh" customClass="HBSegmentedControl" customModule="WallPaper" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="34" width="224" height="29"/>
+                                <rect key="frame" x="76" y="34" width="224" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="feT-8t-p8y"/>
@@ -1322,8 +1407,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_6601" width="1207" height="992"/>
-        <image name="_2530564" width="1372" height="1387"/>
         <image name="_2530565" width="1328" height="1435"/>
         <image name="buttonCreateNew" width="56" height="56"/>
         <image name="iconBackWhite" width="32" height="32"/>
@@ -1340,6 +1423,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rRs-wx-Jc2"/>
-        <segue reference="bol-q7-zdb"/>
+        <segue reference="c16-FI-LDf"/>
     </inferredMetricsTieBreakers>
 </document>

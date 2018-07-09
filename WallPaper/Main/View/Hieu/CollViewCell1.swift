@@ -10,4 +10,6 @@ import UIKit
 
 class CollViewCell1: UICollectionViewCell {
     
+    @IBOutlet weak var img_Library: UIImageView!
+    @IBOutlet weak var img_categories_seeall: UIImageView!
 }

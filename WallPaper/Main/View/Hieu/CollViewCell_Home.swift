@@ -10,4 +10,5 @@ import UIKit
 
 class CollViewCell_Home: UICollectionViewCell {
     
+    @IBOutlet weak var Img_Home: UIImageView!
 }

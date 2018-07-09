@@ -1,18 +1,15 @@
 //
-//  ClickImageCateView.swift
+//  Click_Image_Library_ViewController.swift
 //  WallPaper
 //
-//  Created by User on 6/8/18.
+//  Created by User on 7/9/18.
 //  Copyright © 2018 NatsuSalamada. All rights reserved.
 //
 
 import UIKit
 
-class ClickImageCateView: UIViewController {
+class Click_Image_Library_ViewController: UIViewController {
 
-    @IBAction func abtn_BacktoCate(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

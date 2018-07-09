@@ -56,9 +56,18 @@
 		CE23564620DA4B8E00AF2BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23564420DA4B8E00AF2BAC /* Main.storyboard */; };
 		CE23564820DB4E8B00AF2BAC /* Spacedoggy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */; };
 		CE333E9C20CE287E002D390B /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E9B20CE287E002D390B /* TabbarController.swift */; };
+		CE46C6FA20ECB0290050E4A6 /* ImageInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */; };
+		CE46C6FC20ECB0570050E4A6 /* DataOfSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */; };
+		CE46C6FE20ECB07D0050E4A6 /* getJson_HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */; };
+		CE735E6120F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */; };
+		CE735E6320F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */; };
+		CE735E6520F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */; };
+		CE77DAA120EDC19700AE1DE7 /* getJson_CategoriesIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */; };
+		CE77DAA320EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */; };
 		CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */; };
 		CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACD2E920C7E580007499EE /* None_TableViewCell.swift */; };
 		CEC585B120DBA7B20039CADA /* CollLiveviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */; };
+		CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */; };
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
 		CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */; };
 		CEEB800A20C63C5100D54A3C /* Vertical_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */; };
@@ -142,9 +151,18 @@
 		CE23564520DA4B8E00AF2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spacedoggy.JPG; sourceTree = "<group>"; };
 		CE333E9B20CE287E002D390B /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfor.swift; sourceTree = "<group>"; };
+		CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfSources.swift; sourceTree = "<group>"; };
+		CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_HomeImage.swift; sourceTree = "<group>"; };
+		CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_Library_CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Image_Library_ViewController.swift; sourceTree = "<group>"; };
+		CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Library_CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesIcon.swift; sourceTree = "<group>"; };
+		CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesSeeAll.swift; sourceTree = "<group>"; };
 		CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickImageCateView.swift; sourceTree = "<group>"; };
 		CEACD2E920C7E580007499EE /* None_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = None_TableViewCell.swift; sourceTree = "<group>"; };
 		CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollLiveviewCell.swift; sourceTree = "<group>"; };
+		CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickView_CollectionViewCell.swift; sourceTree = "<group>"; };
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
 		CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horizontal_CollectionView.swift; sourceTree = "<group>"; };
 		CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertical_CollectionView.swift; sourceTree = "<group>"; };
@@ -306,6 +324,18 @@
 		040ED7BB20C4E30700B6A0E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5BB6400420C4EA2B00FD7042 /* Home.swift */,
+				CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */,
+				5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */,
+				5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */,
+				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
+				5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */,
+				5BCE293C20C8DE7A00DE7037 /* Wallpapers_My.swift */,
+				5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */,
+				5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */,
+				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
+				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
+				CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +344,11 @@
 			isa = PBXGroup;
 			children = (
 				04D05BE720CF758E00854469 /* LinkServer.swift */,
+				CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */,
+				CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */,
+				CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */,
+				CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */,
+				CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,14 +375,15 @@
 			children = (
 				CE333E9B20CE287E002D390B /* TabbarController.swift */,
 				040ED7D320C4E93C00B6A0E6 /* RemainHieuView.rtf */,
-				CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */,
-				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
 				0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */,
 				0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */,
 				0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */,
 				CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */,
 				CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */,
 				CEACD2E920C7E580007499EE /* None_TableViewCell.swift */,
+				CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */,
+				CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */,
+				CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -362,17 +398,8 @@
 				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
 				CE23564120DA479C00AF2BAC /* JPEG.swift */,
 				CE23564020DA479C00AF2BAC /* QuickTimeMov.swift */,
-				5BB6400420C4EA2B00FD7042 /* Home.swift */,
-				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
 				5B65624820C67ADA00E02062 /* CollViewCell1.swift */,
-				5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */,
-				5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */,
-				5BCE293C20C8DE7A00DE7037 /* Wallpapers_My.swift */,
-				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
 				5BCE294220C9311000DE7037 /* AllWallpapers_Coll.swift */,
-				5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */,
-				5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */,
-				5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */,
 				5B0649B220DA604700F3C3B1 /* CollViewCell_Home.swift */,
 				CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */,
 			);
@@ -627,6 +654,7 @@
 				040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */,
 				5BCE293F20C8DEA400DE7037 /* LiveWallpapers_My.swift in Sources */,
 				0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */,
+				CE735E6120F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift in Sources */,
 				CE23564320DA479C00AF2BAC /* JPEG.swift in Sources */,
 				CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
@@ -634,13 +662,19 @@
 				5B09FA5920CA2B7700FEE1AD /* Wallpapers_SeeAll.swift in Sources */,
 				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */,
+				CE46C6FE20ECB07D0050E4A6 /* getJson_HomeImage.swift in Sources */,
 				5BCE294320C9311000DE7037 /* AllWallpapers_Coll.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
 				5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */,
+				CE46C6FA20ECB0290050E4A6 /* ImageInfor.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
 				5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
+				CE46C6FC20ECB0570050E4A6 /* DataOfSources.swift in Sources */,
+				CE77DAA320EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift in Sources */,
+				CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */,
 				CEC585B120DBA7B20039CADA /* CollLiveviewCell.swift in Sources */,
+				CE735E6320F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift in Sources */,
 				CE23563B20DA46D000AF2BAC /* DTOtherMacro.swift in Sources */,
 				CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */,
 				04D05BE820CF758E00854469 /* LinkServer.swift in Sources */,
@@ -650,9 +684,11 @@
 				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
 				5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */,
 				CE23564220DA479C00AF2BAC /* QuickTimeMov.swift in Sources */,
+				CE77DAA120EDC19700AE1DE7 /* getJson_CategoriesIcon.swift in Sources */,
 				5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */,
 				5B0649B320DA604700F3C3B1 /* CollViewCell_Home.swift in Sources */,
 				CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */,
+				CE735E6520F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift in Sources */,
 				5BCE293D20C8DE7A00DE7037 /* Wallpapers_My.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

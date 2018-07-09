@@ -20,14 +20,18 @@ enum CellCollectionCateType:Int {
 class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     var img = ["hinh1","hinh2","hinh3","hinh4","hinh5","hinh1","hinh2","hinh3","hinh4","hinh5"]
-    var lbl = ["Abstract","Animals","Cities","Science","Flowers","Sports","Mountains","Underwater","Nature","Ohter"]
+    var lbl = ["Abstract","Animals","Cities","Science","Flowers","Sports","Mountains","Underwater","Nature","Other"]
    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.setGradients(color_01: UIColor(displayP3Red: 51/255, green: 50/255, blue: 55/255, alpha: 1.0), color_02: UIColor(displayP3Red: 11/255, green: 1/255, blue: 1/255, alpha: 1.0))
+        
+        self.view.setGradients(color_01: UIColor(displayP3Red: 51/255, green: 50/255, blue: 55/255, alpha: 1.0), color_02: UIColor(displayP3Red: 11/255, green: 1/255, blue: 1/255, alpha: 1.0))
+        getJson_CategoriesIcon.sharedInstance.fetchFeedForUrlString()
+        
+       
     }
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -136,8 +140,12 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return img.count
+        if collectionView.tag == CellCollectionCateType.Cell_H.rawValue{
+            return img.count
+        }
+        return json_categoriesicon.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         var raDius:CGFloat = 0.0
@@ -160,8 +168,7 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionCate.Cell_H, for: indexPath) as! Horizontal_CollectionView
            
-           cell.H_Image.image = UIImage(named: img[indexPath.row])
-            
+            cell.H_Image.image = UIImage(named: img[indexPath.row])
             cell.layer.cornerRadius = raDius
             cell.clipsToBounds = true
             layout.sectionInset = UIEdgeInsetsMake(0, space, 0, 0)
@@ -178,11 +185,10 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionCate.Cell_V, for: indexPath) as! Vertical_CollectionView
             
-                cell.V_Image.image = UIImage(named: img[indexPath.row])
+            
           cell.Lbl_NameCate.text = lbl[indexPath.row]
             cell.layer.cornerRadius = raDius
             cell.clipsToBounds = true
-            
             layout.sectionInset = UIEdgeInsetsMake(0, space, 0,space)
             layout.itemSize = CGSize(width: 160, height: 57)
             layout.minimumInteritemSpacing = 0
@@ -198,12 +204,28 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             
             layout.minimumLineSpacing = minimumLine
              layout.scrollDirection = .vertical
+            
+           
+            let downloading = DispatchQueue(label: "downloading")
+            downloading.async {
+                 let url = URL(string: json_categoriesicon[indexPath.row])
+                let data = try? Data(contentsOf: url!)
+                DispatchQueue.main.async {
+                    cell.V_Image.image = UIImage(data: data!)
+                }
+                
+            }
             return cell
         }
         
        
     }
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       dictionary_cate.removeAll()
+       dictionary_cate = categories[indexPath.row]
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var sizeCell_H:CGSize = CGSize.zero
         var sizeCell_V:CGSize = CGSize.zero

@@ -9,45 +9,52 @@
 import UIKit
 
 class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+  
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      getJson_HomeImage.sharedInstance.fetchFeedForUrlString()
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: .ImageHomeDownload, object: nil)
+        
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+    
+        return json_imageHome.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_WallpapersHome", for: indexPath) as! CollViewCell_Home
+        print(indexPath.row)
+       
+        
+        let downloading = DispatchQueue(label: "downloading")
+            downloading.async {
+                 let url = URL(string: json_imageHome[indexPath.row])
+                let data = try? Data(contentsOf: url!)
+                DispatchQueue.main.async {
+                    cell.Img_Home.image = UIImage(data: data!)
+                    
+                }
+            }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: CollView_WallHome.bounds.width, height: CollView_WallHome.bounds.height)
     }
-    
+    @objc func reload(){
+        CollView_WallHome.reloadData()
+    }
 
     @IBOutlet weak var CollView_WallHome: UICollectionView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+   
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
+extension Notification.Name{
+    static let ImageHomeDownload = Notification.Name("Downloading")
 }

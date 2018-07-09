@@ -10,6 +10,7 @@ import UIKit
 
 class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
     
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIScreen.main.bounds.width >= 768{
             
@@ -23,14 +24,14 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return array_Image_library.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+   @objc func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Wallpapers_Cell", for: indexPath) as! CollViewCell1
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         var space: CGFloat = 0.0
-        
+        cell.img_Library.image = array_Image_library[indexPath.row] 
         if UIScreen.main.bounds.width >= 768{
             
             
@@ -64,28 +65,19 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
         return cell
     }
     
-
+    @objc func reloadcollection(){
+        Wallpapers_Coll.reloadData()
+        
+    }
     @IBOutlet weak var Wallpapers_Coll: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadcollection), name: .LibaryWallpaper, object: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
+}
+extension Notification.Name{
+    static let LibaryWallpaper = Notification.Name("Downloading")
 }

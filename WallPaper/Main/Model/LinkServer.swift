@@ -18,7 +18,9 @@ let link_Cate_NewArrivals = "\(linkServer)/WallPaper/DataImages/NewArrivals/"
 
 let link_Cate_Popular = "\(linkServer)/WallPaper/DataImages/Popular/"
 
+let link_Home = URL(string: "\(linkServer)/WallPaper/ImageJson/Home.json")
 
+let link_Categories_icon = URL(string: "\(linkServer)/WallPaper/ImageJson/Categories_Icon.json")
 
-
+let link_Categories_SeeAll = URL(string: "\(linkServer)/WallPaper/ImageJson/Categories_SeeAll.json")
 

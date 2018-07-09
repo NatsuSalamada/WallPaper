@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import Photos
+import PhotosUI
+import MobileCoreServices
 
-class YourWallpapers: UIViewController{
+var array_Image_library = [UIImage]()
+class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var FadedView: UIView!
     @IBOutlet weak var View_My: UIView!
-    
     @IBOutlet weak var btn_CreateWall: UIButton!
 //    @IBOutlet weak var CreateView: UIView!
     @IBOutlet weak var btn_CreateLive: UIButton!
+    var imagePicker: UIImagePickerController!
     var btn_expand_state = 0
     lazy var WallpapersControlller:UIViewController? = {
         
@@ -164,20 +168,40 @@ class YourWallpapers: UIViewController{
             return LiveWallpapersController!
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func abtn_CreateLive(_ sender: Any) {
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .camera
+        picker.mediaTypes = [kUTTypeMovie as String]
+        present(picker, animated: true, completion: nil)
     }
-    */
-
+    @IBAction func abtn_TakePhotoWallpaper(_ sender: Any) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let PickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
+           
+            array_Image_library.append(PickedImage)
+           NotificationCenter.default.post(name: .LibaryWallpaper, object: nil)
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+       
+    }
 }

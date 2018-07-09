@@ -19,6 +19,7 @@ struct FilePaths {
 }
 
 class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
+    
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var livePhotoView: PHLivePhotoView! {
         didSet {
@@ -78,20 +79,6 @@ class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
             }
         }
     }
-    
-    func exportLivePhoto () {
-        PHPhotoLibrary.shared().performChanges({ () -> Void in
-            let creationRequest = PHAssetCreationRequest.forAsset()
-            let options = PHAssetResourceCreationOptions()
-            
-            creationRequest.addResource(with: PHAssetResourceType.pairedVideo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.MOV"), options: options)
-            creationRequest.addResource(with: PHAssetResourceType.photo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.JPG"), options: options)
-            
-        }, completionHandler: { (success, error) -> Void in
-            if !success {
-                DTLog((error?.localizedDescription)!)
-            }
-        })
-    }
 
 }
+
