@@ -436,7 +436,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThR-N6-run">
-                                <rect key="frame" x="0.0" y="161" width="24" height="24"/>
+                                <rect key="frame" x="16" y="166" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="iconCancel"/>
                                 <userDefinedRuntimeAttributes>
@@ -454,16 +454,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="abtn_BacktoCate:" destination="foH-pP-vHm" eventType="touchUpInside" id="rcM-Pc-3Ne"/>
+                                    <action selector="abtn_BacktoCate:" destination="foH-pP-vHm" eventType="touchUpInside" id="mjt-Vs-1MW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fe-1Z-cDM">
+                                <rect key="frame" x="167" y="585" width="40" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="VM8-kt-jlf"/>
+                                    <constraint firstAttribute="width" constant="40" id="kv3-cm-yqe"/>
+                                </constraints>
+                                <state key="normal" image="iconDowload"/>
+                                <connections>
+                                    <action selector="btnDownload:" destination="foH-pP-vHm" eventType="touchUpInside" id="aNg-YS-Ze2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Olx-qs-XAh" firstAttribute="bottom" secondItem="yQK-Mo-fd3" secondAttribute="bottom" id="7Wr-BT-4lg"/>
+                            <constraint firstItem="2Fe-1Z-cDM" firstAttribute="centerX" secondItem="Olx-qs-XAh" secondAttribute="centerX" id="Uq2-E4-3Zm"/>
                             <constraint firstItem="yQK-Mo-fd3" firstAttribute="leading" secondItem="Kax-Vg-24N" secondAttribute="leading" id="cu0-m2-U79"/>
                             <constraint firstItem="yQK-Mo-fd3" firstAttribute="trailing" secondItem="Kax-Vg-24N" secondAttribute="trailing" id="d2H-L6-BaV"/>
                             <constraint firstItem="yQK-Mo-fd3" firstAttribute="top" secondItem="Kax-Vg-24N" secondAttribute="top" id="kdO-SE-YNc"/>
+                            <constraint firstItem="Olx-qs-XAh" firstAttribute="bottom" secondItem="2Fe-1Z-cDM" secondAttribute="bottom" constant="40" id="lxz-9X-Ocm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Olx-qs-XAh"/>
                     </view>
@@ -591,13 +604,26 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-SK-oPe">
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="155"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-Zx-hF0">
+                                                    <rect key="frame" x="41" y="73" width="40" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="5DJ-Kz-2R7"/>
+                                                        <constraint firstAttribute="height" constant="42" id="jp9-VA-V4T"/>
+                                                    </constraints>
+                                                    <state key="normal" image="iconDowload"/>
+                                                    <connections>
+                                                        <action selector="btnDownload:" destination="Apc-Ja-2g5" eventType="touchUpInside" id="8Li-o8-M5p"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="SCK-Zx-hF0" secondAttribute="bottom" constant="40" id="D6R-Yu-OqM"/>
                                             <constraint firstItem="7iE-SK-oPe" firstAttribute="leading" secondItem="JCC-Np-bFF" secondAttribute="leading" id="DCf-ia-Phk"/>
                                             <constraint firstItem="7iE-SK-oPe" firstAttribute="top" secondItem="JCC-Np-bFF" secondAttribute="top" id="apl-1F-jjP"/>
                                             <constraint firstAttribute="trailing" secondItem="7iE-SK-oPe" secondAttribute="trailing" id="i8v-fv-ohW"/>
                                             <constraint firstAttribute="bottom" secondItem="7iE-SK-oPe" secondAttribute="bottom" id="oZ9-XK-5v4"/>
+                                            <constraint firstItem="SCK-Zx-hF0" firstAttribute="centerX" secondItem="JCC-Np-bFF" secondAttribute="centerX" id="xhR-4O-2E0"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="Img_Home" destination="7iE-SK-oPe" id="XQM-SK-jv2"/>
@@ -637,7 +663,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-sV-Rbg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="W5D-WG-i6C">
                                     <size key="itemSize" width="113" height="195"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -699,7 +725,7 @@
                         <viewLayoutGuide key="safeArea" id="VYJ-xS-dgr"/>
                     </view>
                     <connections>
-                        <outlet property="Coll_Live" destination="0Pe-sV-Rbg" id="E4b-b9-6LW"/>
+                        <outlet property="Coll_Live" destination="0Pe-sV-Rbg" id="y3T-Gg-xVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0H-Dg-is8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -755,37 +781,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-qV-AYC">
-                                <rect key="frame" x="159" y="305" width="56" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="iconDowload"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIpad">
-                                        <real key="value" value="356"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIpad">
-                                        <real key="value" value="871"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIpad">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIpad">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xIphone">
-                                        <real key="value" value="160"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="yIphone">
-                                        <real key="value" value="530"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="widthIphone">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="heightIphone">
-                                        <real key="value" value="56"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1214,6 +1209,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZd-LO-4Rv">
                                                     <rect key="frame" x="0.0" y="0.0" width="161" height="226"/>
+                                                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -1261,9 +1257,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-0X-LiA">
-                                <rect key="frame" x="16" y="36" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-0X-LiA">
+                                <rect key="frame" x="16" y="32.5" width="32" height="32"/>
                                 <state key="normal" image="iconBackWhite">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1328,8 +1323,10 @@
                         <constraints>
                             <constraint firstItem="x74-Xd-vSd" firstAttribute="leading" secondItem="5D8-gU-ZbT" secondAttribute="leading" id="5WK-bW-BOn"/>
                             <constraint firstItem="5D8-gU-ZbT" firstAttribute="trailing" secondItem="x74-Xd-vSd" secondAttribute="trailing" id="5bp-z8-z4T"/>
+                            <constraint firstItem="CNl-0X-LiA" firstAttribute="leading" secondItem="FXm-La-Ecm" secondAttribute="leading" constant="16" id="NrY-Wu-OxX"/>
                             <constraint firstItem="x74-Xd-vSd" firstAttribute="top" secondItem="av6-4U-EDh" secondAttribute="bottom" constant="24" id="Xd1-gj-0kD"/>
                             <constraint firstItem="5D8-gU-ZbT" firstAttribute="bottom" secondItem="x74-Xd-vSd" secondAttribute="bottom" id="dBC-rg-xeJ"/>
+                            <constraint firstItem="CNl-0X-LiA" firstAttribute="centerY" secondItem="av6-4U-EDh" secondAttribute="centerY" id="daK-GD-krq"/>
                             <constraint firstItem="av6-4U-EDh" firstAttribute="centerX" secondItem="5D8-gU-ZbT" secondAttribute="centerX" id="jGm-PD-IUz"/>
                             <constraint firstItem="av6-4U-EDh" firstAttribute="top" secondItem="FXm-La-Ecm" secondAttribute="top" constant="34" id="vi4-b1-Ws2"/>
                         </constraints>

@@ -17,15 +17,15 @@ struct FilePaths {
         static var livePath = FilePaths.documentsPath.appending("/")
     }
 }
-
+var tempvideo = ""
 class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
     
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var livePhotoView: PHLivePhotoView! {
-        didSet {
-            loadVideoWithVideoURL(Bundle.main.url(forResource: "Spacedoggy", withExtension: "MOV")!)
-        }
+    @IBOutlet weak var livePhotoView: PHLivePhotoView!
+    override func awakeFromNib() {
+       
     }
+    
     func loadVideoWithVideoURL(_ videoURL: URL) {
         livePhotoView.livePhoto = nil
         let asset = AVURLAsset(url: videoURL)
@@ -81,4 +81,17 @@ class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
     }
 
 }
-
+func exportLivePhoto () {
+    PHPhotoLibrary.shared().performChanges({ () -> Void in
+        let creationRequest = PHAssetCreationRequest.forAsset()
+        let options = PHAssetResourceCreationOptions()
+        
+        creationRequest.addResource(with: PHAssetResourceType.pairedVideo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.MOV"), options: options)
+        creationRequest.addResource(with: PHAssetResourceType.photo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.JPG"), options: options)
+        
+    }, completionHandler: { (success, error) -> Void in
+        if !success {
+            DTLog((error?.localizedDescription)!)
+        }
+    })
+}

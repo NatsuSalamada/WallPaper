@@ -128,8 +128,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
 
         UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
             self.btn_expand.transform = CGAffineTransform.identity
-            
-            
         }, completion: nil)
         UIView.animate(withDuration: 0.5) {
             self.btn_expand_state = 0
@@ -141,7 +139,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
     }
     
     func ChangeDisplayViewLoad(index:Int){
-        
         let vc = CheckCollection(index: index)
         vc.didMove(toParentViewController: self)
         self.addChildViewController(vc)
@@ -149,7 +146,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
         View_My.addSubview(vc.view)
         currentViewCOntroller = vc
     }
-    
     @objc func ChangeDisplay(noti:Notification){
         print("Change:\(noti.object as! Int)")
         currentViewCOntroller?.view.removeFromSuperview()
@@ -181,7 +177,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func abtn_CreateLive(_ sender: Any) {
-        
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .camera

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var indexLibrary = IndexPath()
 class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
     
    
@@ -33,11 +33,7 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
         var space: CGFloat = 0.0
         cell.img_Library.image = array_Image_library[indexPath.row] 
         if UIScreen.main.bounds.width >= 768{
-            
-            
             space = WIPA(w: 14)
-            
-            
         }else{
             
             space = WIPH(w: 0)
@@ -60,23 +56,20 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
             
             layout.minimumInteritemSpacing = 1
         }
-        
-        
         return cell
     }
     
     @objc func reloadcollection(){
         Wallpapers_Coll.reloadData()
-        
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        indexLibrary = indexPath
     }
     @IBOutlet weak var Wallpapers_Coll: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         NotificationCenter.default.addObserver(self, selector: #selector(reloadcollection), name: .LibaryWallpaper, object: nil)
     }
-
-  
 }
 extension Notification.Name{
     static let LibaryWallpaper = Notification.Name("Downloading")

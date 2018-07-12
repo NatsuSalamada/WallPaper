@@ -28,9 +28,10 @@ class getJson_HomeImage: NSObject {
                 if let unwrappedData = data, let imageResult = try JSONSerialization.jsonObject(with: unwrappedData, options: .mutableContainers) as? NSDictionary {
                     
                     DispatchQueue.main.async(execute: {
-                        self.imageCurrent = (imageResult["ImagesHome"] as? [[String : AnyObject]])!
+                        self.imageCurrent = (imageResult["Home"] as? [[String : AnyObject]])!
                         for image in self.imageCurrent{
                             json_imageHome.append(image["link"] as! String)
+                            json_idImageHome.append(image["id"] as! String)
                         }
                         NotificationCenter.default.post(name: .ImageHomeDownload, object: nil)
                        

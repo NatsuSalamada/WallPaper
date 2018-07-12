@@ -208,11 +208,15 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
            
             let downloading = DispatchQueue(label: "downloading")
             downloading.async {
-                 let url = URL(string: json_categoriesicon[indexPath.row])
-                let data = try? Data(contentsOf: url!)
-                DispatchQueue.main.async {
-                    cell.V_Image.image = UIImage(data: data!)
+                if let url = URL(string: json_categoriesicon[indexPath.row]){
+                    if  let data = try? Data(contentsOf: url){
+                        DispatchQueue.main.async {
+                            cell.V_Image.image = UIImage(data: data)
+                        }
+                    }
                 }
+               
+               
                 
             }
             return cell

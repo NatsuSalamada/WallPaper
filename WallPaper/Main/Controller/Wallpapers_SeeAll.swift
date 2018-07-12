@@ -12,6 +12,7 @@ var temp:IndexPath = IndexPath()
 
 class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var coll_Categories_seeall: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
           getJson_CategoriesSeeAll.sharedInstance.fetchFeedForUrlString()
@@ -26,16 +27,16 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Wallpapers_Cell", for: indexPath) as! CollViewCell1
-        
   
         let downloading = DispatchQueue.global()
         downloading.async {
             let url = URL(string: json_categories_SeeAll[indexPath.row])
             if let data = try? Data(contentsOf: url!) {
-            
+
                 if let image = UIImage(data: data){
                     DispatchQueue.main.async {
                         cell.img_categories_seeall.image = image
+                        
                     }
                 }
             }
@@ -49,7 +50,7 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
          
             space = WIPA(w: 14)
             
-            
+            //////testtttttt
         }else{
             
             space = WIPH(w: 0)
@@ -72,17 +73,16 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
             
             layout.minimumInteritemSpacing = 1
         }
-        
-       
         return  cell
     }
 
     @objc func reloadCategories(){
+    
     coll_Categories_seeall.reloadData()
 }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     temp = indexPath
-        print(temp)
+    print(temp)
       
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

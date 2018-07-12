@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Images+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Images+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:WallPaper.xcodeproj">
    </FileRef>
    <FileRef

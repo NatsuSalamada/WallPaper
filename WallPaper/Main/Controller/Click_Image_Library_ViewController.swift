@@ -11,6 +11,7 @@ import UIKit
 class Click_Image_Library_ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var Collection_library: UICollectionView!
     
+    var WallpaperData:[Images] = []
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return array_Image_library.count
@@ -21,7 +22,8 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
         
         print(array_Image_library[indexPath.row])
         cell.img_Library.image = array_Image_library[indexPath.row]
-            
+        
+        
         return cell
     }
     
@@ -39,8 +41,11 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        WallpaperData = WallpaperCoreData.share.getAllData()
         Collection_library.reloadData()
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        Collection_library.scrollToItem(at: indexLibrary, at: UICollectionViewScrollPosition.right, animated: false)
+    }
 
 }
