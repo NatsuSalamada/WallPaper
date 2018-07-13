@@ -604,26 +604,13 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-SK-oPe">
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="155"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-Zx-hF0">
-                                                    <rect key="frame" x="41" y="73" width="40" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="5DJ-Kz-2R7"/>
-                                                        <constraint firstAttribute="height" constant="42" id="jp9-VA-V4T"/>
-                                                    </constraints>
-                                                    <state key="normal" image="iconDowload"/>
-                                                    <connections>
-                                                        <action selector="btnDownload:" destination="Apc-Ja-2g5" eventType="touchUpInside" id="8Li-o8-M5p"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="SCK-Zx-hF0" secondAttribute="bottom" constant="40" id="D6R-Yu-OqM"/>
                                             <constraint firstItem="7iE-SK-oPe" firstAttribute="leading" secondItem="JCC-Np-bFF" secondAttribute="leading" id="DCf-ia-Phk"/>
                                             <constraint firstItem="7iE-SK-oPe" firstAttribute="top" secondItem="JCC-Np-bFF" secondAttribute="top" id="apl-1F-jjP"/>
                                             <constraint firstAttribute="trailing" secondItem="7iE-SK-oPe" secondAttribute="trailing" id="i8v-fv-ohW"/>
                                             <constraint firstAttribute="bottom" secondItem="7iE-SK-oPe" secondAttribute="bottom" id="oZ9-XK-5v4"/>
-                                            <constraint firstItem="SCK-Zx-hF0" firstAttribute="centerX" secondItem="JCC-Np-bFF" secondAttribute="centerX" id="xhR-4O-2E0"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="Img_Home" destination="7iE-SK-oPe" id="XQM-SK-jv2"/>
@@ -635,13 +622,26 @@
                                     <outlet property="delegate" destination="Apc-Ja-2g5" id="kxL-NJ-cQA"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-Zx-hF0">
+                                <rect key="frame" x="167" y="585" width="40" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="WIi-EK-0qa"/>
+                                    <constraint firstAttribute="height" constant="42" id="e3E-xD-bet"/>
+                                </constraints>
+                                <state key="normal" image="iconDowload"/>
+                                <connections>
+                                    <action selector="btnDownload:" destination="Apc-Ja-2g5" eventType="touchUpInside" id="8Li-o8-M5p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Gsg-ec-Pbw" firstAttribute="top" secondItem="Z2q-sW-L6j" secondAttribute="top" id="IiK-Tu-Cuh"/>
                             <constraint firstAttribute="trailing" secondItem="Gsg-ec-Pbw" secondAttribute="trailing" id="PKt-wE-mDD"/>
+                            <constraint firstItem="FHA-UL-Cn1" firstAttribute="bottom" secondItem="SCK-Zx-hF0" secondAttribute="bottom" constant="40" id="SE2-X2-bUP"/>
                             <constraint firstItem="Gsg-ec-Pbw" firstAttribute="leading" secondItem="Z2q-sW-L6j" secondAttribute="leading" id="diW-5S-Nno"/>
                             <constraint firstAttribute="bottom" secondItem="Gsg-ec-Pbw" secondAttribute="bottom" id="gZY-nO-AI1"/>
+                            <constraint firstItem="SCK-Zx-hF0" firstAttribute="centerX" secondItem="FHA-UL-Cn1" secondAttribute="centerX" id="leO-u1-sgQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FHA-UL-Cn1"/>
                     </view>
@@ -714,13 +714,26 @@
                                     <outlet property="delegate" destination="kQL-ks-MSq" id="SG1-Iq-fOy"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-vc-7fT">
+                                <rect key="frame" x="167" y="585" width="40" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Az3-wk-X2S"/>
+                                    <constraint firstAttribute="width" constant="40" id="eEs-hZ-nM8"/>
+                                </constraints>
+                                <state key="normal" image="iconDowload"/>
+                                <connections>
+                                    <action selector="btnDownload:" destination="kQL-ks-MSq" eventType="touchUpInside" id="mVh-uj-PUc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0Pe-sV-Rbg" firstAttribute="top" secondItem="leI-OT-YP1" secondAttribute="top" id="NyB-S2-2wa"/>
+                            <constraint firstItem="gBf-vc-7fT" firstAttribute="centerX" secondItem="VYJ-xS-dgr" secondAttribute="centerX" id="Y68-gd-FZJ"/>
                             <constraint firstAttribute="bottom" secondItem="0Pe-sV-Rbg" secondAttribute="bottom" id="Y9d-eb-Tr4"/>
                             <constraint firstItem="0Pe-sV-Rbg" firstAttribute="trailing" secondItem="leI-OT-YP1" secondAttribute="trailing" id="hIk-5J-SR0"/>
                             <constraint firstItem="0Pe-sV-Rbg" firstAttribute="leading" secondItem="leI-OT-YP1" secondAttribute="leading" id="rAw-4h-ku6"/>
+                            <constraint firstItem="VYJ-xS-dgr" firstAttribute="bottom" secondItem="gBf-vc-7fT" secondAttribute="bottom" constant="40" id="w29-Te-THk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VYJ-xS-dgr"/>
                     </view>

@@ -73,7 +73,31 @@ class LiveWallpapers_Home: UIViewController, UIImagePickerControllerDelegate,UIC
     @objc func reloadLiveHome()
     {
         Coll_Live.reloadData()
+    
     }
+    
+    
+    
+//    @IBAction func btnDownload(_ sender: Any) {
+//        UISaveVideoAtPathToSavedPhotosAlbum(, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), contextInfo: UnsafeRawPointer)
+//    }
+//    
+//    @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
+//        if let error = error {
+//            
+//            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        } else {
+//            
+//            let ac = UIAlertController(title: "Saved!", message: "The screenshot has been saved to your photos.", preferredStyle: .alert)
+//            ac.addAction(UIAlertAction(title: "OK", style: .default))
+//            present(ac, animated: true)
+//        }
+//    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
