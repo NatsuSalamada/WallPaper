@@ -1,0 +1,30 @@
+PODS:
+  - CameraManager (4.2.3)
+  - DKChainableAnimationKit (2.0.1)
+  - Google-Mobile-Ads-SDK (7.31.0)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
+
+DEPENDENCIES:
+  - CameraManager (~> 4.2)
+  - DKChainableAnimationKit (~> 2.0.0)
+  - Google-Mobile-Ads-SDK
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CameraManager
+    - DKChainableAnimationKit
+    - Google-Mobile-Ads-SDK
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  CameraManager: ea80fdeb797ed6d1f02a6bae645bf31ddb2da3c7
+  DKChainableAnimationKit: bbb3c33fba2cf696b5da2a27fc50540777befb88
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
+
+PODFILE CHECKSUM: ecef130e92fdc81e7260f34e2d1bdb6a0af078c0
+
+COCOAPODS: 1.5.3

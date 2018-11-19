@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+<<<<<<< HEAD
+      location = "group:Livephotomy+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Livephotomy+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Takephoto+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Takephoto+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+=======
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
+      location = "group:Images+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Images+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WallPaper.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

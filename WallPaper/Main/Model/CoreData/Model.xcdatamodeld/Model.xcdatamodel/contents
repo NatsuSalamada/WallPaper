@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Images" representedClassName="Images" syncable="YES" codeGenerationType="class">
+        <attribute name="index" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Livephoto" representedClassName="Livephoto" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkDataIMG" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkDataMOV" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Livephotomy" representedClassName="Livephotomy" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkDataIMG" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkDataMOV" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Takephoto" representedClassName="Takephoto" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Images" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Livephoto" positionX="-63" positionY="-9" width="128" height="90"/>
+        <element name="Takephoto" positionX="-63" positionY="-9" width="128" height="60"/>
+        <element name="Livephotomy" positionX="-54" positionY="18" width="128" height="90"/>
+=======
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Images" representedClassName="Images" syncable="YES" codeGenerationType="class">
+        <attribute name="index" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Images" positionX="-63" positionY="-18" width="128" height="60"/>
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
+    </elements>
+</model>
