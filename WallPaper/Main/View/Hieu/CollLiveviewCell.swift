@@ -12,15 +12,6 @@ import PhotosUI
 import MobileCoreServices
 import NVActivityIndicatorView
 
-<<<<<<< HEAD
-=======
-struct FilePaths {
-    static let documentsPath : AnyObject = NSSearchPathForDirectoriesInDomains(.cachesDirectory,.userDomainMask,true)[0] as AnyObject
-    struct VidToLive {
-        static var livePath = FilePaths.documentsPath.appending("/")
-    }
-}
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 var tempvideo = ""
 class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
     
@@ -34,7 +25,6 @@ class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
     @IBOutlet weak var img_live: UIImageView!
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var livePhotoView: PHLivePhotoView!
-<<<<<<< HEAD
     var filePath:String = ""
     
     override func awakeFromNib() {
@@ -139,13 +129,6 @@ class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
     }
     func loadVideoWithVideoURL(_ videoURL: URL,imagedTemp:String,index:Int) {
         
-=======
-    override func awakeFromNib() {
-       
-    }
-    
-    func loadVideoWithVideoURL(_ videoURL: URL) {
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         livePhotoView.livePhoto = nil
         
         let asset = AVURLAsset(url: videoURL)
@@ -211,17 +194,4 @@ class CollLiveviewCell: UICollectionViewCell,UIImagePickerControllerDelegate {
         })
     }
 }
-func exportLivePhoto () {
-    PHPhotoLibrary.shared().performChanges({ () -> Void in
-        let creationRequest = PHAssetCreationRequest.forAsset()
-        let options = PHAssetResourceCreationOptions()
-        
-        creationRequest.addResource(with: PHAssetResourceType.pairedVideo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.MOV"), options: options)
-        creationRequest.addResource(with: PHAssetResourceType.photo, fileURL: URL(fileURLWithPath: FilePaths.VidToLive.livePath + "/IMG.JPG"), options: options)
-        
-    }, completionHandler: { (success, error) -> Void in
-        if !success {
-            DTLog((error?.localizedDescription)!)
-        }
-    })
-}
+

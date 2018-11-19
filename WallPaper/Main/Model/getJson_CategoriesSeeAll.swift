@@ -24,21 +24,8 @@ class getJson_CategoriesSeeAll: NSObject {
                 if let unwrappedData = data, let imageResult = try JSONSerialization.jsonObject(with: unwrappedData, options: .mutableContainers) as? NSDictionary {
                     
                     DispatchQueue.main.async(execute: {
-<<<<<<< HEAD
                         
                         photoCateSeeAll = imageResult
-=======
-                        self.imageCurrent = (imageResult[dictionary_cate] as? [[String : AnyObject]])!
-                        print(dictionary_cate)
-                        
-                        for image in self.imageCurrent{
-                          
-                            json_categories_SeeAll.append(image["link"] as! String)
-                            json_idCategories_SeeAll.append(image["id"] as! String)
-                           
-                        }
-                       NotificationCenter.default.post(name: .CategoriesDownload, object: nil)
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
                         
                     })
                     

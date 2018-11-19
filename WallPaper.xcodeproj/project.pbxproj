@@ -98,10 +98,7 @@
 		CE735E6520F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */; };
 		CE735E6920F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */; };
 		CE735E7620F5C41100E3C9B0 /* WallpaperCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */; };
-<<<<<<< HEAD
 		CE736B4D2117E8B40041A65D /* CameraVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE736B4C2117E8B40041A65D /* CameraVideoViewController.swift */; };
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 		CE77DAA120EDC19700AE1DE7 /* getJson_CategoriesIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */; };
 		CE77DAA320EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */; };
 		CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */; };
@@ -111,16 +108,11 @@
 		CEB4B4542112F598003C7B58 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B4532112F598003C7B58 /* PictureViewController.swift */; };
 		CEC585B120DBA7B20039CADA /* CollLiveviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */; };
 		CEC8A58720F5FA7A00763DCD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A58520F5FA7A00763DCD /* Model.xcdatamodeld */; };
-<<<<<<< HEAD
 		CED3E592211AD54F00997B85 /* getJson_LiveCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */; };
 		CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */; };
 		CED6403020F741CC001EC243 /* DownloadOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6402F20F741CC001EC243 /* DownloadOperator.swift */; };
 		CED938F220FC821900412273 /* LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED938F120FC821900412273 /* LivePhoto.swift */; };
 		CED938F420FC87FB00412273 /* DownloadLivePhotoOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED938F320FC87FB00412273 /* DownloadLivePhotoOperator.swift */; };
-=======
-		CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */; };
-		CED6403020F741CC001EC243 /* DownloadOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6402F20F741CC001EC243 /* DownloadOperator.swift */; };
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
 		CEE265AE21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */; };
 		CEE265B0212167CC00D38AAF /* getJson_NewArrival_Horizal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */; };
@@ -251,10 +243,7 @@
 		CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Library_CollectionViewCell.swift; sourceTree = "<group>"; };
 		CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_LiveHomeImage.swift; sourceTree = "<group>"; };
 		CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCoreData.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		CE736B4C2117E8B40041A65D /* CameraVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoViewController.swift; sourceTree = "<group>"; };
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 		CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesIcon.swift; sourceTree = "<group>"; };
 		CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesSeeAll.swift; sourceTree = "<group>"; };
 		CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickImageCateView.swift; sourceTree = "<group>"; };
@@ -264,16 +253,11 @@
 		CEB4B4532112F598003C7B58 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollLiveviewCell.swift; sourceTree = "<group>"; };
 		CEC8A58620F5FA7A00763DCD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_LiveCategories.swift; sourceTree = "<group>"; };
 		CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickView_CollectionViewCell.swift; sourceTree = "<group>"; };
 		CED6402F20F741CC001EC243 /* DownloadOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperator.swift; sourceTree = "<group>"; };
 		CED938F120FC821900412273 /* LivePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhoto.swift; sourceTree = "<group>"; };
 		CED938F320FC87FB00412273 /* DownloadLivePhotoOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadLivePhotoOperator.swift; sourceTree = "<group>"; };
-=======
-		CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickView_CollectionViewCell.swift; sourceTree = "<group>"; };
-		CED6402F20F741CC001EC243 /* DownloadOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperator.swift; sourceTree = "<group>"; };
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
 		CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_NewArrival_SeeAll.swift; sourceTree = "<group>"; };
 		CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_NewArrival_Horizal.swift; sourceTree = "<group>"; };
@@ -412,11 +396,8 @@
 				5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */,
 				5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */,
 				CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */,
-<<<<<<< HEAD
 				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
 				5BCE293C20C8DE7A00DE7037 /* Wallpapers_My.swift */,
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
 				04290F422138E1CC007B314B /* chup.swift */,
 				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
@@ -433,11 +414,6 @@
 			isa = PBXGroup;
 			children = (
 				CE735E6A20F5BC7600E3C9B0 /* CoreData */,
-<<<<<<< HEAD
-=======
-				04D05BE720CF758E00854469 /* LinkServer.swift */,
-				CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */,
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */,
 				CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */,
 				04D05BE720CF758E00854469 /* LinkServer.swift */,
@@ -446,7 +422,6 @@
 				CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */,
 				CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */,
 				CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */,
-<<<<<<< HEAD
 				CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */,
 				CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */,
 				CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */,
@@ -466,9 +441,6 @@
 				0432027F21300B1100870022 /* getJson_Cate_Popular_Live.swift */,
 				045FBE07216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift */,
 				045FBE09216C495D00B92C48 /* imagePhotoModel.swift */,
-=======
-				CED6402F20F741CC001EC243 /* DownloadOperator.swift */,
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -568,17 +540,13 @@
 			children = (
 				CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */,
 				CEC8A58520F5FA7A00763DCD /* Model.xcdatamodeld */,
-<<<<<<< HEAD
 				CE8CFBE920FF1B7000EB1977 /* TakePhotoCoreData.swift */,
 				04A346AC2112A508000C0614 /* LivePhoToCoreData.swift */,
 				043538EA2137AD63007899BE /* LivePhoToMyCoreData.swift */,
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		CEB4B4502112F53B003C7B58 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,8 +557,6 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 		EA071DD61D46880A636C766F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,11 +801,8 @@
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
 				04290F432138E1CC007B314B /* chup.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
-<<<<<<< HEAD
 				0434007E213F7FF6003EB441 /* Rate.swift in Sources */,
 				04A346AD2112A508000C0614 /* LivePhoToCoreData.swift in Sources */,
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */,
 				0432027C212FEDAE00870022 /* GetDataLive.swift in Sources */,
 				040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */,
@@ -851,14 +814,10 @@
 				0432B90D212AA08B0098D1D1 /* SettingViewController.swift in Sources */,
 				04340078213F7683003EB441 /* Second.swift in Sources */,
 				0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */,
-<<<<<<< HEAD
 				CE1188EF21004FAE0049330C /* CheckBegan.swift in Sources */,
 				CE735E6920F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift in Sources */,
 				04290F3F2138E118007B314B /* chupcell.swift in Sources */,
 				CED938F220FC821900412273 /* LivePhoto.swift in Sources */,
-=======
-				CE735E6920F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift in Sources */,
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				CE735E6120F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift in Sources */,
 				CE23564320DA479C00AF2BAC /* JPEG.swift in Sources */,
 				04A346B12112F32D000C0614 /* Data.swift in Sources */,
@@ -889,13 +848,9 @@
 				043538EB2137AD63007899BE /* LivePhoToMyCoreData.swift in Sources */,
 				0432B90B212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift in Sources */,
 				CE46C6FA20ECB0290050E4A6 /* ImageInfor.swift in Sources */,
-<<<<<<< HEAD
 				0432027E2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift in Sources */,
 				CEC8A58720F5FA7A00763DCD /* Model.xcdatamodeld in Sources */,
 				CEB4B4542112F598003C7B58 /* PictureViewController.swift in Sources */,
-=======
-				CEC8A58720F5FA7A00763DCD /* Model.xcdatamodeld in Sources */,
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
 				5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */,
 				CE735E7620F5C41100E3C9B0 /* WallpaperCoreData.swift in Sources */,
@@ -913,10 +868,7 @@
 				CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */,
 				042D3E4621268765007DDBF8 /* DownloadPhotoOperation_H2.swift in Sources */,
 				04D05BE820CF758E00854469 /* LinkServer.swift in Sources */,
-<<<<<<< HEAD
 				CE51FEC02111977300DA3800 /* Notification.swift in Sources */,
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 				CED6403020F741CC001EC243 /* DownloadOperator.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
 				042D3E48212687DC007DDBF8 /* DownloadPhotoOperation_V.swift in Sources */,

@@ -8,10 +8,7 @@
 
 import UIKit
 var indexLibrary = IndexPath()
-<<<<<<< HEAD
 
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
     let documentsPhoto = FileManager.default
     var string:String = ""
@@ -104,7 +101,6 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         indexLibrary = indexPath
-<<<<<<< HEAD
         if indexPath.row == TakePhotoCoreData.share.getAllData().count{
             let inFor = ["index": 1] as [String : Int]
             NotificationCenter.default.post(name: .Wallpapers_Screen, object: nil, userInfo: inFor)
@@ -114,20 +110,13 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
             let Click_Image_Library_ViewController = storyBoard.instantiateViewController(withIdentifier: "Click_Image_Library_ViewController") as! Click_Image_Library_ViewController
             self.present(Click_Image_Library_ViewController, animated: true, completion: nil)
         }
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     }
     @IBOutlet weak var Wallpapers_Coll: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
     
         NotificationCenter.default.addObserver(self, selector: #selector(reloadcollection), name: .LibaryWallpaper, object: nil)
     }
   
-=======
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadcollection), name: .LibaryWallpaper, object: nil)
-    }
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 }
 

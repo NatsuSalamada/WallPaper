@@ -30,13 +30,8 @@ class getJson_HomeImage: NSObject {
                     DispatchQueue.main.async(execute: {
                         self.imageCurrent = (imageResult["Home"] as? [[String : AnyObject]])!
                         for image in self.imageCurrent{
-<<<<<<< HEAD
                             let user = UserInfo(id: image["id"] as! String, link: image["link"] as! String)
                             PhotoList.append(user)
-=======
-                            json_imageHome.append(image["link"] as! String)
-                            json_idImageHome.append(image["id"] as! String)
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
                         }
                         
                        

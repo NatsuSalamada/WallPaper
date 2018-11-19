@@ -11,7 +11,6 @@ import UIKit
 
 class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
-<<<<<<< HEAD
     @IBOutlet weak var Collection_ClickView: UICollectionView!
     @IBAction func abtn_BacktoCate(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -55,43 +54,6 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
         }
     }
  
-=======
-    var tempPath = ""
-    @IBOutlet weak var Collection_ClickView: UICollectionView!
-    @IBAction func abtn_BacktoCate(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func btnDownload(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum((Collection_ClickView.visibleCells.first as! ClickView_CollectionViewCell).img_clickView.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-     
-    }
-    
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            
-            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        } else {
-            
-            let ac = UIAlertController(title: "Saved!", message: "The screenshot has been saved to your photos.", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
-    
-    
-    func ViewWillDisappear(_ animated: Bool) {
-        do{
-            try? documentsURL.removeItem(atPath: tempPath)
-        }
-        catch{
-            print("can't remove")
-            
-        }
-    }
-     let documentsURL = FileManager.default
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -180,7 +142,6 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-<<<<<<< HEAD
         
         return PhotoCategoriesSeeAll.count
     }
@@ -240,46 +201,6 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
                     for sublayer in sublayers{
                         if sublayer.name == "shapeLayer" || sublayer.name == "pulsatingLayer" || sublayer.name == "trackLayer"{
                             sublayer.removeFromSuperlayer()
-=======
-        print(json_categories_SeeAll)
-        return json_categories_SeeAll.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Coll_ClickView", for: indexPath) as! ClickView_CollectionViewCell
-       
-        let manager = documentsURL.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
-        let filePath = manager.appendingPathComponent("\(dictionary_cate)-\(indexPath.row + 1).jpg").path
-
-        if UIImage(contentsOfFile: filePath) != nil {
-            cell.img_clickView.image = UIImage(contentsOfFile: filePath)
-        }else{
-            
-            
-            let downloading = DispatchQueue(label: "downloading")
-            downloading.async {
-                let url = URL(string: json_categories_SeeAll[indexPath.row])
-              
-                if let data = try? Data(contentsOf: url!){
-                    if let image = UIImage(data: data){
-                        DispatchQueue.main.async {
-                            
-                            cell.img_clickView.image = image
-                            
-                            WallpaperCoreData.share.saveData(index: json_idCategories_SeeAll[indexPath.row])
-                            
-                            do {
-                                
-                                let fileURL = manager.appendingPathComponent("\(WallpaperCoreData.share.getID()).jpg").path
-                                self.tempPath = fileURL
-                                print(fileURL)
-                                if let jpgData = UIImageJPEGRepresentation(UIImage(data: data)!, 1.0){
-                                    try? jpgData.write(to:manager , options: .atomic)
-                                }
-                                
-                            } catch { }
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
                         }
                     }
                 }
@@ -307,35 +228,14 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
                 }
             }
         }
-<<<<<<< HEAD
         cell.frame.origin.y = self.Collection_ClickView.bounds.origin.y
             return cell
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-=======
-        
-            return cell
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     }
-//        let downloading = DispatchQueue.global()
-//        downloading.async {
-//
-//            let url = URL(string: json_categories_SeeAll[indexPath.row])
-//
-//            if let data = try? Data(contentsOf: url!) {
-//
-//                if let image = UIImage(data: data){
-//                    DispatchQueue.main.async {
-//                        cell.img_clickView.image = image
-//                    }
-//                }
-//            }
-//        }
-
     
-<<<<<<< HEAD
     var onceOnly = false
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if !onceOnly {
@@ -398,26 +298,6 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
         
         downloadingTasks.removeAll()
         print("RaDis")
-=======
-    static func deleteFiledInDocDirectory(tempFolderPath:URL){
-        
-        let fileManager = FileManager.default
-        guard let tempFolderPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first?.absoluteString else {
-            return   // documents directory not found for some reason
-        }
-        do {
-            let filePaths = try fileManager.contentsOfDirectory(atPath: tempFolderPath)
-            for filePath in filePaths {
-                try fileManager.removeItem(atPath: tempFolderPath + filePath)
-            }
-        } catch {
-            print("Could not clear temp folder: \(error)")
-        }
-    }
-    @objc func reloadclickView(){
-    
-    Collection_ClickView.reloadData()
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -425,7 +305,6 @@ class ClickImageCateView: UIViewController,UICollectionViewDelegate,UICollection
         return CGSize(width: Collection_ClickView.bounds.width, height: Collection_ClickView.bounds.height)
     }
     
-<<<<<<< HEAD
 }
 extension ClickImageCateView: DownloadPhotoOperationDelegate {
     
@@ -447,7 +326,5 @@ extension ClickImageCateView: DownloadPhotoOperationDelegate {
         
         downloadingTasks.removeValue(forKey: operation.indexPath)
     }
-=======
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 }
 

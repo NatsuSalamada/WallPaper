@@ -403,7 +403,6 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             let Manager = DocumentsURL.urls(for: .documentDirectory, in: .allDomainsMask).first!
             let filePath = Manager.appendingPathComponent("\(keyCache).jpg")
             
-<<<<<<< HEAD
             //        if keyCache == nil{
             //            WallpaperCoreData.share.saveData(index: keyCache)
             //        }else{
@@ -434,21 +433,6 @@ class CategogiesView: UIViewController ,UITableViewDelegate,UITableViewDataSourc
                         
                     }
                 }
-=======
-           
-            let downloading = DispatchQueue(label: "downloading")
-            downloading.async {
-                if let url = URL(string: json_categoriesicon[indexPath.row]){
-                    if  let data = try? Data(contentsOf: url){
-                        DispatchQueue.main.async {
-                            cell.V_Image.image = UIImage(data: data)
-                        }
-                    }
-                }
-               
-               
-                
->>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
             }
             return cell
         }
