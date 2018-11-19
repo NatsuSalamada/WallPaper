@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 import UIKit
 
 protocol DownloadPhotoOperationDelegate:class {
@@ -7,6 +10,7 @@ protocol DownloadPhotoOperationDelegate:class {
     func downloadPhotoDidFail(operation:DownloadPhotoOperation)
 }
 
+<<<<<<< HEAD
 class DownloadPhotoOperation:Operation,URLSessionDelegate,URLSessionDownloadDelegate {
     
     
@@ -77,6 +81,18 @@ class DownloadPhotoOperation:Operation,URLSessionDelegate,URLSessionDownloadDele
         self.photoURL = photoURL
         self.delegate = delegate
         self.needPercent = needPercent
+=======
+class DownloadPhotoOperation:Operation {
+    
+    let indexPath:IndexPath
+    let photoURL:String
+    weak var delegate:DownloadPhotoOperationDelegate?
+    
+    init(indexPath:IndexPath, photoURL:String, delegate:DownloadPhotoOperationDelegate?) {
+        self.indexPath = indexPath
+        self.photoURL = photoURL
+        self.delegate = delegate
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     }
     
     override func main() {
@@ -87,6 +103,7 @@ class DownloadPhotoOperation:Operation,URLSessionDelegate,URLSessionDownloadDele
             return
         }
         
+<<<<<<< HEAD
         
         if isCancelled { return }
         
@@ -102,6 +119,26 @@ class DownloadPhotoOperation:Operation,URLSessionDelegate,URLSessionDownloadDele
         downloadtask = urlSession.downloadTask(with: url)
         
         downloadtask?.resume()
+=======
+        if isCancelled { return }
+        
+        guard let imgData = try? Data(contentsOf: url) else {
+            handleFail()
+            return
+        }
+        
+        if isCancelled { return }
+        
+        if let downloadedImage = UIImage(data: imgData) {
+            
+            DispatchQueue.main.async(execute: {
+                self.delegate?.downloadPhotoDidFinish(operation: self, image: downloadedImage)
+            })
+            
+        } else {
+            handleFail()
+        }
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         
     }
     

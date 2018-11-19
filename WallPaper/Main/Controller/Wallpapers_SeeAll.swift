@@ -12,6 +12,7 @@ var temp:IndexPath = IndexPath()
 class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var coll_Categories_seeall: UICollectionView!
     
+<<<<<<< HEAD
     lazy var downloadPhotoQueue:OperationQueue = {
         let queue = OperationQueue()
         queue.name = "Download Photo"
@@ -22,6 +23,8 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
     var downloadingTasks = Dictionary<IndexPath,Operation>()
     let photoCache:NSCache<AnyObject,AnyObject> = NSCache<AnyObject,AnyObject>()
     
+=======
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -31,6 +34,7 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
         
     }
     
+<<<<<<< HEAD
     override func viewWillAppear(_ animated: Bool) {
         GetDataPhotoSeeAll.sharedInstance.get()
         
@@ -44,8 +48,32 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
     @objc func loadprogress(_ notification: Notification){
         DispatchQueue.main.async {
             
+=======
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Wallpapers_Cell", for: indexPath) as! CollViewCell1
+  
+        let downloading = DispatchQueue.global()
+        downloading.async {
+            let url = URL(string: json_categories_SeeAll[indexPath.row])
+            if let data = try? Data(contentsOf: url!) {
+
+                if let image = UIImage(data: data){
+                    DispatchQueue.main.async {
+                        cell.img_categories_seeall.image = image
+                        
+                    }
+                }
+            }
+        }
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        var space: CGFloat = 0.0
+        
+        if UIScreen.main.bounds.width >= 768{
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
             
             
+<<<<<<< HEAD
             guard let data = notification.userInfo as? [String: Any] else{
                 return
             }
@@ -53,6 +81,10 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
             guard let index = data["index"] as? Int else{
                 return
             }
+=======
+            //////testtttttt
+        }else{
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
             
             guard let precent = data["precent"] as? CGFloat else{
                 return
@@ -182,8 +214,6 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
                 }
             }
         }
-        
-       
         return  cell
     }
 
@@ -245,7 +275,11 @@ class Wallpapers_SeeAll: UIViewController, UICollectionViewDelegateFlowLayout, U
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     temp = indexPath
+<<<<<<< HEAD
     
+=======
+    print(temp)
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
       
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

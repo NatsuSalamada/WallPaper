@@ -12,7 +12,11 @@ import Foundation
 class getJson_LiveHomeImage: NSObject {
     static let sharedInstance = getJson_LiveHomeImage()
     var imageCurrent = [[String : AnyObject]]()
+<<<<<<< HEAD
    
+=======
+    let notification = NotificationCenter()
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     @objc func fetchFeedForUrlString(){
         URLSession.shared.dataTask(with: link_LiveHome!, completionHandler: { (data, response, error) in
             if error != nil {
@@ -26,10 +30,16 @@ class getJson_LiveHomeImage: NSObject {
                     DispatchQueue.main.async(execute: {
                         self.imageCurrent = (imageResult["LiveHome"] as? [[String : AnyObject]])!
                         for image in self.imageCurrent{
+<<<<<<< HEAD
                             let user = UserInfo(id: image["id"] as! String, link: image["link"] as! String)
                             LivePhotoList.append(user)
                         }
                       
+=======
+                            json_LiveImageHome.append(image["link"] as! String)
+                        }
+                       NotificationCenter.default.post(name: .LiveDownload, object: nil)
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
                         
                     })
                     

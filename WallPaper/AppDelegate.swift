@@ -93,11 +93,20 @@
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         AppDelegate.saveContext()
+<<<<<<< HEAD
     }
     
     static var context: NSManagedObjectContext {
         return AppDelegate.persistentContainer.viewContext
     }
+=======
+    }
+    
+    static var context: NSManagedObjectContext {
+        return AppDelegate.persistentContainer.viewContext
+    }
+    
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     static var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -158,6 +167,12 @@
             fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
         }
     }
+<<<<<<< HEAD
     
  }
  
+=======
+
+}
+
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080

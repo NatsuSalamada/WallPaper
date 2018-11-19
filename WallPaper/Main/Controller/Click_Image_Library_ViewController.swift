@@ -17,6 +17,7 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
     }
     
     
+    var WallpaperData:[Images] = []
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if TakePhotoCoreData.share.getID() != "-1"{
             
@@ -45,6 +46,7 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_Library", for: indexPath) as! Click_Library_CollectionViewCell
         
+<<<<<<< HEAD
         
         let documentsPhoto = FileManager.default
         let manager = documentsPhoto.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -58,6 +60,12 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
         }
 //        Collection_library.scrollToItem(at: indexLibrary, at: UICollectionViewScrollPosition.right, animated: false)
         cell.frame.origin.y = self.Collection_library.bounds.origin.y
+=======
+        print(array_Image_library[indexPath.row])
+        cell.img_Library.image = array_Image_library[indexPath.row]
+        
+        
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         return cell
     }
     
@@ -76,12 +84,19 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
         NotificationCenter.default.addObserver(self, selector: #selector(reloadLibrary), name: .Library, object: nil)
         // Do any additional setup after loading the view.
     }
+<<<<<<< HEAD
     @objc func reloadLibrary(){
         
+=======
+    
+    override func viewWillAppear(_ animated: Bool) {
+        WallpaperData = WallpaperCoreData.share.getAllData()
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         Collection_library.reloadData()
         
         
     }
+<<<<<<< HEAD
   
         
     override func viewWillAppear(_ animated: Bool) {
@@ -95,5 +110,10 @@ class Click_Image_Library_ViewController: UIViewController,UICollectionViewDeleg
     
   
     
+=======
+    override func viewDidAppear(_ animated: Bool) {
+        Collection_library.scrollToItem(at: indexLibrary, at: UICollectionViewScrollPosition.right, animated: false)
+    }
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 
 }

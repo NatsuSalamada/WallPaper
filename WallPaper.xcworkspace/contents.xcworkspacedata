@@ -2,6 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:Livephotomy+CoreDataClass.swift">
    </FileRef>
    <FileRef
@@ -14,6 +15,8 @@
       location = "group:Takephoto+CoreDataProperties.swift">
    </FileRef>
    <FileRef
+=======
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
       location = "group:Images+CoreDataClass.swift">
    </FileRef>
    <FileRef

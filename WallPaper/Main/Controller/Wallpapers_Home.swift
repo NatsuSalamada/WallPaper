@@ -11,6 +11,7 @@ import CoreData
 
 class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+<<<<<<< HEAD
     
     
     
@@ -49,6 +50,11 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
         
     }
     @objc func S(){
+=======
+    var WallpaperData:[Images] = []
+   @IBOutlet weak var CollView_WallHome: UICollectionView!
+    @IBAction func btnDownload(_ sender: Any) {
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         UIImageWriteToSavedPhotosAlbum((CollView_WallHome.visibleCells.first as! CollViewCell_Home).Img_Home.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
@@ -68,6 +74,7 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
     
     
     
+<<<<<<< HEAD
     
     var btnDownload:UIButton = {
         let btnDownload = UIButton()
@@ -177,6 +184,21 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return PhotoList.count
     }
+=======
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      getJson_HomeImage.sharedInstance.fetchFeedForUrlString()
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: .ImageHomeDownload, object: nil)
+       
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return json_imageHome.count
+    }
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let userPhoto = PhotoList[indexPath.row]
         let keyCache = userPhoto.id
@@ -184,6 +206,7 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
         let Manager = DocumentsURL.urls(for: .documentDirectory, in: .allDomainsMask).first!
         let filePath = Manager.appendingPathComponent("\(keyCache).jpg")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell_WallpapersHome", for: indexPath) as! CollViewCell_Home
+<<<<<<< HEAD
         
         cell.shapeLayer.strokeEnd = 0
         cell.shapeLayer.isHidden = true
@@ -255,12 +278,46 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
                     let downloadPhoto = DownloadPhotoOperation(indexPath: id, photoURL: userPhoto.link, needPercent: 1, delegate: self as DownloadPhotoOperationDelegate)
                     startDownloadImage(operation: downloadPhoto, indexPath: id)
             
+=======
+
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let filePath = documentsURL.appendingPathComponent("Home\(indexPath.row + 1).jpg").path
+        
+        if UIImage(contentsOfFile: filePath) != nil{
+            cell.Img_Home.image = UIImage(contentsOfFile: filePath)
+        }else{
+            let downloading = DispatchQueue(label: "downloading")
+            downloading.async {
+                let url = URL(string: json_imageHome[indexPath.row])
+                let data = try? Data(contentsOf: url!)
+                DispatchQueue.main.async {
+                    cell.Img_Home.image = UIImage(data: data!)
+                    print(json_idImageHome[indexPath.row])
+                    WallpaperCoreData.share.saveData(index: json_idImageHome[indexPath.row])
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
                     
+                    do {
+                        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+                        
+                        
+                        let fileURL = documentsURL.appendingPathComponent("\(WallpaperCoreData.share.getID()).jpg")
+                        
+                        
+                        if let pngImageData = UIImagePNGRepresentation(UIImage(data: data!)!) {
+                            try pngImageData.write(to: fileURL, options: .atomic)
+                        }
+                    } catch { }
+        }
                 }
+                
             }
+<<<<<<< HEAD
         }
        
         cell.frame.origin.y = self.CollView_WallHome.bounds.origin.y
+=======
+        	
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
         
         return cell
     }
@@ -328,14 +385,26 @@ class Wallpapers_Home: UIViewController, UICollectionViewDelegate, UICollectionV
         return CGSize(width: self.CollView_WallHome.frame.size.width, height: self.CollView_WallHome.frame.size.height)
     }
     
+<<<<<<< HEAD
     
     
     
+=======
+
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     @objc func reload(){
+        
         CollView_WallHome.reloadData()
         //        AnimateCircle()
         
     }
+<<<<<<< HEAD
+=======
+
+   
+   
+
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
     
 }
 

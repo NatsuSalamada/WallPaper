@@ -7,9 +7,13 @@
 //
 
 import Foundation
+<<<<<<< HEAD
 import UIKit
 let categories = ["Abstracts","Animals","Cities","Science","Flowers","Sports","Mountains","Underwater","Nature","Other"]
 let live_categories = ["live-Abstracts","live-Animals","live-Cities","live-Science","live-Flowers","live-Sports","live-Mountains","live-Underwater","live-Nature","live-Other"]
+=======
+let categories = ["Abstracts","Animals","Cities","Science","Flowers","Sports","Mountains","Underwater","Nature","Other"]
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
 
 
 var json_imageHome:[String] = []
@@ -18,6 +22,7 @@ var json_idImageHome:[String] = []
 
 var json_LiveImageHome:[String] = []
 
+<<<<<<< HEAD
 var PhotoIcon:Array<UserInfo> = [UserInfo]()
 
 var PhotoCategoriesSeeAll:Array<UserInfo> = [UserInfo]()
@@ -39,6 +44,16 @@ var Popular_SeeAll_List:Array<UserInfo> = [UserInfo]()
 var Popular_Horizal_List:Array<UserInfo> = [UserInfo]()
 
 var Popular_Live_List:Array<UserInfo> = [UserInfo]()
+=======
+var json_categoriesicon:[String] = []
+
+var json_idCategoriesIcon:[String] = []
+
+var json_categories_SeeAll:[String] = []
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
+
+var json_idCategories_SeeAll:[String] = []
+
 
 var ClickCategories = [[String : AnyObject]]()
 
@@ -49,6 +64,7 @@ var dictionary_cate:String = ""
 var photosListBuffer:Array<UserInfo> = [UserInfo]()
 
 var downloadedData = ""
+<<<<<<< HEAD
 
 var VideoSize:Array<VideoInfo> = [VideoInfo]()
 
@@ -69,3 +85,5 @@ extension UIColor {
 }
 
 var imageLivePhoto:[imageLivePhotoModels] = []
+=======
+>>>>>>> 448d4ba881ec20425d0a2a44225b3512f98b7080
