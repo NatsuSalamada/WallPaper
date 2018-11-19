@@ -70,7 +70,7 @@ class DesignableButton: UIButton {
     /// - left: title to the left of button image
     /// - right: title to the right of button image
     @objc enum Position: Int {
-        case top, bottom, left, right
+        case top, bottom, left, right ,T
     }
     
     /// This method sets an image and title for a UIButton and
@@ -146,10 +146,15 @@ class DesignableButton: UIButton {
             imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -(titleSize.width * 2 + spacing))
             contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: spacing / 2)
         case .right:
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -spacing)
-            imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: spacing / 2)
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: 70, bottom: 0, right: 0)
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
+            contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        case .T:
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: 78, bottom: 0, right: 0)
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: 45, bottom: 0, right: 0)
+            contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
+        
     }
 }
 

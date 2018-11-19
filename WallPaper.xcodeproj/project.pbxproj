@@ -10,7 +10,6 @@
 		02498E88D5D01FBF4B75C7DA /* Pods_WallPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659C4DA75A63185C9F34869 /* Pods_WallPaper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED78320C4DF4A00B6A0E6 /* AppDelegate.swift */; };
 		040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED78520C4DF4A00B6A0E6 /* ViewController.swift */; };
-		040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040ED78A20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld */; };
 		040ED78E20C4DF4C00B6A0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040ED78D20C4DF4C00B6A0E6 /* Assets.xcassets */; };
 		040ED79120C4DF4C00B6A0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040ED78F20C4DF4C00B6A0E6 /* LaunchScreen.storyboard */; };
 		040ED79C20C4DF4C00B6A0E6 /* WallPaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED79B20C4DF4C00B6A0E6 /* WallPaperTests.swift */; };
@@ -31,10 +30,38 @@
 		040ED7E220C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7DF20C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf */; };
 		040ED7E320C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 040ED7E020C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf */; };
 		040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ED7E420C4F6A000B6A0E6 /* DataOfAppLife.swift */; };
+		04290F3F2138E118007B314B /* chupcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04290F3E2138E118007B314B /* chupcell.swift */; };
+		04290F432138E1CC007B314B /* chup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04290F422138E1CC007B314B /* chup.swift */; };
+		042AB5B6212D201B00D2C457 /* GetDataPhotoSeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AB5B5212D201B00D2C457 /* GetDataPhotoSeeAll.swift */; };
+		042B2C1D213E8FEF0025B85B /* FristNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B2C1C213E8FEF0025B85B /* FristNavigation.swift */; };
+		042B2C1F213E90200025B85B /* SecondNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B2C1E213E90200025B85B /* SecondNavigation.swift */; };
+		042D3E44212686AD007DDBF8 /* DownloadPhotoOperation_H1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3E43212686AD007DDBF8 /* DownloadPhotoOperation_H1.swift */; };
+		042D3E4621268765007DDBF8 /* DownloadPhotoOperation_H2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3E4521268765007DDBF8 /* DownloadPhotoOperation_H2.swift */; };
+		042D3E48212687DC007DDBF8 /* DownloadPhotoOperation_V.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3E47212687DC007DDBF8 /* DownloadPhotoOperation_V.swift */; };
+		0432027C212FEDAE00870022 /* GetDataLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432027B212FEDAE00870022 /* GetDataLive.swift */; };
+		0432027E2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432027D2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift */; };
+		0432028021300B1100870022 /* getJson_Cate_Popular_Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432027F21300B1100870022 /* getJson_Cate_Popular_Live.swift */; };
+		0432B90B212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B90A212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift */; };
+		0432B90D212AA08B0098D1D1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B90C212AA08B0098D1D1 /* SettingViewController.swift */; };
+		04340076213F6D43003EB441 /* Frist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04340075213F6D43003EB441 /* Frist.swift */; };
+		04340078213F7683003EB441 /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04340077213F7683003EB441 /* Second.swift */; };
+		0434007A213F76CD003EB441 /* Thrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04340079213F76CD003EB441 /* Thrid.swift */; };
+		0434007C213F7FE9003EB441 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434007B213F7FE9003EB441 /* Reward.swift */; };
+		0434007E213F7FF6003EB441 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434007D213F7FF6003EB441 /* Rate.swift */; };
+		043427A7214FA1FE007F9371 /* ABNScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043427A6214FA1FE007F9371 /* ABNScheduler.swift */; };
+		043538EB2137AD63007899BE /* LivePhoToMyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043538EA2137AD63007899BE /* LivePhoToMyCoreData.swift */; };
+		04360AF92122C3D70096DC41 /* TabbarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04360AF82122C3D70096DC41 /* TabbarCustom.swift */; };
+		043931F4212E92B300CCBF4F /* plusImageBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043931F3212E92B300CCBF4F /* plusImageBtnCell.swift */; };
+		04419DCD2124369B00BA0475 /* AniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419DCC2124369B00BA0475 /* AniView.swift */; };
 		0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */; };
 		0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */; };
 		0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */; };
+		045FBE08216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBE07216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift */; };
+		045FBE0A216C495D00B92C48 /* imagePhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FBE09216C495D00B92C48 /* imagePhotoModel.swift */; };
 		049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */; };
+		04A346AD2112A508000C0614 /* LivePhoToCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A346AC2112A508000C0614 /* LivePhoToCoreData.swift */; };
+		04A346AF2112EFC5000C0614 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A346AE2112EFC5000C0614 /* LoadingViewController.swift */; };
+		04A346B12112F32D000C0614 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A346B02112F32D000C0614 /* Data.swift */; };
 		04D05BE820CF758E00854469 /* LinkServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D05BE720CF758E00854469 /* LinkServer.swift */; };
 		5B0649B320DA604700F3C3B1 /* CollViewCell_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0649B220DA604700F3C3B1 /* CollViewCell_Home.swift */; };
 		5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */; };
@@ -42,6 +69,8 @@
 		5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */; };
 		5B34572120C77ADC00EB4572 /* Wallpapers_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */; };
 		5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */; };
+		5B45822D2122BB1600FA905D /* getJson_VideoSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B45822C2122BB1600FA905D /* getJson_VideoSize.swift */; };
+		5B45822F2122BE9A00FA905D /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B45822E2122BE9A00FA905D /* VideoInfo.swift */; };
 		5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65624820C67ADA00E02062 /* CollViewCell1.swift */; };
 		5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400420C4EA2B00FD7042 /* Home.swift */; };
 		5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */; };
@@ -49,26 +78,44 @@
 		5BCE293F20C8DEA400DE7037 /* LiveWallpapers_My.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */; };
 		5BCE294320C9311000DE7037 /* AllWallpapers_Coll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE294220C9311000DE7037 /* AllWallpapers_Coll.swift */; };
 		82E41ED0EFAB9B25846D3608 /* Pods_WallPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C8E3AA1D9949C803A2EC5 /* Pods_WallPaperTests.framework */; };
+		CE1188EF21004FAE0049330C /* CheckBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1188EE21004FAE0049330C /* CheckBegan.swift */; };
 		CE23563520DA03AE00AF2BAC /* Spacedoggy.MOV in Resources */ = {isa = PBXBuildFile; fileRef = CE23563420DA03AE00AF2BAC /* Spacedoggy.MOV */; };
 		CE23563B20DA46D000AF2BAC /* DTOtherMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23563A20DA46D000AF2BAC /* DTOtherMacro.swift */; };
 		CE23564220DA479C00AF2BAC /* QuickTimeMov.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23564020DA479C00AF2BAC /* QuickTimeMov.swift */; };
 		CE23564320DA479C00AF2BAC /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23564120DA479C00AF2BAC /* JPEG.swift */; };
 		CE23564620DA4B8E00AF2BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23564420DA4B8E00AF2BAC /* Main.storyboard */; };
-		CE23564820DB4E8B00AF2BAC /* Spacedoggy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */; };
 		CE333E9C20CE287E002D390B /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E9B20CE287E002D390B /* TabbarController.swift */; };
+		CE3966F92121AC1700A51131 /* getJson_Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3966F82121AC1700A51131 /* getJson_Popular.swift */; };
+		CE3966FB2121AE1100A51131 /* getJson_Popular_Horizal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3966FA2121AE1100A51131 /* getJson_Popular_Horizal.swift */; };
 		CE46C6FA20ECB0290050E4A6 /* ImageInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */; };
 		CE46C6FC20ECB0570050E4A6 /* DataOfSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */; };
 		CE46C6FE20ECB07D0050E4A6 /* getJson_HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */; };
+		CE50D7FB211AFAC4008D1C9F /* Click_Live_PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D7FA211AFAC4008D1C9F /* Click_Live_PhotoViewController.swift */; };
+		CE50D7FD211AFAEC008D1C9F /* Click_LivePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D7FC211AFAEC008D1C9F /* Click_LivePhotoCollectionViewCell.swift */; };
+		CE51FEC02111977300DA3800 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FEBF2111977300DA3800 /* Notification.swift */; };
 		CE735E6120F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */; };
 		CE735E6320F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */; };
 		CE735E6520F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */; };
+		CE735E6920F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */; };
+		CE735E7620F5C41100E3C9B0 /* WallpaperCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */; };
+		CE736B4D2117E8B40041A65D /* CameraVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE736B4C2117E8B40041A65D /* CameraVideoViewController.swift */; };
 		CE77DAA120EDC19700AE1DE7 /* getJson_CategoriesIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */; };
 		CE77DAA320EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */; };
 		CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */; };
+		CE8CFBEA20FF1B7000EB1977 /* TakePhotoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CFBE920FF1B7000EB1977 /* TakePhotoCoreData.swift */; };
 		CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACD2E920C7E580007499EE /* None_TableViewCell.swift */; };
+		CEB4B4522112F554003C7B58 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B4512112F554003C7B58 /* CameraViewController.swift */; };
+		CEB4B4542112F598003C7B58 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B4532112F598003C7B58 /* PictureViewController.swift */; };
 		CEC585B120DBA7B20039CADA /* CollLiveviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */; };
+		CEC8A58720F5FA7A00763DCD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A58520F5FA7A00763DCD /* Model.xcdatamodeld */; };
+		CED3E592211AD54F00997B85 /* getJson_LiveCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */; };
 		CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */; };
+		CED6403020F741CC001EC243 /* DownloadOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6402F20F741CC001EC243 /* DownloadOperator.swift */; };
+		CED938F220FC821900412273 /* LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED938F120FC821900412273 /* LivePhoto.swift */; };
+		CED938F420FC87FB00412273 /* DownloadLivePhotoOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED938F320FC87FB00412273 /* DownloadLivePhotoOperator.swift */; };
 		CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */; };
+		CEE265AE21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */; };
+		CEE265B0212167CC00D38AAF /* getJson_NewArrival_Horizal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */; };
 		CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */; };
 		CEEB800A20C63C5100D54A3C /* Vertical_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */; };
 		F4CD584523E8D92A3D997A1D /* Pods_WallPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */; };
@@ -95,7 +142,6 @@
 		040ED78020C4DF4A00B6A0E6 /* WallPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040ED78320C4DF4A00B6A0E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040ED78520C4DF4A00B6A0E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		040ED78B20C4DF4A00B6A0E6 /* WallPaper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallPaper.xcdatamodel; sourceTree = "<group>"; };
 		040ED78D20C4DF4C00B6A0E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040ED79020C4DF4C00B6A0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040ED79220C4DF4C00B6A0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,11 +167,40 @@
 		040ED7DF20C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		040ED7E020C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		040ED7E420C4F6A000B6A0E6 /* DataOfAppLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOfAppLife.swift; sourceTree = "<group>"; };
+		04290F3E2138E118007B314B /* chupcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chupcell.swift; sourceTree = "<group>"; };
+		04290F422138E1CC007B314B /* chup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chup.swift; sourceTree = "<group>"; };
+		042AB5B5212D201B00D2C457 /* GetDataPhotoSeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataPhotoSeeAll.swift; sourceTree = "<group>"; };
+		042B2C1C213E8FEF0025B85B /* FristNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristNavigation.swift; sourceTree = "<group>"; };
+		042B2C1E213E90200025B85B /* SecondNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigation.swift; sourceTree = "<group>"; };
+		042D3E43212686AD007DDBF8 /* DownloadPhotoOperation_H1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPhotoOperation_H1.swift; sourceTree = "<group>"; };
+		042D3E4521268765007DDBF8 /* DownloadPhotoOperation_H2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPhotoOperation_H2.swift; sourceTree = "<group>"; };
+		042D3E47212687DC007DDBF8 /* DownloadPhotoOperation_V.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPhotoOperation_V.swift; sourceTree = "<group>"; };
+		0432027B212FEDAE00870022 /* GetDataLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataLive.swift; sourceTree = "<group>"; };
+		0432027D2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_Cate_NewArrivals_Live.swift; sourceTree = "<group>"; };
+		0432027F21300B1100870022 /* getJson_Cate_Popular_Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_Cate_Popular_Live.swift; sourceTree = "<group>"; };
+		0432B90A212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_H2_TableViewCell.swift; sourceTree = "<group>"; };
+		0432B90C212AA08B0098D1D1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		04340075213F6D43003EB441 /* Frist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frist.swift; sourceTree = "<group>"; };
+		04340077213F7683003EB441 /* Second.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
+		04340079213F76CD003EB441 /* Thrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thrid.swift; sourceTree = "<group>"; };
+		0434007B213F7FE9003EB441 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		0434007D213F7FF6003EB441 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		043427A6214FA1FE007F9371 /* ABNScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABNScheduler.swift; sourceTree = "<group>"; };
+		043538EA2137AD63007899BE /* LivePhoToMyCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhoToMyCoreData.swift; sourceTree = "<group>"; };
+		04360AF82122C3D70096DC41 /* TabbarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCustom.swift; sourceTree = "<group>"; };
+		043931F3212E92B300CCBF4F /* plusImageBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plusImageBtnCell.swift; sourceTree = "<group>"; };
+		04419DCC2124369B00BA0475 /* AniView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AniView.swift; sourceTree = "<group>"; };
 		0443906720C54D2F00FDD30A /* Name_Cate_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_Cate_TableViewCell.swift; sourceTree = "<group>"; };
 		0443906920C54D4800FDD30A /* Collection_H_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_H_TableViewCell.swift; sourceTree = "<group>"; };
 		0443906B20C54D5A00FDD30A /* Collection_V_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_V_TableViewCell.swift; sourceTree = "<group>"; };
+		045FBE07216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_ImgaeLivePhoto.swift; sourceTree = "<group>"; };
+		045FBE09216C495D00B92C48 /* imagePhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePhotoModel.swift; sourceTree = "<group>"; };
 		049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBSegmentedControl.swift; sourceTree = "<group>"; };
+		04A346AC2112A508000C0614 /* LivePhoToCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhoToCoreData.swift; sourceTree = "<group>"; };
+		04A346AE2112EFC5000C0614 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		04A346B02112F32D000C0614 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		04D05BE720CF758E00854469 /* LinkServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkServer.swift; sourceTree = "<group>"; };
+		25260DC628743B53C0A0755B /* Pods-WallPaperTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.distribution.xcconfig"; sourceTree = "<group>"; };
 		39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0649B220DA604700F3C3B1 /* CollViewCell_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewCell_Home.swift; sourceTree = "<group>"; };
@@ -134,6 +209,8 @@
 		5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWallpapers_SeeAll.swift; sourceTree = "<group>"; };
 		5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpapers_Home.swift; sourceTree = "<group>"; };
 		5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWallpapers_Home.swift; sourceTree = "<group>"; };
+		5B45822C2122BB1600FA905D /* getJson_VideoSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_VideoSize.swift; sourceTree = "<group>"; };
+		5B45822E2122BE9A00FA905D /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		5B65624820C67ADA00E02062 /* CollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewCell1.swift; sourceTree = "<group>"; };
 		5BB6400420C4EA2B00FD7042 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWallpapers.swift; sourceTree = "<group>"; };
@@ -142,28 +219,48 @@
 		5BCE294220C9311000DE7037 /* AllWallpapers_Coll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWallpapers_Coll.swift; sourceTree = "<group>"; };
 		5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTests/Pods-WallPaperTests.release.xcconfig"; sourceTree = "<group>"; };
 		8659C4DA75A63185C9F34869 /* Pods_WallPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF2841597A1FDD1BFBC3723 /* Pods-WallPaper.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.distribution.xcconfig"; sourceTree = "<group>"; };
 		9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.debug.xcconfig"; sourceTree = "<group>"; };
+		AED884F35708F5B93894F244 /* Pods-WallPaperUITests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperUITests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperUITests/Pods-WallPaperUITests.distribution.xcconfig"; sourceTree = "<group>"; };
 		C588CF9E40BADBAB6B056E80 /* Pods_WallPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1188EE21004FAE0049330C /* CheckBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckBegan.swift; path = WallPaper/CheckBegan.swift; sourceTree = SOURCE_ROOT; };
 		CE23563420DA03AE00AF2BAC /* Spacedoggy.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Spacedoggy.MOV; sourceTree = "<group>"; };
 		CE23563A20DA46D000AF2BAC /* DTOtherMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTOtherMacro.swift; sourceTree = "<group>"; };
 		CE23564020DA479C00AF2BAC /* QuickTimeMov.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickTimeMov.swift; sourceTree = "<group>"; };
 		CE23564120DA479C00AF2BAC /* JPEG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPEG.swift; sourceTree = "<group>"; };
 		CE23564520DA4B8E00AF2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spacedoggy.JPG; sourceTree = "<group>"; };
 		CE333E9B20CE287E002D390B /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		CE3966F82121AC1700A51131 /* getJson_Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_Popular.swift; sourceTree = "<group>"; };
+		CE3966FA2121AE1100A51131 /* getJson_Popular_Horizal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_Popular_Horizal.swift; sourceTree = "<group>"; };
 		CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfor.swift; sourceTree = "<group>"; };
 		CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfSources.swift; sourceTree = "<group>"; };
 		CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_HomeImage.swift; sourceTree = "<group>"; };
+		CE50D7FA211AFAC4008D1C9F /* Click_Live_PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Live_PhotoViewController.swift; sourceTree = "<group>"; };
+		CE50D7FC211AFAEC008D1C9F /* Click_LivePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_LivePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE51FEBF2111977300DA3800 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_Library_CollectionViewCell.swift; sourceTree = "<group>"; };
 		CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Image_Library_ViewController.swift; sourceTree = "<group>"; };
 		CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_Library_CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_LiveHomeImage.swift; sourceTree = "<group>"; };
+		CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCoreData.swift; sourceTree = "<group>"; };
+		CE736B4C2117E8B40041A65D /* CameraVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoViewController.swift; sourceTree = "<group>"; };
 		CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesIcon.swift; sourceTree = "<group>"; };
 		CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_CategoriesSeeAll.swift; sourceTree = "<group>"; };
 		CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickImageCateView.swift; sourceTree = "<group>"; };
+		CE8CFBE920FF1B7000EB1977 /* TakePhotoCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoCoreData.swift; sourceTree = "<group>"; };
 		CEACD2E920C7E580007499EE /* None_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = None_TableViewCell.swift; sourceTree = "<group>"; };
+		CEB4B4512112F554003C7B58 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CEB4B4532112F598003C7B58 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		CEC585B020DBA7B20039CADA /* CollLiveviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollLiveviewCell.swift; sourceTree = "<group>"; };
+		CEC8A58620F5FA7A00763DCD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_LiveCategories.swift; sourceTree = "<group>"; };
 		CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickView_CollectionViewCell.swift; sourceTree = "<group>"; };
+		CED6402F20F741CC001EC243 /* DownloadOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperator.swift; sourceTree = "<group>"; };
+		CED938F120FC821900412273 /* LivePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhoto.swift; sourceTree = "<group>"; };
+		CED938F320FC87FB00412273 /* DownloadLivePhotoOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadLivePhotoOperator.swift; sourceTree = "<group>"; };
 		CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategogiesView.swift; sourceTree = "<group>"; };
+		CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_NewArrival_SeeAll.swift; sourceTree = "<group>"; };
+		CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJson_NewArrival_Horizal.swift; sourceTree = "<group>"; };
 		CEEB800720C63C2B00D54A3C /* Horizontal_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horizontal_CollectionView.swift; sourceTree = "<group>"; };
 		CEEB800920C63C5100D54A3C /* Vertical_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertical_CollectionView.swift; sourceTree = "<group>"; };
 		D915AB1BDD109AB6579E672C /* Pods-WallPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +299,7 @@
 		040ED77720C4DF4A00B6A0E6 = {
 			isa = PBXGroup;
 			children = (
+				043427A6214FA1FE007F9371 /* ABNScheduler.swift */,
 				040ED7E420C4F6A000B6A0E6 /* DataOfAppLife.swift */,
 				040ED78220C4DF4A00B6A0E6 /* WallPaper */,
 				040ED79A20C4DF4C00B6A0E6 /* WallPaperTests */,
@@ -228,17 +326,15 @@
 				040ED7CC20C4E3DB00B6A0E6 /* Config */,
 				040ED7B920C4E27900B6A0E6 /* Resource */,
 				040ED7B820C4E26E00B6A0E6 /* Main */,
-				040ED7B720C4E25E00B6A0E6 /* Base */,
 				040ED7B620C4E24C00B6A0E6 /* Ultis */,
-				040ED7B520C4E23300B6A0E6 /* Library */,
-				040ED7B420C4E1FE00B6A0E6 /* Framework */,
 				040ED78320C4DF4A00B6A0E6 /* AppDelegate.swift */,
+				CE51FEBF2111977300DA3800 /* Notification.swift */,
+				CE1188EE21004FAE0049330C /* CheckBegan.swift */,
 				040ED78520C4DF4A00B6A0E6 /* ViewController.swift */,
 				040ED78D20C4DF4C00B6A0E6 /* Assets.xcassets */,
 				CE23564420DA4B8E00AF2BAC /* Main.storyboard */,
 				040ED78F20C4DF4C00B6A0E6 /* LaunchScreen.storyboard */,
 				040ED79220C4DF4C00B6A0E6 /* Info.plist */,
-				040ED78A20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld */,
 			);
 			path = WallPaper;
 			sourceTree = "<group>";
@@ -261,20 +357,6 @@
 			path = WallPaperUITests;
 			sourceTree = "<group>";
 		};
-		040ED7B420C4E1FE00B6A0E6 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
-		040ED7B520C4E23300B6A0E6 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
 		040ED7B620C4E24C00B6A0E6 /* Ultis */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,20 +370,12 @@
 			path = Ultis;
 			sourceTree = "<group>";
 		};
-		040ED7B720C4E25E00B6A0E6 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		040ED7B820C4E26E00B6A0E6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				040ED7BD20C4E31600B6A0E6 /* View */,
 				040ED7BC20C4E30F00B6A0E6 /* Model */,
 				040ED7BB20C4E30700B6A0E6 /* Controller */,
-				040ED7BA20C4E2FB00B6A0E6 /* Custom */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,28 +388,24 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		040ED7BA20C4E2FB00B6A0E6 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
 		040ED7BB20C4E30700B6A0E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CEB4B4502112F53B003C7B58 /* Camera */,
 				5BB6400420C4EA2B00FD7042 /* Home.swift */,
-				CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */,
 				5B34572020C77ADC00EB4572 /* Wallpapers_Home.swift */,
 				5B34572220C77AF400EB4572 /* LiveWallpapers_Home.swift */,
-				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
-				5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */,
+				CE88D7DF20CA218B0001A5B1 /* ClickImageCateView.swift */,
+				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
 				5BCE293C20C8DE7A00DE7037 /* Wallpapers_My.swift */,
+				5BCE293E20C8DEA400DE7037 /* LiveWallpapers_My.swift */,
+				04290F422138E1CC007B314B /* chup.swift */,
+				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
+				5B09FA5620CA2B5A00FEE1AD /* Categories_SeeAll.swift */,
 				5B09FA5820CA2B7700FEE1AD /* Wallpapers_SeeAll.swift */,
 				5B09FA5A20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift */,
-				5BB6400620C4EAEC00FD7042 /* YourWallpapers.swift */,
-				CEDD294820C4E9D80042D0E7 /* CategogiesView.swift */,
 				CE735E6220F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift */,
+				CE50D7FA211AFAC4008D1C9F /* Click_Live_PhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,12 +413,34 @@
 		040ED7BC20C4E30F00B6A0E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				04D05BE720CF758E00854469 /* LinkServer.swift */,
-				CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */,
+				CE735E6A20F5BC7600E3C9B0 /* CoreData */,
 				CE46C6FB20ECB0570050E4A6 /* DataOfSources.swift */,
+				CE46C6F920ECB0290050E4A6 /* ImageInfor.swift */,
+				04D05BE720CF758E00854469 /* LinkServer.swift */,
+				5B45822C2122BB1600FA905D /* getJson_VideoSize.swift */,
 				CE46C6FD20ECB07D0050E4A6 /* getJson_HomeImage.swift */,
 				CE77DAA020EDC19700AE1DE7 /* getJson_CategoriesIcon.swift */,
 				CE77DAA220EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift */,
+				CE735E6820F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift */,
+				CED3E591211AD54F00997B85 /* getJson_LiveCategories.swift */,
+				CEE265AD21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift */,
+				CEE265AF212167CC00D38AAF /* getJson_NewArrival_Horizal.swift */,
+				CE3966F82121AC1700A51131 /* getJson_Popular.swift */,
+				CE3966FA2121AE1100A51131 /* getJson_Popular_Horizal.swift */,
+				CED6402F20F741CC001EC243 /* DownloadOperator.swift */,
+				CED938F320FC87FB00412273 /* DownloadLivePhotoOperator.swift */,
+				CED938F120FC821900412273 /* LivePhoto.swift */,
+				04A346B02112F32D000C0614 /* Data.swift */,
+				5B45822E2122BE9A00FA905D /* VideoInfo.swift */,
+				042D3E43212686AD007DDBF8 /* DownloadPhotoOperation_H1.swift */,
+				042D3E4521268765007DDBF8 /* DownloadPhotoOperation_H2.swift */,
+				042D3E47212687DC007DDBF8 /* DownloadPhotoOperation_V.swift */,
+				042AB5B5212D201B00D2C457 /* GetDataPhotoSeeAll.swift */,
+				0432027B212FEDAE00870022 /* GetDataLive.swift */,
+				0432027D2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift */,
+				0432027F21300B1100870022 /* getJson_Cate_Popular_Live.swift */,
+				045FBE07216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift */,
+				045FBE09216C495D00B92C48 /* imagePhotoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,8 +448,17 @@
 		040ED7BD20C4E31600B6A0E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04419DCC2124369B00BA0475 /* AniView.swift */,
 				040ED7D020C4E63C00B6A0E6 /* Hieu */,
 				040ED7CF20C4E63200B6A0E6 /* Dat */,
+				04290F3E2138E118007B314B /* chupcell.swift */,
+				042B2C1C213E8FEF0025B85B /* FristNavigation.swift */,
+				042B2C1E213E90200025B85B /* SecondNavigation.swift */,
+				04340075213F6D43003EB441 /* Frist.swift */,
+				04340077213F7683003EB441 /* Second.swift */,
+				04340079213F76CD003EB441 /* Thrid.swift */,
+				0434007B213F7FE9003EB441 /* Reward.swift */,
+				0434007D213F7FF6003EB441 /* Rate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +485,12 @@
 				CED5266320EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift */,
 				CE735E6020F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift */,
 				CE735E6420F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift */,
+				04A346AE2112EFC5000C0614 /* LoadingViewController.swift */,
+				CE50D7FC211AFAEC008D1C9F /* Click_LivePhotoCollectionViewCell.swift */,
+				04360AF82122C3D70096DC41 /* TabbarCustom.swift */,
+				0432B90A212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift */,
+				0432B90C212AA08B0098D1D1 /* SettingViewController.swift */,
+				043931F3212E92B300CCBF4F /* plusImageBtnCell.swift */,
 			);
 			path = Dat;
 			sourceTree = "<group>";
@@ -392,7 +499,6 @@
 			isa = PBXGroup;
 			children = (
 				CE23563420DA03AE00AF2BAC /* Spacedoggy.MOV */,
-				CE23564720DB4E8B00AF2BAC /* Spacedoggy.JPG */,
 				CE23563A20DA46D000AF2BAC /* DTOtherMacro.swift */,
 				049BCD8020C62D31003C5101 /* HBSegmentedControl.swift */,
 				040ED7D120C4E92200B6A0E6 /* RemainDatView.rtf */,
@@ -429,6 +535,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE735E6A20F5BC7600E3C9B0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE735E7520F5C41100E3C9B0 /* WallpaperCoreData.swift */,
+				CEC8A58520F5FA7A00763DCD /* Model.xcdatamodeld */,
+				CE8CFBE920FF1B7000EB1977 /* TakePhotoCoreData.swift */,
+				04A346AC2112A508000C0614 /* LivePhoToCoreData.swift */,
+				043538EA2137AD63007899BE /* LivePhoToMyCoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CEB4B4502112F53B003C7B58 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4B4512112F554003C7B58 /* CameraViewController.swift */,
+				CEB4B4532112F598003C7B58 /* PictureViewController.swift */,
+				CE736B4C2117E8B40041A65D /* CameraVideoViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		EA071DD61D46880A636C766F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +566,9 @@
 				5C64DB235184E44293BA13D0 /* Pods-WallPaperTests.release.xcconfig */,
 				506B7A5FC3D638168EF3BDF8 /* Pods-WallPaperUITests.debug.xcconfig */,
 				39C5892EC1713EF322C64A0D /* Pods-WallPaperUITests.release.xcconfig */,
+				9EF2841597A1FDD1BFBC3723 /* Pods-WallPaper.distribution.xcconfig */,
+				25260DC628743B53C0A0755B /* Pods-WallPaperTests.distribution.xcconfig */,
+				AED884F35708F5B93894F244 /* Pods-WallPaperUITests.distribution.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -453,6 +584,7 @@
 				040ED77C20C4DF4A00B6A0E6 /* Sources */,
 				040ED77D20C4DF4A00B6A0E6 /* Frameworks */,
 				040ED77E20C4DF4A00B6A0E6 /* Resources */,
+				4299883BCFD8AF2A65462693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -557,7 +689,6 @@
 				CE23563520DA03AE00AF2BAC /* Spacedoggy.MOV in Resources */,
 				040ED7DB20C4F57F00B6A0E6 /* SF-Pro-Display-Regular.otf in Resources */,
 				040ED7E220C4F5D700B6A0E6 /* SF-Pro-Text-Regular.otf in Resources */,
-				CE23564820DB4E8B00AF2BAC /* Spacedoggy.JPG in Resources */,
 				040ED7DD20C4F57F00B6A0E6 /* SF-Pro-Display-Bold.otf in Resources */,
 				040ED7E320C4F5D700B6A0E6 /* SF-Pro-Text-Semibold.otf in Resources */,
 				040ED7D220C4E92200B6A0E6 /* RemainDatView.rtf in Resources */,
@@ -598,6 +729,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4299883BCFD8AF2A65462693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/DKChainableAnimationKit/DKChainableAnimationKit.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKChainableAnimationKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WallPaper/Pods-WallPaper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5599CFC73DA5BDB90B13A34F /* [CP] Check Pods Manifest.lock */ = {
@@ -646,50 +799,98 @@
 				CEEB800A20C63C5100D54A3C /* Vertical_CollectionView.swift in Sources */,
 				CE333E9C20CE287E002D390B /* TabbarController.swift in Sources */,
 				040ED7C820C4E39D00B6A0E6 /* GoogleAdsMob.swift in Sources */,
+				04290F432138E1CC007B314B /* chup.swift in Sources */,
 				040ED7C720C4E39D00B6A0E6 /* UILable+Extention.swift in Sources */,
-				040ED78C20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld in Sources */,
+				0434007E213F7FF6003EB441 /* Rate.swift in Sources */,
+				04A346AD2112A508000C0614 /* LivePhoToCoreData.swift in Sources */,
 				5BB6400520C4EA2B00FD7042 /* Home.swift in Sources */,
+				0432027C212FEDAE00870022 /* GetDataLive.swift in Sources */,
 				040ED78620C4DF4A00B6A0E6 /* ViewController.swift in Sources */,
 				5BB6400720C4EAEC00FD7042 /* YourWallpapers.swift in Sources */,
+				CE50D7FD211AFAEC008D1C9F /* Click_LivePhotoCollectionViewCell.swift in Sources */,
 				040ED7E520C4F6A000B6A0E6 /* DataOfAppLife.swift in Sources */,
 				5BCE293F20C8DEA400DE7037 /* LiveWallpapers_My.swift in Sources */,
+				042D3E44212686AD007DDBF8 /* DownloadPhotoOperation_H1.swift in Sources */,
+				0432B90D212AA08B0098D1D1 /* SettingViewController.swift in Sources */,
+				04340078213F7683003EB441 /* Second.swift in Sources */,
 				0443906A20C54D4800FDD30A /* Collection_H_TableViewCell.swift in Sources */,
+				CE1188EF21004FAE0049330C /* CheckBegan.swift in Sources */,
+				CE735E6920F45ECF00E3C9B0 /* getJson_LiveHomeImage.swift in Sources */,
+				04290F3F2138E118007B314B /* chupcell.swift in Sources */,
+				CED938F220FC821900412273 /* LivePhoto.swift in Sources */,
 				CE735E6120F3481700E3C9B0 /* Live_Library_CollectionViewCell.swift in Sources */,
 				CE23564320DA479C00AF2BAC /* JPEG.swift in Sources */,
+				04A346B12112F32D000C0614 /* Data.swift in Sources */,
+				CE8CFBEA20FF1B7000EB1977 /* TakePhotoCoreData.swift in Sources */,
+				CED3E592211AD54F00997B85 /* getJson_LiveCategories.swift in Sources */,
+				CE50D7FB211AFAC4008D1C9F /* Click_Live_PhotoViewController.swift in Sources */,
 				CEEB800820C63C2B00D54A3C /* Horizontal_CollectionView.swift in Sources */,
+				5B45822D2122BB1600FA905D /* getJson_VideoSize.swift in Sources */,
 				040ED7C420C4E39D00B6A0E6 /* Alert.swift in Sources */,
+				043427A7214FA1FE007F9371 /* ABNScheduler.swift in Sources */,
+				CE3966F92121AC1700A51131 /* getJson_Popular.swift in Sources */,
+				045FBE08216C48F600B92C48 /* getJson_ImgaeLivePhoto.swift in Sources */,
 				5B34572120C77ADC00EB4572 /* Wallpapers_Home.swift in Sources */,
+				0434007C213F7FE9003EB441 /* Reward.swift in Sources */,
 				5B09FA5920CA2B7700FEE1AD /* Wallpapers_SeeAll.swift in Sources */,
+				5B45822F2122BE9A00FA905D /* VideoInfo.swift in Sources */,
 				0443906820C54D2F00FDD30A /* Name_Cate_TableViewCell.swift in Sources */,
 				049BCD8120C62D32003C5101 /* HBSegmentedControl.swift in Sources */,
+				043931F4212E92B300CCBF4F /* plusImageBtnCell.swift in Sources */,
 				CE46C6FE20ECB07D0050E4A6 /* getJson_HomeImage.swift in Sources */,
+				045FBE0A216C495D00B92C48 /* imagePhotoModel.swift in Sources */,
+				CEE265B0212167CC00D38AAF /* getJson_NewArrival_Horizal.swift in Sources */,
+				04340076213F6D43003EB441 /* Frist.swift in Sources */,
 				5BCE294320C9311000DE7037 /* AllWallpapers_Coll.swift in Sources */,
 				040ED7C520C4E39D00B6A0E6 /* Reachability.swift in Sources */,
+				CE3966FB2121AE1100A51131 /* getJson_Popular_Horizal.swift in Sources */,
 				5B65624920C67ADA00E02062 /* CollViewCell1.swift in Sources */,
+				043538EB2137AD63007899BE /* LivePhoToMyCoreData.swift in Sources */,
+				0432B90B212A6AC70098D1D1 /* Collection_H2_TableViewCell.swift in Sources */,
 				CE46C6FA20ECB0290050E4A6 /* ImageInfor.swift in Sources */,
+				0432027E2130057D00870022 /* getJson_Cate_NewArrivals_Live.swift in Sources */,
+				CEC8A58720F5FA7A00763DCD /* Model.xcdatamodeld in Sources */,
+				CEB4B4542112F598003C7B58 /* PictureViewController.swift in Sources */,
 				040ED7C620C4E39D00B6A0E6 /* UIButton+Extention.swift in Sources */,
 				5B34572320C77AF400EB4572 /* LiveWallpapers_Home.swift in Sources */,
+				CE735E7620F5C41100E3C9B0 /* WallpaperCoreData.swift in Sources */,
 				040ED7CE20C4E3F900B6A0E6 /* Config.swift in Sources */,
 				CE46C6FC20ECB0570050E4A6 /* DataOfSources.swift in Sources */,
 				CE77DAA320EE1D3B00AE1DE7 /* getJson_CategoriesSeeAll.swift in Sources */,
+				04A346AF2112EFC5000C0614 /* LoadingViewController.swift in Sources */,
+				CED938F420FC87FB00412273 /* DownloadLivePhotoOperator.swift in Sources */,
 				CED5266420EF5C2D00D72D4B /* ClickView_CollectionViewCell.swift in Sources */,
 				CEC585B120DBA7B20039CADA /* CollLiveviewCell.swift in Sources */,
+				042B2C1D213E8FEF0025B85B /* FristNavigation.swift in Sources */,
+				CE736B4D2117E8B40041A65D /* CameraVideoViewController.swift in Sources */,
 				CE735E6320F34CC000E3C9B0 /* Click_Image_Library_ViewController.swift in Sources */,
 				CE23563B20DA46D000AF2BAC /* DTOtherMacro.swift in Sources */,
 				CEACD2EA20C7E580007499EE /* None_TableViewCell.swift in Sources */,
+				042D3E4621268765007DDBF8 /* DownloadPhotoOperation_H2.swift in Sources */,
 				04D05BE820CF758E00854469 /* LinkServer.swift in Sources */,
+				CE51FEC02111977300DA3800 /* Notification.swift in Sources */,
+				CED6403020F741CC001EC243 /* DownloadOperator.swift in Sources */,
 				040ED78420C4DF4A00B6A0E6 /* AppDelegate.swift in Sources */,
+				042D3E48212687DC007DDBF8 /* DownloadPhotoOperation_V.swift in Sources */,
+				CEE265AE21213C4B00D38AAF /* getJson_NewArrival_SeeAll.swift in Sources */,
+				042B2C1F213E90200025B85B /* SecondNavigation.swift in Sources */,
 				0443906C20C54D5A00FDD30A /* Collection_V_TableViewCell.swift in Sources */,
 				CE88D7E020CA218B0001A5B1 /* ClickImageCateView.swift in Sources */,
 				040ED7C920C4E39D00B6A0E6 /* UIView+Extention.swift in Sources */,
 				5B09FA5B20CA2B9800FEE1AD /* LiveWallpapers_SeeAll.swift in Sources */,
+				0434007A213F76CD003EB441 /* Thrid.swift in Sources */,
 				CE23564220DA479C00AF2BAC /* QuickTimeMov.swift in Sources */,
+				04360AF92122C3D70096DC41 /* TabbarCustom.swift in Sources */,
 				CE77DAA120EDC19700AE1DE7 /* getJson_CategoriesIcon.swift in Sources */,
 				5B09FA5720CA2B5A00FEE1AD /* Categories_SeeAll.swift in Sources */,
 				5B0649B320DA604700F3C3B1 /* CollViewCell_Home.swift in Sources */,
+				04419DCD2124369B00BA0475 /* AniView.swift in Sources */,
+				042AB5B6212D201B00D2C457 /* GetDataPhotoSeeAll.swift in Sources */,
 				CEDD294920C4E9D80042D0E7 /* CategogiesView.swift in Sources */,
+				CEB4B4522112F554003C7B58 /* CameraViewController.swift in Sources */,
 				CE735E6520F34D0300E3C9B0 /* Click_Library_CollectionViewCell.swift in Sources */,
 				5BCE293D20C8DE7A00DE7037 /* Wallpapers_My.swift in Sources */,
+				0432028021300B1100870022 /* getJson_Cate_Popular_Live.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,7 +978,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TRAN PHUOC NHAN (ES6276JGS5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -796,7 +997,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -837,7 +1038,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TRAN PHUOC NHAN (ES6276JGS5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -850,7 +1051,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -864,17 +1065,20 @@
 			baseConfigurationReference = 9F93E1FEBA5BF3065BDA6768 /* Pods-WallPaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TWXZYM9R2G;
+				DEVELOPMENT_TEAM = ES6276JGS5;
 				INFOPLIST_FILE = WallPaper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = Natsu.Boxingtimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranphuocnhan.WallpapersNhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -885,17 +1089,20 @@
 			baseConfigurationReference = D915AB1BDD109AB6579E672C /* Pods-WallPaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TWXZYM9R2G;
+				DEVELOPMENT_TEAM = ES6276JGS5;
 				INFOPLIST_FILE = WallPaper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = Natsu.Boxingtimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranphuocnhan.WallpapersNhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -987,6 +1194,127 @@
 			};
 			name = Release;
 		};
+		8A438C11214259550000CF7B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TRAN PHUOC NHAN (ES6276JGS5)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		8A438C12214259550000CF7B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF2841597A1FDD1BFBC3723 /* Pods-WallPaper.distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ES6276JGS5;
+				INFOPLIST_FILE = WallPaper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranphuocnhan.WallpapersNhan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		8A438C13214259550000CF7B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25260DC628743B53C0A0755B /* Pods-WallPaperTests.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38MF4H8FX;
+				INFOPLIST_FILE = WallPaperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Natsu.WallPaperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallPaper.app/WallPaper";
+			};
+			name = Distribution;
+		};
+		8A438C14214259550000CF7B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED884F35708F5B93894F244 /* Pods-WallPaperUITests.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38MF4H8FX;
+				INFOPLIST_FILE = WallPaperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Natsu.WallPaperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallPaper;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -995,6 +1323,7 @@
 			buildConfigurations = (
 				040ED7A920C4DF4C00B6A0E6 /* Debug */,
 				040ED7AA20C4DF4C00B6A0E6 /* Release */,
+				8A438C11214259550000CF7B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1004,6 +1333,7 @@
 			buildConfigurations = (
 				040ED7AC20C4DF4C00B6A0E6 /* Debug */,
 				040ED7AD20C4DF4C00B6A0E6 /* Release */,
+				8A438C12214259550000CF7B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1013,6 +1343,7 @@
 			buildConfigurations = (
 				040ED7AF20C4DF4C00B6A0E6 /* Debug */,
 				040ED7B020C4DF4C00B6A0E6 /* Release */,
+				8A438C13214259550000CF7B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1022,6 +1353,7 @@
 			buildConfigurations = (
 				040ED7B220C4DF4C00B6A0E6 /* Debug */,
 				040ED7B320C4DF4C00B6A0E6 /* Release */,
+				8A438C14214259550000CF7B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1029,13 +1361,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		040ED78A20C4DF4A00B6A0E6 /* WallPaper.xcdatamodeld */ = {
+		CEC8A58520F5FA7A00763DCD /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				040ED78B20C4DF4A00B6A0E6 /* WallPaper.xcdatamodel */,
+				CEC8A58620F5FA7A00763DCD /* Model.xcdatamodel */,
 			);
-			currentVersion = 040ED78B20C4DF4A00B6A0E6 /* WallPaper.xcdatamodel */;
-			path = WallPaper.xcdatamodeld;
+			currentVersion = CEC8A58620F5FA7A00763DCD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

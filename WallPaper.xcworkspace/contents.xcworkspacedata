@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Livephotomy+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Livephotomy+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Takephoto+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Takephoto+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Images+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Images+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:WallPaper.xcodeproj">
    </FileRef>
    <FileRef

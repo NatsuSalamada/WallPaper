@@ -57,7 +57,7 @@ class QuickTimeMov {
         return nil
     }
 
-    func write(_ dest : String, assetIdentifier : String) {
+    func write(_ dest : URL, assetIdentifier : String) {
         
         var audioReader : AVAssetReader? = nil
         var audioWriterInput : AVAssetWriterInput? = nil
@@ -76,7 +76,7 @@ class QuickTimeMov {
             // --------------------------------------------------
             // writer for mov
             // --------------------------------------------------
-            let writer = try AVAssetWriter(outputURL: URL(fileURLWithPath: dest), fileType: .mov)
+            let writer = try AVAssetWriter(outputURL:  dest, fileType: .mov)
             writer.metadata = [metadataFor(assetIdentifier)]
             
             // video track

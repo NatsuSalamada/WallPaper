@@ -1,4 +1,4 @@
-//
+ //
 //  Wallpapers_My.swift
 //  WallPaper
 //
@@ -7,10 +7,11 @@
 //
 
 import UIKit
+var indexLibrary = IndexPath()
 
 class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
-    
-   
+    let documentsPhoto = FileManager.default
+    var string:String = ""
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIScreen.main.bounds.width >= 768{
             
@@ -22,22 +23,54 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
             return CGSize(width: WIPH(w: 93), height: HIPH(h: 152))
         }
     }
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return array_Image_library.count
+        
+        if TakePhotoCoreData.share.getID() != "-1"{
+            return TakePhotoCoreData.share.getAllData().count + 1
+        }
+        return 1
+        
     }
     
    @objc func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Wallpapers_Cell", for: indexPath) as! CollViewCell1
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         var space: CGFloat = 0.0
-        cell.img_Library.image = array_Image_library[indexPath.row] 
+    
+    
+    if indexPath.row != TakePhotoCoreData.share.getAllData().count{
+        let documentsPhoto = FileManager.default
+        let manager = documentsPhoto.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let id = TakePhotoCoreData.share.getAllData()[indexPath.row].id
+        
+        
+        let filePath = manager.appendingPathComponent("yourPhoto\(id!).jpg").path
+        
+        if UIImage(contentsOfFile: filePath) != nil{
+            cell.LivePhotoCate.image = UIImage(contentsOfFile: filePath)!
+        }
+    }else{
+        cell.LivePhotoCate.image = #imageLiteral(resourceName: "plusImageBtn")
+    }
+       
+//        if let imgdata = UIImageJPEGRepresentation(cell.img_Library.image!, 1.0)
+//        {
+//            do {
+//                 try? imgdata.write(to: fileURL, options: .atomic)
+//
+//                print("file saved")
+//            }catch {
+//                print("error saving file:", error)
+//            }
+//        }
+    
+    
+    
         if UIScreen.main.bounds.width >= 768{
-            
-            
             space = WIPA(w: 14)
-            
-            
         }else{
             
             space = WIPH(w: 0)
@@ -60,24 +93,30 @@ class Wallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionVie
             
             layout.minimumInteritemSpacing = 1
         }
-        
-        
         return cell
     }
     
     @objc func reloadcollection(){
         Wallpapers_Coll.reloadData()
-        
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        indexLibrary = indexPath
+        if indexPath.row == TakePhotoCoreData.share.getAllData().count{
+            let inFor = ["index": 1] as [String : Int]
+            NotificationCenter.default.post(name: .Wallpapers_Screen, object: nil, userInfo: inFor)
+            NotificationCenter.default.post(name: .hideChup, object: nil)
+        }else{
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let Click_Image_Library_ViewController = storyBoard.instantiateViewController(withIdentifier: "Click_Image_Library_ViewController") as! Click_Image_Library_ViewController
+            self.present(Click_Image_Library_ViewController, animated: true, completion: nil)
+        }
     }
     @IBOutlet weak var Wallpapers_Coll: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         NotificationCenter.default.addObserver(self, selector: #selector(reloadcollection), name: .LibaryWallpaper, object: nil)
     }
-
   
 }
-extension Notification.Name{
-    static let LibaryWallpaper = Notification.Name("Downloading")
-}
+

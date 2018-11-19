@@ -41,10 +41,12 @@ class Home: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if let current = currentViewCOntroller{
-            current.viewWillDisappear(true)
+        super.viewWillDisappear(animated)
+        if let currentViewCOntroller = currentViewCOntroller {
+            currentViewCOntroller.viewWillDisappear(animated)
         }
     }
+    private var changeTag:Int = 0
     
     func ChangeDisplayViewLoad(index:Int){
         
@@ -58,13 +60,10 @@ class Home: UIViewController {
     
     @objc func ChangeDisplay(noti:Notification){
         print("Change:\(noti.object as! Int)")
+        self.changeTag = noti.object as! Int
         currentViewCOntroller?.view.removeFromSuperview()
         currentViewCOntroller?.removeFromParentViewController()
-        let vc = CheckCollection(index: noti.object as! Int)
-        vc.didMove(toParentViewController: self)
-        self.addChildViewController(vc)
-        vc.view.frame = self.View_Home.bounds
-        View_Home.addSubview(vc.view)
+        ChangeDisplayViewLoad(index: noti.object as! Int)
     }
 
     func CheckCollection(index:Int) ->UIViewController {

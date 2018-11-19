@@ -11,9 +11,10 @@ import Photos
 import PhotosUI
 import MobileCoreServices
 
-var array_Image_library = [UIImage]()
+
 class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    
+    var imageLibrary:UIImage?
+   
     @IBOutlet weak var FadedView: UIView!
     @IBOutlet weak var View_My: UIView!
     @IBOutlet weak var btn_CreateWall: UIButton!
@@ -44,7 +45,7 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
          
             
             btn_expand.transform = CGAffineTransform.identity
-            UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+            UIView.animate(withDuration: 0.5, delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
             let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi/4))
             self.btn_expand.transform = rotation
     
@@ -74,12 +75,12 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
             
            
             
-            UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+            UIView.animate(withDuration: 0.5, delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
                 self.btn_expand.transform = CGAffineTransform.identity
    
                 
             }, completion: nil)
-            UIView.animate(withDuration: 0.5) {
+            UIView.animate(withDuration: 0.3) {
                 self.btn_expand_state = 0
                 self.btn_CreateLive.alpha  = 0
                 self.btn_CreateWall.alpha  = 0
@@ -88,13 +89,13 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
 
             let animation = CAKeyframeAnimation(keyPath: "transform.translation.y")
             animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-            animation.duration = 0.5
+            animation.duration = 0.3
             animation.values = [0, 32 ]
             btn_CreateWall.layer.add(animation, forKey: "move")
             
             let animation1 = CAKeyframeAnimation(keyPath: "transform.translation.y")
             animation1.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-            animation1.duration = 0.5
+            animation1.duration = 0.3
             animation1.values = [0, 32 ]
             btn_CreateLive.layer.add(animation, forKey: "move")
             
@@ -111,7 +112,9 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        btn_expand.isHidden = true
         NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(chup(_:)), name: .Wallpapers_Screen , object: nil)
         ChangeDisplayViewLoad(index: 0)
         btn_CreateLive.set(image: #imageLiteral(resourceName: "iconCreateLiveWallpapers") , title: "Create Live Wallpapers     ", titlePosition: .left, additionalSpacing: 8, state: .normal)
         btn_CreateWall.set(image: #imageLiteral(resourceName: "iconCreateWallpapers"), title: "Create Wallpapers     ", titlePosition: .left, additionalSpacing: 8, state: .normal)
@@ -128,8 +131,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
 
         UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
             self.btn_expand.transform = CGAffineTransform.identity
-            
-            
         }, completion: nil)
         UIView.animate(withDuration: 0.5) {
             self.btn_expand_state = 0
@@ -141,7 +142,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
     }
     
     func ChangeDisplayViewLoad(index:Int){
-        
         let vc = CheckCollection(index: index)
         vc.didMove(toParentViewController: self)
         self.addChildViewController(vc)
@@ -149,16 +149,11 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
         View_My.addSubview(vc.view)
         currentViewCOntroller = vc
     }
-    
     @objc func ChangeDisplay(noti:Notification){
         print("Change:\(noti.object as! Int)")
         currentViewCOntroller?.view.removeFromSuperview()
         currentViewCOntroller?.removeFromParentViewController()
-        let vc = CheckCollection(index: noti.object as! Int)
-        vc.didMove(toParentViewController: self)
-        self.addChildViewController(vc)
-        vc.view.frame = self.View_My.bounds
-        View_My.addSubview(vc.view)
+        ChangeDisplayViewLoad(index: noti.object as! Int)
     }
     
     func CheckCollection(index:Int) ->UIViewController {
@@ -181,7 +176,6 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func abtn_CreateLive(_ sender: Any) {
-        
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .camera
@@ -189,19 +183,40 @@ class YourWallpapers: UIViewController,UIImagePickerControllerDelegate, UINaviga
         present(picker, animated: true, completion: nil)
     }
     @IBAction func abtn_TakePhotoWallpaper(_ sender: Any) {
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let PickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
-           
-            array_Image_library.append(PickedImage)
-           NotificationCenter.default.post(name: .LibaryWallpaper, object: nil)
-        }
-        imagePicker.dismiss(animated: true, completion: nil)
+      
        
     }
+    @objc func chup(_ notification: Notification){
+        guard let data = notification.userInfo as? [String: Any] else{
+            return
+        }
+        guard let index = data["index"] as? Int else{
+            return
+        }
+        let vc:CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "showCamera") as! CameraViewController
+        vc.kindOf = index
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let currentViewCOntroller = currentViewCOntroller {
+            currentViewCOntroller.viewWillDisappear(animated)
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.tabBarController?.tabBar.isHidden = false
+        self.btn_expand.transform = CGAffineTransform.identity
+        self.btn_expand_state = 0
+        FadedView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TapFadedView(_:))))
+        NotificationCenter.default.post(name: .LibaryWallpaper, object: nil)
+        btn_CreateLive.set(image: #imageLiteral(resourceName: "iconCreateLiveWallpapers") , title: "Create Live Wallpapers     ", titlePosition: .left, additionalSpacing: 8, state: .normal)
+        btn_CreateWall.set(image: #imageLiteral(resourceName: "iconCreateWallpapers"), title: "Create Wallpapers     ", titlePosition: .left, additionalSpacing: 8, state: .normal)
+        btn_CreateLive.alpha = 0
+        btn_CreateWall.alpha  = 0
+        FadedView.alpha  = 0
+        
+    }
+    
+    
+    
 }

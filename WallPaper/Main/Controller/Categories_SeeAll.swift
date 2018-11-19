@@ -33,13 +33,14 @@ class Categories_SeeAll: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ChangeDisplay), name: Notification.Name("ChangeDislay") , object: nil)
-        
+        self.view.setGradients(color_01: UIColor(displayP3Red: 51/255, green: 50/255, blue: 55/255, alpha: 1.0), color_02: UIColor(displayP3Red: 11/255, green: 1/255, blue: 1/255, alpha: 1.0))
         ChangeDisplayViewLoad(index: 0)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if let current = currentViewCOntroller{
-            current.viewWillDisappear(true)
+        super.viewWillDisappear(animated)
+        if let currentViewCOntroller = currentViewCOntroller {
+            currentViewCOntroller.viewWillDisappear(animated)
         }
     }
     
@@ -57,21 +58,20 @@ class Categories_SeeAll: UIViewController {
         print("Change:\(noti.object as! Int)")
         currentViewCOntroller?.view.removeFromSuperview()
         currentViewCOntroller?.removeFromParentViewController()
-        let vc = CheckCollection(index: noti.object as! Int)
-        vc.didMove(toParentViewController: self)
-        self.addChildViewController(vc)
-        vc.view.frame = self.View_SeeAll.bounds
-        View_SeeAll.addSubview(vc.view)
+        ChangeDisplayViewLoad(index: noti.object as! Int)
     }
     
     func CheckCollection(index:Int) ->UIViewController {
         if(index == 0){
-            return WallpapersControlller!
-        }else{
+            
+          return WallpapersControlller!
+        }else {
+            
             return LiveWallpapersController!
         }
     }
-
+    override func viewDidDisappear(_ animated: Bool) {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -23,8 +23,25 @@ class Collection_V_TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func reloadVisibleCells() {
+        UIView.setAnimationsEnabled(false)
+        self.Collection_V.performBatchUpdates({
+            
+            let visibleCellIndexPaths = self.Collection_V.indexPathsForVisibleItems
+            self.Collection_V.reloadItems(at: visibleCellIndexPaths)
+        }) { (finished) in
+            UIView.setAnimationsEnabled(true)
+        }
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y + scrollView.bounds.size.height
+        
+        if offsetY >= scrollView.contentSize.height {
+            //loadData(nextKeyId: nextKeyId)
+        }
+        reloadVisibleCells()
+        
+    }
+}
 
-}
-extension Notification.Name{
-    static let CategoriesDownload = Notification.Name("Downloading")
-}
+

@@ -10,6 +10,11 @@ import UIKit
 
 class LiveWallpapers_My: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    
+    @IBOutlet weak var loading: UIActivityIndicatorView!
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIScreen.main.bounds.width >= 768{
             
@@ -23,13 +28,35 @@ class LiveWallpapers_My: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        
+        return LivePhoToMyCoreData.share.getAllData().count + 1
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LiveWallpapers_Cell", for: indexPath) as! Live_Library_CollectionViewCell
+        
+        
+        if indexPath.row != LivePhoToMyCoreData.share.getAllData().count{
+            var l = LivePhoToMyCoreData.share.getAllData()[indexPath.row].linkDataIMG!
+            let range = l.index(l.endIndex, offsetBy: -3)..<l.endIndex
+            l.removeSubrange(range)
+            l = l + "jpg"
+            print(l)
+            cell.createVideo.image = UIImage(contentsOfFile: LivePhoToMyCoreData.share.getAllData()[indexPath.row].linkDataIMG!)
+        }else{
+            cell.createVideo.image = #imageLiteral(resourceName: "plusImageBtn")
+        }
+        
+        
+        
+        
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         var space: CGFloat = 0.0
+        
+        
+        
+        
         
         if UIScreen.main.bounds.width >= 768{
             
@@ -64,13 +91,49 @@ class LiveWallpapers_My: UIViewController, UICollectionViewDelegate, UICollectio
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        temp = indexPath
+        if indexPath.row == LivePhoToMyCoreData.share.getAllData().count{
+            let inFor = ["index": 2] as [String : Int]
+            NotificationCenter.default.post(name: .Wallpapers_Screen, object: nil, userInfo: inFor)
+            NotificationCenter.default.post(name: .hideChup, object: nil)
+        }else{
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let chup = storyBoard.instantiateViewController(withIdentifier: "chup") as! chup
+            self.present(chup, animated: true, completion: nil)
+        }
+    }
 
     @IBOutlet weak var LiveWallpapers_Coll: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: .reloadLiveWallpapers, object: nil)
+        
     }
 
  
+    @objc func reload(){
+        self.loading.isHidden = true
+        self.LiveWallpapers_Coll.reloadData()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if checkCamera == 1{
+            self.loading.isHidden = false
+            self.loading.startAnimating()
+            checkCamera = 0
+            
+        }else{
+            self.loading.stopAnimating()
+            self.loading.isHidden = true
+        }
+    }
 
 }

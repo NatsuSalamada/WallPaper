@@ -346,3 +346,20 @@ extension UIImage {
         }
     }
 }
+func Up(v:UIViewController){
+    
+//    checkUp = false
+    
+    let ran = arc4random_uniform(UInt32(UserDefaults.standard.value(forKey: "Ran") as! Int))
+    if ran == 4{
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let Click_Image_Library_ViewController = storyBoard.instantiateViewController(withIdentifier: "Rate") as! Rate
+        v.present(Click_Image_Library_ViewController, animated: true, completion: nil)
+    }else{
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let Click_Image_Library_ViewController = storyBoard.instantiateViewController(withIdentifier: "Reward") as! Reward
+        v.present(Click_Image_Library_ViewController, animated: true, completion: nil)
+    }
+   
+}
+

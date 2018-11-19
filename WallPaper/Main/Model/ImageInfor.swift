@@ -14,6 +14,7 @@ struct UserInfo{
     init(id: String,link:String){
         self.id = id
         self.link = link
+      
     }
 }
 

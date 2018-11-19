@@ -25,8 +25,8 @@ class JPEG {
         return makerNote.object(forKey: kFigAppleMakerNote_AssetIdentifier) as! String?
     }
 
-    func write(_ dest : String, assetIdentifier : String) {
-        guard let dest = CGImageDestinationCreateWithURL(URL(fileURLWithPath: dest) as CFURL, kUTTypeJPEG, 1, nil)
+    func write(_ dest : URL, assetIdentifier : String) {
+        guard let dest = CGImageDestinationCreateWithURL( dest as CFURL, kUTTypeJPEG, 1, nil)
             else { return }
         defer { CGImageDestinationFinalize(dest) }
         guard let imageSource = self.imageSource() else { return }

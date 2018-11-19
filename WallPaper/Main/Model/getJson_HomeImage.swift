@@ -16,7 +16,7 @@ import Foundation
 class getJson_HomeImage: NSObject {
     static let sharedInstance = getJson_HomeImage()
     var imageCurrent = [[String : AnyObject]]()
-    let notification = NotificationCenter()
+    
     @objc func fetchFeedForUrlString(){
         URLSession.shared.dataTask(with: link_Home!, completionHandler: { (data, response, error) in
             if error != nil {
@@ -28,11 +28,12 @@ class getJson_HomeImage: NSObject {
                 if let unwrappedData = data, let imageResult = try JSONSerialization.jsonObject(with: unwrappedData, options: .mutableContainers) as? NSDictionary {
                     
                     DispatchQueue.main.async(execute: {
-                        self.imageCurrent = (imageResult["ImagesHome"] as? [[String : AnyObject]])!
+                        self.imageCurrent = (imageResult["Home"] as? [[String : AnyObject]])!
                         for image in self.imageCurrent{
-                            json_imageHome.append(image["link"] as! String)
+                            let user = UserInfo(id: image["id"] as! String, link: image["link"] as! String)
+                            PhotoList.append(user)
                         }
-                        NotificationCenter.default.post(name: .ImageHomeDownload, object: nil)
+                        
                        
                     })
                     

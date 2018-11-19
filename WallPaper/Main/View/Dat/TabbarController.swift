@@ -39,12 +39,16 @@ class TabbarController: UITabBarController {
         }
             else  if item.tag == 2{
             
-            (tabBar.subviews[2].subviews[0] as! UIImageView).transform = CGAffineTransform.identity
-            UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
-            let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
-                (tabBar.subviews[2].subviews[0] as! UIImageView).transform = rotation
-            }, completion: nil)
-            
+//            (tabBar.subviews[2].subviews[0] as! UIImageView).transform = CGAffineTransform.identity
+//            UIView.animate(withDuration: 0.7, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
+//            let rotation = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
+//                (tabBar.subviews[2].subviews[0] as! UIImageView).transform = rotation
+//            }, completion: nil)
+            let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+            bounceAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
+            bounceAnimation.duration = 1.2
+            bounceAnimation.calculationMode = kCAAnimationCubic
+            (tabBar.subviews[2].subviews[0] as! UIImageView).layer.add(bounceAnimation, forKey: "bounceAnimation")
         }else{
             let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
             bounceAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]

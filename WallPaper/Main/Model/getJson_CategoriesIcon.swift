@@ -11,7 +11,7 @@ import Foundation
 class getJson_CategoriesIcon: NSObject {
     static let sharedInstance = getJson_CategoriesIcon()
     var imageCurrent = [[String : AnyObject]]()
-    let notification = NotificationCenter()
+    
     @objc func fetchFeedForUrlString(){
         URLSession.shared.dataTask(with: link_Categories_icon!, completionHandler: { (data, response, error) in
             if error != nil {
@@ -25,9 +25,10 @@ class getJson_CategoriesIcon: NSObject {
                     DispatchQueue.main.async(execute: {
                         self.imageCurrent = (imageResult["IconCategories"] as? [[String : AnyObject]])!
                         for image in self.imageCurrent{
-                            json_categoriesicon.append(image["link"] as! String)
+                        let user = UserInfo(id: image["id"] as! String, link: image["link"] as! String)
+                          PhotoIcon.append(user)
                         }
-                        NotificationCenter.default.post(name: .ImageHomeDownload, object: nil)
+                        
                         
                     })
                     
